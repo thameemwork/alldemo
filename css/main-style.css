@@ -432,6 +432,9 @@ width: 100%;
     .carousel-btn{
         display: none;
     }
+    #myCarousel {
+    margin-top: 0px;
+}
 }
 
 
