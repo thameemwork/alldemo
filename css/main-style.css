@@ -392,6 +392,13 @@ width: 100%;
     .avater-wapper-inner{
         padding-bottom: 15px !important;
     }
+    .footer{
+        padding: 0px;
+    }
+    .footer li{
+        float: none;
+        padding: 4px 4px;
+    }
 }
 
 
