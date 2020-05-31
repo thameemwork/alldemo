@@ -365,7 +365,7 @@ width: 100%;
      padding: 10px;
     }
     .home-seeall{
-       margin-top: 26px; 
+       margin-top: 24px; 
     }
     .avater{
         background: none;
@@ -375,6 +375,7 @@ width: 100%;
     }
     .hover{
         height: 150px !important;
+        border-radius: 15px;
     }
     .font-weight-light{
         margin-bottom: -9px;
