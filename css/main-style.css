@@ -361,7 +361,8 @@ width: 100%;
         float:none;
     }
     .home-title{
-     font-size: 15px;   
+     font-size: 15px;
+     padding: 10px;
     }
     .home-seeall{
        margin-top: 33px; 
