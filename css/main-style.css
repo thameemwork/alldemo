@@ -365,12 +365,13 @@ width: 100%;
      padding: 10px;
     }
     .home-seeall{
-       margin-top: 29px; 
+       margin-top: 26px; 
     }
     .avater{
         background: none;
         margin-bottom: 0px;
         height: 150px;
+        width: 150px;
     }
     .hover{
         height: 150px !important;
