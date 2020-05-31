@@ -393,11 +393,10 @@ width: 100%;
         padding-bottom: 15px !important;
     }
     .footer{
-        padding: 0px!important;
+        padding: 5px 0px!important;
     }
     .footer li{
-        float: none !important;
-        padding: 4px 4px !important;
+        padding: 4px 22px !important;
     }
 }
 
