@@ -365,7 +365,8 @@ width: 100%;
      padding: 10px;
     }
     .home-seeall{
-       margin-top: 24px; 
+       margin-top: 24px;
+        font-size: 12px;
     }
     .avater{
         background: none;
