@@ -402,11 +402,23 @@ width: 100%;
         padding: 4px 22px !important;
     }
     .menu-name{
-        display: block;
+    display: block;
     float: left;
-    margin-top: 17px;
+    margin-top: 15px;
     margin-left: 10px;
 }
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #000;
+}
+    .navbar-default .navbar-toggle {
+    border-color: #000;
+}
+    .navbar-default .navbar-toggle .icon-bar {
+    background-color: #f7d413;
+}
+    .navbar-toggle{
+        background-color: #000;
+    }
 }
 
 
