@@ -365,7 +365,7 @@ width: 100%;
      padding: 10px;
     }
     .home-seeall{
-       margin-top: 24px;
+       margin-top: 28px;
         font-size: 12px;
     }
     .avater{
@@ -396,8 +396,8 @@ width: 100%;
         padding: 0px;
     }
     .footer li{
-        float: none;
-        padding: 4px 4px;
+        float: none !important;
+        padding: 4px 4px !important;
     }
 }
 
