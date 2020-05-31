@@ -362,6 +362,7 @@ width: 100%;
 @media screen and (max-width: 768px) {
     .itemsdiv {
         float:none;
+        width: auto;
     }
     .home-title{
      font-size: 15px;
