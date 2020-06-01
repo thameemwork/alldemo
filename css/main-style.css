@@ -444,6 +444,22 @@ width: 100%;
     #myCarousel {
     margin-top: 0px;
 }
+    .logo-home img {
+    width: 100%;
+    margin: 17px 0px 13px 0px;
+}
+    .home-login-btn a {
+    margin-top: 12px;
+    padding: 6px 14px;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+    .login-user-drop {
+    margin-top: 6px;
+    }
+    .logo-home.home-login-btn {
+    float: right;
+}
     
 }
 
