@@ -1,3 +1,4 @@
+/*Form-line style*/
 (function ($) {
 // Form control border-bottom line
 $('.blmd-line .form-control').bind('focus',function(){
@@ -11,8 +12,8 @@ $(this).parent('.blmd-line').removeClass('blmd-toggled');
 }
 })
 })(jQuery);
-
-
+/*Form-line style*/
+/*Mobile Menu style*/
 window.onload = function () {
 window.jQuery
 ? $(document).ready(function () {
@@ -31,3 +32,31 @@ $(".navbar-toggle").is(":hidden") ? $(".sideMenu, .overlay").hide() : $(".sideMe
 })
 : console.log("sidebarNavigation Requires jQuery");
 };
+/*Mobile Menu style*/
+/*top-move style*/
+$(document).ready(function () {
+$(window).scroll(function () {
+var top =  $(".goto-top");
+if ( $('body').height() <= (    $(window).height() + $(window).scrollTop() + 200 )) {
+top.animate({"margin-left": "0px"},1500);
+} else {
+top.animate({"margin-left": "-100%"},1500);
+}
+});
+
+$(".goto-top").on('click', function () {
+$("html, body").animate({scrollTop: 0}, 1000);
+});
+});
+/*top-move style*/
+/*Active line*/
+/*$( '#topheader .navbar-nav a' ).on( 'click', function () {
+	$( '#topheader .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+	$( this ).parent( 'li' ).addClass( 'active' );
+});*/
+/*Active line*/
+/*Pause-slider*/
+/*$(window).load(function() {
+    $('.carousel').carousel('pause'); 
+});*/
+/*Pause-slider*/
