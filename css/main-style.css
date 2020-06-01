@@ -345,10 +345,13 @@ a:hover.carousel-btn {
 width: 100%;
 }
 .avater-wapper-inner{
-     overflow-y:hidden;
-     overflow-x:auto;
      white-space: nowrap;
-     padding-bottom: 40px;
+     padding-bottom: 13px;
+     overflow: hidden;
+}
+.avater-wapper-inner:hover{
+    overflow-y: hidden;
+    overflow-x: auto;
 }
 .avater-wapper-2{
     background-color: #1f1f1f;
@@ -357,6 +360,9 @@ width: 100%;
     padding: 8px 10px;
     border-radius: 12px;
     display: inline-block;
+    float: none;
+    width:16.55555555%;
+    
    
 }
 @media screen and (max-width: 768px) {
@@ -578,10 +584,10 @@ body::-webkit-scrollbar-thumb {
   width: 12px;
 }
 *::-webkit-scrollbar-track {
-  background: orange;
+  background: #353535;
 }
 *::-webkit-scrollbar-thumb {
-  background-color: blue;
+  background-color: #4a4a4a;
   border-radius: 20px;
 }
 
