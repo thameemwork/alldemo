@@ -401,6 +401,8 @@ width: 100%;
 }   
     .avater-wapper-inner{
         padding-bottom: 15px !important;
+        overflow-y: hidden;
+        overflow-x: auto;
     }
     .footer{
         padding: 5px 0px!important;
@@ -442,6 +444,7 @@ width: 100%;
     #myCarousel {
     margin-top: 0px;
 }
+    
 }
 
 
