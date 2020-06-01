@@ -31,36 +31,76 @@ body{
     background-color: #444;
     margin-top: 15px;
 }
+/*Scrollbar*/
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #F7D413 #2A2927;  
+}
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: #353535;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #4a4a4a;
+  border-radius: 20px;
+}
+/*End-Scrollbar*/
+/*top-scroll*/
+  #return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+.top-btn{
+    margin: 0 auto;
+    width: 50px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.top-btn a{
+    color: #F7D413;
+}
+/*End-top-scroll*/
 /*End custom css class*/
-/* fade effect style */
-.carousel-fade .carousel-inner .item {
-  transition-property: opacity;
-}
-.carousel-fade .carousel-inner .item,
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  opacity: 0;
-}
-.carousel-fade .carousel-inner .active,
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-.carousel-fade .carousel-inner .next,
-.carousel-fade .carousel-inner .prev,
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  transform: translate3d(0, 0, 0);
-}
-@media (min-width: 768px){
-    .centered-ul{
-        float:none;
-        margin: 0 auto;
-        display: table;
-        table-layout: fixed;
-    }
-}
+/*Navbar*/
 .navbar-cus {
     background-color: #F7D413;
     border-color: #F7D413;
@@ -77,11 +117,9 @@ body{
   color: #676767;
     border-top: 3px solid #131313;
 }
-
 #topheader .navbar-nav li.active > a {
   background: transparent;
- 
-    color: #000;
+  color: #000;
 }
 .logo-home img{
     width: 25%;
@@ -170,24 +208,16 @@ body{
 .user-login{
     float: right;
 }
-/*@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(1, 1);
-  }
-  to {
-    -webkit-transform: scale(1.5, 1.5);
-  }
+@media (min-width: 768px){
+    .centered-ul{
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
 }
-
-@keyframes zoom {
-  from {
-    transform: scale(1, 1);
-  }
-  to {
-    transform: scale(1.5, 1.5);
-  }
-}*/
-
+/*End-Navbar*/
+/*slider*/
 .carousel-inner .item > img {
   -webkit-animation: zoom 20s;
   animation: zoom 20s;
@@ -255,30 +285,30 @@ a:hover.carousel-btn {
 .carousel-control.right span{
    font-size: 18px; 
 }
-.home-title{
-   padding: 15px;
-    color: #fff;
-    font-size: 20px;
-    margin-top: 17px;
-    font-weight: 600;
+/* fade effect style */
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
 }
-.home-seeall{
-    color: #fff;
-    margin-top: 43px;
-    float: right; 
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+/* End-fade effect style */
+/*End-slider*/
+/*Mobile-menu*/
 .overlay,
 .sideMenu {
     position: fixed;
@@ -327,6 +357,20 @@ a:hover.carousel-btn {
 .menu-name{
     display: none;
 }
+/*End-mobile*/
+/*Home-page*/
+.home-title{
+   padding: 15px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 17px;
+    font-weight: 600;
+}
+.home-seeall{
+    color: #fff;
+    margin-top: 43px;
+    float: right; 
+}
 .avater{
     width: 100%;
     height: 200px;
@@ -361,117 +405,14 @@ width: 100%;
     border-radius: 12px;
     display: inline-block;
     float: none;
-    width:16.55555555%;
-    
-   
+    width:16.55555555%;  
 }
-@media screen and (max-width: 768px) {
-    .itemsdiv {
-        float:none;
-        width: auto;
-    }
-    .home-title{
-     font-size: 15px;
-     padding: 10px;
-    }
-    .home-seeall{
-       margin-top: 30px;
-        font-size: 12px;
-    }
-    .avater{
-        background: none;
-        margin-bottom: 0px;
-        height: 150px;
-        width: 150px;
-    }
-    .hover{
-        height: 150px !important;
-        border-radius: 15px;
-    }
-    .font-weight-light{
-        margin-bottom: -9px;
-        font-size: 14px !important;
-    }
-    .hover-1-description{
-        font-size: 8px!important;
-    }
-     .avater:hover {
-    height: 150px;
-    box-shadow:none;
-}   
-    .avater-wapper-inner{
-        padding-bottom: 15px !important;
-        overflow-y: hidden;
-        overflow-x: auto;
-    }
-    .footer{
-        padding: 5px 0px!important;
-    }
-    .footer li{
-        padding: 4px 22px !important;
-    }
-    .menu-name{
-    display: block;
-    float: left;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #000;
-}
-    .navbar-default .navbar-toggle {
-    border-color: #000;
-}
-    .navbar-default .navbar-toggle .icon-bar {
-    background-color: #f7d413;
-}
-    .navbar-toggle{
-        background-color: #000;
-    }
-    .carousel-caption h3 {
-    font-size: 14px;
-}
-    .carousel-caption {
-    top: -10%;
-    }
-    .carousel-caption h4 {
-    line-height: 12px;
-    font-size: 10px;
-}
-    .carousel-btn{
-        display: none;
-    }
-    #myCarousel {
-    margin-top: 0px;
-}
-    .logo-home img {
-    width: 100%;
-    margin: 17px 0px 13px 0px;
-}
-    .home-login-btn a {
-    margin-top: 12px;
-    padding: 6px 14px;
-    font-size: 11px;
-    margin-bottom: 10px;
-}
-    .login-user-drop {
-    margin-top: 6px;
-    }
-    .logo-home.home-login-btn {
-    float: right;
-}
-    
-}
-
-
-
 .hover {
   overflow: hidden;
   position: relative;
   height: 200px;
     border-radius: 10px;
 }
-
 .hover-overlay {
   width: 100%;
   height: 100%;
@@ -482,7 +423,6 @@ width: 100%;
   transition: all 0.4s;
   
 }
-
 .hover img {
   width: 100%;
   position: absolute;
@@ -490,7 +430,6 @@ width: 100%;
   left: 0;
   transition: all 0.3s;
 }
-
 .hover-content {
   position: relative;
   z-index: 99;
@@ -505,8 +444,7 @@ width: 100%;
 h3.hover-1-title{
   margin-bottom: 4px;  
 }
-
-/* DEMO 1 ============================== */
+/*over-effect*/
 .hover-1 img {
   width: 100%;
   position: absolute;
@@ -514,7 +452,6 @@ h3.hover-1-title{
   left: 0%;
   transition: all 0.3s;
 }
-
 .hover-1-content {
   position: absolute;
   bottom: 0;
@@ -524,36 +461,27 @@ h3.hover-1-title{
   width: 100%;
     padding: 5px;
 }
-
 .hover-1 .hover-overlay {
   background: rgba(0, 0, 0, 0.20);
 }
-
 .hover-1-description {
   transform: translateY(0.5rem);
   transition: all 0.4s;
   opacity: 0;
   font-size: 12px;
   color: #fff;
-  font-weight: 800;
-    
-    
+  font-weight: 800;  
 }
-
 .hover-1:hover .hover-1-content {
-  bottom: 2rem;
-    
+  bottom: 2rem;  
 }
-
 .hover-1:hover .hover-1-description {
   opacity: 1;
   transform: none;
 }
-
 .hover-1:hover img {
   left: 0;
 }
-
 .hover-1:hover .hover-overlay {
   opacity: 0;
 }
@@ -593,45 +521,4 @@ body::-webkit-scrollbar-thumb {
   background-color: #F7D413;
   border-radius: 20px;
 }
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #F7D413 #2A2927;
-    
-}
-/* Works on Chrome/Edge/Safari */
-*::-webkit-scrollbar {
-  width: 12px;
-}
-*::-webkit-scrollbar-track {
-  background: #353535;
-}
-*::-webkit-scrollbar-thumb {
-  background-color: #4a4a4a;
-  border-radius: 20px;
-}
-
-
-
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*End-home*/

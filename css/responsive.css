@@ -1,0 +1,128 @@
+/*Default media query in Mobile*/
+@media screen and (max-width: 767px) {
+    .itemsdiv {
+        float:none;
+        width: auto;
+    }
+    .home-title{
+     font-size: 15px;
+     padding: 10px;
+    }
+    .home-seeall{
+       margin-top: 30px;
+        font-size: 12px;
+    }
+    .avater{
+        background: none;
+        margin-bottom: 0px;
+        height: 150px;
+        width: 150px;
+    }
+    .hover{
+        height: 150px !important;
+        border-radius: 15px;
+    }
+    .font-weight-light{
+        margin-bottom: -9px;
+        font-size: 14px !important;
+    }
+    .hover-1-description{
+        font-size: 8px!important;
+    }
+     .avater:hover {
+    height: 150px;
+    box-shadow:none;
+}   
+    .avater-wapper-inner{
+        padding-bottom: 15px !important;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+    .footer{
+        padding: 5px 0px!important;
+    }
+    .footer li{
+        padding: 4px 22px !important;
+    }
+    .menu-name{
+    display: block;
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #000;
+}
+    .navbar-default .navbar-toggle {
+    border-color: #000;
+}
+    .navbar-default .navbar-toggle .icon-bar {
+    background-color: #f7d413;
+}
+    .navbar-toggle{
+        background-color: #000;
+    }
+    .carousel-caption h3 {
+    font-size: 14px;
+}
+    .carousel-caption {
+    top: -10%;
+    }
+    .carousel-caption h4 {
+    line-height: 12px;
+    font-size: 10px;
+}
+    .carousel-btn{
+        display: none;
+    }
+    #myCarousel {
+    margin-top: 0px;
+}
+    .logo-home img {
+    width: 100%;
+    margin: 17px 0px 13px 0px;
+}
+    .home-login-btn a {
+    margin-top: 12px;
+    padding: 6px 14px;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+    .login-user-drop {
+    margin-top: 6px;
+    }
+    .logo-home.home-login-btn {
+    float: right;
+}
+    .footer li {
+    width: 49%;
+}   
+}
+/*End-Default media query in Mobile*/
+/*Screen-landscape*/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { 
+.carousel-caption {
+    top: 19%;
+}
+}
+@media screen and (min-width : 320px) and (max-width : 480px) and (orientation :landscape) {
+.carousel-caption {
+    top: 13%;
+}
+}
+@media screen and (min-width : 360px) and (max-width : 640px) and (orientation :landscape) {
+.carousel-caption {
+    top: 13%;
+}
+}
+/*End-Screen-landscape*/
+/*Screen-Portrait*/
+@media screen and (min-width : 320px) and (max-width : 480px) and (orientation : portrait) {
+.carousel-caption {
+    top: -29%;
+}
+}
+/*End-Screen-Portrait*/
