@@ -118,11 +118,145 @@ and (orientation : landscape) {
     top: 13%;
 }
 }
+@media screen and (min-width : 768px) and (max-width : 1024px) and (orientation :landscape) {
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 7px;
+}
+    .carousel-caption {
+    top: 4%;
+}
+.logo-home img {
+    width: 34%;
+}
+.avater {
+    height: 145px;
+    }
+    .hover {
+    height: 145px;
+    }
+    .font-weight-light {
+    font-size: 18px;
+    }
+    .avater:hover {
+    height: 145px;
+    }
+    .hover-1-title {
+    font-size: 11px;
+}
+    .hover-1-description{
+        font-size: 10px;
+    }
+}
 /*End-Screen-landscape*/
 /*Screen-Portrait*/
 @media screen and (min-width : 320px) and (max-width : 480px) and (orientation : portrait) {
 .carousel-caption {
     top: -29%;
+}
+}
+@media screen and (min-width : 320px) and (max-width : 640px) and (orientation : portrait) {
+.carousel-caption {
+    top: -21%;
+}
+}
+@media (max-width: 991px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:none !important;
+  }
+    .menu-name {
+    display: block;
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #000;
+}
+    .navbar-default .navbar-toggle {
+    border-color: #000;
+}
+    .navbar-default .navbar-toggle .icon-bar {
+    background-color: #f7d413;
+}
+    .navbar-toggle{
+        background-color: #000;
+    }
+}
+@media screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+.logo-home img {
+    width: 45%;
+}
+ .home-login-btn a {
+    margin-top: 24px;
+    padding: 5px 14px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}  
+    .carousel-caption h3 {
+    font-size: 15px;
+}
+    .carousel-caption{
+       top: -4%; 
+    }
+    .carousel-caption {
+    top: -4%;
+}
+    .carousel-caption h3 {
+    font-size: 25px;
+}
+    .carousel-caption h4 {
+    line-height: 23px;
+    font-size: 13px;
+    color: #bdbdbd;
+}
+    .carousel-btn {
+    font-size: 11px;
+    padding: 11px 16px;
+}
+    .itemsdiv {
+    width: 25.555556%;
+}
+    .avater {
+    height: auto;
+}
+    .hover {
+    height: 165px;
+}
+    .avater:hover {
+    height: 163px;
 }
 }
 /*End-Screen-Portrait*/
