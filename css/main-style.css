@@ -538,6 +538,7 @@ body::-webkit-scrollbar-thumb {
 .pagenation{
     margin: 0 auto;
     width: 17%;
+	float: right;
 }
 .pagenation .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
     z-index: 2;
@@ -560,3 +561,81 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 30px;
 }
 /*End-list-view*/
+/*detail-view*/
+.detail-page-header{
+    background-color: #000;
+}
+.detail-page-header h3{
+    color: #fff;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 39px;
+}
+.detail-page-header p{
+    color: #fff;
+}
+.detail-page-header h6{
+    color: #C2C2C2;
+    font-weight: bold;
+}
+.detail-page-header a{
+    padding: 8px 32px;
+    background-color: #f7d413;
+    border-radius: 50px;
+    margin-top: 13px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+.detail-user{
+    margin-top: 20px;
+}
+.detail-user img{
+   border-radius: 11px;
+   margin-bottom: 20px;
+   width: 80%;
+}
+.detail-highlight{
+    margin-top: 30px;
+    color: #fff;
+}
+.detail-highlight ul{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.detail-highlight li{
+    line-height: 26px;
+    color: #b7b6b6;
+}
+.detail-wapper{
+    margin-top: 10px;
+    color: #fff;
+}
+.detail-wapper video{
+     border-radius: 10px;
+}
+.detail-similar video{
+     border-radius: 10px;
+}
+.detail-video{
+    width: 100%;
+    background-color: #2A2927;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.detail-similar{
+    margin-top: 10px;
+    color: #fff; 
+}
+.video-icon{
+    position: absolute;
+    margin: 15px;
+    font-size: 26px;
+    z-index: 1000;
+    width: 80%;
+}
+.video-icon a{
+    color: #fff;
+}
+/*End-detailpage*/

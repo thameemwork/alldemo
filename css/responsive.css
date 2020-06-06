@@ -96,7 +96,13 @@
 }
     .footer li {
     width: 49%;
-}   
+} 
+    .pagenation {
+    margin: 0 auto;
+    float: right;
+    margin-right: 19px;
+	width: auto;
+}  
 }
 /*End-Default media query in Mobile*/
 /*Screen-landscape*/
