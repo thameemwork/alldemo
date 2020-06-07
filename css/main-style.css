@@ -7,6 +7,7 @@ body{
     background-color: #2A2927;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
+    color: #fff;
 }
 /*custom css class*/
 .m-1{
@@ -100,6 +101,147 @@ body{
 }
 /*End-top-scroll*/
 /*End custom css class*/
+/*form style*/
+.blmd-form {
+  margin: 2rem 0;
+  position: relative;
+  width: 100%;
+}
+.blmd-form .blmd-line {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  vertical-align: top;
+}
+.blmd-form .blmd-line.blmd-toggled:after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.blmd-form .blmd-line.blmd-toggled.hf:after {
+  display: none;
+}
+.blmd-form .blmd-line.blmd-toggled .blmd-label {
+  top: -10px;
+  font-size: 11px;
+}
+.blmd-form .blmd-line:after {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  background: #f0cd0b;
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  content: "";
+  -webkit-transition: all;
+  -o-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.blmd-form .form-control {
+  box-shadow: none;
+  border-radius: 0;
+  position: relative;
+  background: 0 0;
+  z-index: 1;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  /*-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;*/
+  padding: 0;
+    color: #ddd;
+    font-size: 12px;
+}
+.blmd-form .blmd-label {
+  -webkit-transition: all;
+  -o-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  position: absolute;
+  top: 5px;
+  font-weight: 300;
+  color: #fff;
+  pointer-events: none;
+  z-index: 0;
+  left: 0;
+  white-space: nowrap;
+    font-size: 13px;
+}
+.btn-blmd{
+  background-color: #F0CD0B;
+  border: 1px solid #676559;
+  font-size: 15px;
+  width: 100%;
+  color: #fff;
+}
+.login-btn{
+  margin-top: 20px;
+}
+.error{
+    color: red;
+    font-size: 11px;
+}
+.btn-blmd:hover{
+   background-color: #d2b92d;
+   border: 1px solid #f0cd0b; 
+}
+.btn-blmd:focus{
+   background-color: #F0CD0B;
+   border: 1px solid #f0cd0b;
+    outline: none;
+}
+.btn-blmd:active{
+ background-color: #F0CD0B;
+   border: 1px solid #f0cd0b;    
+}
+.log-select option{
+    background-color:#2A2927;
+}
+.re-for{
+    margin-top: 15px;
+    color: #fff; 
+}
+.re-for h4{
+    float: left;
+    font-size: 12px;
+}
+.re-for h3{
+    float: right;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.policy{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.policy a{
+    color: #F0CD0B;  
+}
+.re-for a{
+    color: #fff; 
+}
+.success-alert{
+    color: #fff;
+    margin-top: 10px;
+    display: block;
+    font-size: 13px;
+}
+/*End form style*/
 /*Navbar*/
 .navbar-cus {
     background-color: #F7D413;
@@ -440,7 +582,7 @@ width: 100%;
 h3.hover-1-title{
   margin-bottom: 4px;  
 }
-/*over-effect*/
+/*hover-effect*/
 .hover-1 img {
   width: 100%;
   position: absolute;
@@ -652,4 +794,31 @@ body::-webkit-scrollbar-thumb {
     margin:auto;
     background-size:contain;
     background-position: center;
+}
+/*form-elements*/
+.form-1,.form-2{
+    color: #fff;
+}
+.small-title{
+    color: #f7d413;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 800;
+}
+.form-horizontal .control-label{
+    text-align: left;
+}
+.form-2{
+    margin-top: 140px;
+}
+.form-labe{
+    top: -31px !important;
+}
+.form-wapper{
+    margin-top: 50px;
+}
+.form-details{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
 }
