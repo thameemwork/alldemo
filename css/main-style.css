@@ -19,6 +19,9 @@ body{
 .m-3{
     margin-top: 30px;
 }
+.m-b-1{
+    margin-bottom: 20px;
+}
 .padding-trim{
     padding-left: 0px;
     padding-right: 0px;
@@ -264,7 +267,6 @@ body{
   color: #000;
 }
 .logo-home img{
-    width: 25%;
     margin: 10px 0px 13px 0px;
 }
 .search-box{
@@ -728,6 +730,7 @@ body::-webkit-scrollbar-thumb {
     display: inline-block;
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
 }
 .detail-user{
     margin-top: 20px;
@@ -831,6 +834,18 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
 }
 a.form-btn{
+    color: #fff;
+    text-decoration: none;   
+}
+.check-btn{
+    margin-top: 42px;
+    padding: 8px 17px;
+    background-color: #f7d413;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+}
+a.check-btn{
     color: #fff;
     text-decoration: none;   
 }
