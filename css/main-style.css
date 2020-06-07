@@ -822,3 +822,15 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 20px;
     float: left;
 }
+.form-btn{
+    margin-top: 22px;
+    padding: 8px 17px;
+    background-color: #f7d413;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+}
+a.form-btn{
+    color: #fff;
+    text-decoration: none;   
+}
