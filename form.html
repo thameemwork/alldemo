@@ -12,6 +12,7 @@
 <link href="css/font-style.css" rel="stylesheet">
 <link href="css/font-awesome.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
+ <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -153,7 +154,17 @@ ThameemAnsari
 </div>
        </div></div>
       </section>
-    
+      
+      <div class="input-group blmd-form form-group">
+<div class="blmd-line input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd" style="width: 96%;margin-left: 6px;">
+<input type="text" name="username" autocomplete="off" id="username" class="form-control">
+<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+<label class="blmd-label"><b>Date Picker</b></label>
+    <input type="hidden" id="dtp_input2" value="" />
+</div>
+       </div>
+      
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding-trim-l"> 
       <div class="input-group blmd-form">
 <div class="blmd-line">
 <select class="form-control log-select ">
@@ -165,7 +176,8 @@ ThameemAnsari
 </select>
 <label class="blmd-label">What's the Relationship</label>
 </div>
-       </div>
+       </div></div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding-trim-l">
       <div class="input-group blmd-form">
           <div class="blmd-line">
 <select class="form-control log-select ">
@@ -177,18 +189,19 @@ ThameemAnsari
 </select>
 <label class="blmd-label">What's the occasion?</label>
 </div>
-<div class="blmd-line form-wapper">
+          
+          </div>
+          
+          </div></div>
+ <div class="input-group blmd-form">
+      
+     <div class="blmd-line form-wapper">
     <textarea class="form-control" rows="3"></textarea>
 
 <label class="blmd-label form-labe">My instructions for Kalen Allen are</label>
 </div>
-          <span class="error">Min 20 characters;Max 250 characters</span>
-          
-</div>
-
-      
-            </div>
-            
+          <span class="error">Min 20 characters;Max 250 characters</span>       
+            </div>  
 </form>
      </div>
      </div>
@@ -205,6 +218,10 @@ ThameemAnsari
          <div class="blmd-line">
 <input type="text" name="username" autocomplete="off" id="username" class="form-control">
 <label class="blmd-label">My email</label>
+</div>
+    <div class="blmd-line m-2">
+<input type="text" name="username" autocomplete="off" id="username" class="form-control">
+<label class="blmd-label">GST NO :</label>
 </div>
         
           </div></div>
@@ -297,6 +314,8 @@ ThameemAnsari
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main-js.js"></script>
+<script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="js/bootstrap-datetimepicker.fr.js"></script>
 <script>
 $(document).ready(function() {
 $('.carousel').carousel({
@@ -311,7 +330,16 @@ $('.video').parent().click(function () {
 });
 </script>
 <script>
-    
+    $('.form_date').datetimepicker({
+        language:  'en',
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 2,
+		minView: 2,
+		forceParse: 0
+    });
     </script>
 </body>
 </html>
