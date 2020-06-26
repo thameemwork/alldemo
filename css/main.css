@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+  overflow-x: hidden;
+  font-family: 'Muli', sans-serif;
+    
+}
+.padding-trim{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.padding-trim-lf{
+    padding-left: 0px;
+}
+#method{
+    background-image:url(../image/bg.png);
+    background-size: cover;
+      min-height: 600px;
+}
+#about{
+    padding: 50px;
+    height: 600px;
+   
+}
+.mech-col-2{
+    background-image: url(../image/side.jpg);
+    background-size: cover;
+    height: 500px;
+}
+.process-col-2{
+    background-image: url(../image/process.jpg);
+    background-size: cover;
+}
+#method p{
+    padding: 13px 41px;
+    text-align: justify;
+}
+#method h2{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.m-top{
+    margin-top: 10px;
+}
+.main-slider h4{
+    padding-top: 10px;
+    padding-left: 80px;
+    font-size: 48px;
+    font-weight: bold;
+}
+.main-slider p{
+    padding-left: 80px;
+    font-size: 16px;
+    color: #ececec;
+    padding-right: 80px;
+}
+.main-slider .btns{
+    margin-left: 80px;
+    margin-top: 10px;
+    background: #ffcd04 !important;
+    border: none !important;
+    padding: 8px 27px;
+    border-radius: 5px;  
+}
+.form .btns{
+    background: #ffcd04 !important;
+    border: none !important;
+    padding: 8px 27px;
+    border-radius: 5px;
+    margin: 22px auto;
+    display: block;
+    width: 25%;  
+}
+.about_white {
+  position: relative; }
+
+.cr_gray {
+  position: relative;
+}
+.title{
+    color: #ffcd04;
+    font-size: 23px;
+    text-align: center;
+    font-weight: bold;
+}
+.para{
+    text-align: justify;
+    line-height: 25px;
+    color: #202020;
+    margin-top: 50px;
+}
+.bg-light {
+  background-color: #f2f4f9 !important; }
+.cr_white {
+  position: relative; }
+.cr_gray {
+  position: relative;
+}
+.transition-timer-carousel .carousel-caption {
+	width: 100%;
+	left: 0px;
+	right: 0px;
+	bottom: 30%;
+	text-align: left;
+	padding-top: 5px;
+	padding-left: 8%;
+	padding-right: 15%;
+}
+.transition-timer-carousel .carousel-caption .carousel-caption-header {
+	margin-top: 10px;
+	font-size: 24px;
+}
+
+@media (min-width: 970px) {
+    /* Lower the font size of the carousel caption header so that our caption
+    doesn't take up the full image/slide on smaller screens */
+	.transition-timer-carousel .carousel-caption .carousel-caption-header {
+		font-size: 39px;
+    font-weight: bold;
+    line-height: 51px;
+	}
+}
+.transition-timer-carousel .carousel-indicators {
+    bottom: 0px;
+    margin-bottom: 31px;
+    left: 130px;
+}
+.transition-timer-carousel .carousel-control {
+	z-index: 11;
+}
+.transition-timer-carousel .transition-timer-carousel-progress-bar {
+    height: 5px;
+    background-color: #5cb85c;
+    width: 0%;
+    margin: -5px 0px 0px 0px;
+    border: none;
+    z-index: 11;
+    position: relative;
+}
+.transition-timer-carousel .transition-timer-carousel-progress-bar.animate{
+    /* We make the transition time shorter to avoid the slide transitioning
+    before the timer bar is "full" - change the 4.25s here to fit your
+    carousel's transition time */
+    -webkit-transition: width 4.25s linear;
+	-moz-transition: width 4.25s linear;
+	-o-transition: width 4.25s linear;
+	transition: width 4.25s linear;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #ffcd04;
+    background: none;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #1e3237;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-brand > img {
+    display: block;
+    width: 80%;
+    margin-top: -10px;
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+    
+   
+}
+#home{
+    min-height: 600px;
+}
+#process {
+    background-color: #fff;
+    min-height: 1530px;
+}
+#process h2 {
+    padding-top: 160px;
+}
+#process p {
+    padding: 13px 41px;
+    text-align: justify;
+}
+#process {
+  position: relative; 
+}
+.section-top{
+    margin-top: 60px;
+}
+#action {
+    margin-bottom: 30px;
+    margin-top: 50px;
+    height: 750px;
+    background-image: url(../image/bg.png);
+    background-size: cover;
+}
+#action h2 {
+    padding-top: 55px;
+}
+#action p {
+    padding: 13px 9px;
+    text-align: justify;
+}
+
+#action {
+  position: relative; }
+#upcoming {
+  position: relative; }
+#upcoming:after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: -70px;
+    height: 94px;
+    width: 130%;
+    background-color: #ffffff;
+    -webkit-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    transform: rotate(-4deg);
+    z-index: 10;
+}
+#upcoming p {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.title_up{
+    color: #536827;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+}
+.navbar.navbar-fixed-top.fixed-theme {
+    background-color: #ffffff;
+    height: 72px;
+    -webkit-box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-brand.fixed-theme {
+    font-size: 18px;
+}
+
+.navbar-container.fixed-theme {
+    padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container{
+    transition: 0.8s;
+    -webkit-transition:  0.8s;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #ffcd04;
+    background-color: transparent;
+}
+#upcoming{
+    height: 400px;
+}
+#contact p{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.main_wapper{
+ margin-top: 52px;   
+}
+.media{
+    padding: 15px;
+}
+.card-blog{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.22);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.22);
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.card-blog-image img {
+    border-radius: 5px;
+}
+.card-blog h4{
+    text-align: center;
+    color: #ffcd04;
+    font-size: 18px;
+}
+.footer{
+    width: 100%;
+    background-color: #fdfcfc;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    overflow: hidden;
+   
+}
+.footer-name{
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f5f5f5;
+    margin: 0px;
+}
+.logo-footer{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+}
+.footer h4{
+    color: #777;
+}
+.media-body h4{
+    text-align: left;
+    font-size: 14px;
+}
+.media-left img{
+    width: 18px;
+}
+@media screen and (max-width: 767px) {
+.slider h4 {
+    padding-top: 106px;
+    padding-left: 10px;
+    font-size: 41px;
+}
+.slider p {
+    padding-left: 12px;
+    font-size: 14px;
+    padding-right: 20px;
+    text-align: justify;
+}
+.slider{
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+#method {
+    height: auto;
+    padding-bottom: 84px;
+}
+.slider .btns{
+margin-left: 13px;
+}
+#home {
+    min-height: auto;
+}
+.para{
+    margin-top: 30px;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+}
+#action {
+    padding-bottom: 40px;
+    margin-top: 50px;
+    height: auto;
+    background-image: url(../image/bg.png);
+    background-size: cover;
+    overflow: hidden;
+    background-position: 44% 80%;
+}
+#contact {
+    height: auto;
+}
+    .section-top{
+        margin-top:0px;
+    }
+    .form .btns{
+        width: 100%;
+    }
+    .footer p {
+    margin-top: 15px;
+}
+#about {
+    padding: 0px;
+    height: auto;
+}
+#method h2 {
+    padding-top: 10px !important;
+   padding-bottom: 30px;
+}
+#method p {
+    padding: 13px 0px;
+}
+.padding-trim-r {
+    padding-left: 15px;
+    padding-right: 15px;
+}	
+#process h2 {
+    padding-top: 0px !important;
+}
+    #process p{
+     padding: 21px 15px;   
+    }  
+    .title-head{
+    margin-top: 30px !important;
+    text-align: center;
+    margin-left: 0px !important;
+    }
+    .padding-trim-lf {
+    padding-left: 15px;
+}
+    .logo-footer {
+    margin-bottom: 20px;
+}
+    .carousel-fullscreen .carousel-inner .item{
+        min-height: 420px;
+    }
+    .carousel-caption{
+        width: 100% !important;
+    }
+    .main-slider h4{
+        padding-left: 0px;
+    }
+    .main-slider p {
+    padding-left:0px;
+    font-size: 12px;
+    }
+    .carousel-caption h4 {
+    line-height: 38px !important;
+    font-size: 27px !important;
+}
+    .carousel-fullscreen .carousel-inner .item {
+    min-height: 430px !important;
+    }
+    .main-slider .btns{
+      margin-left: 0px;  
+    }
+}
+/*slider*/
+.carousel-inner .item > img {
+  -webkit-animation: zoom 20s;
+  animation: zoom 20s;
+}
+#myCarousel{
+    margin-top: -20px;
+}
+.carousel-caption {
+    top: 13%;
+    text-align: left;
+    left: 10%;
+    width: 50%;
+    font-size: 50px;
+}
+.carousel-caption h3{
+    font-size: 40px;
+}
+.carousel-caption h4{
+    line-height: 28px;
+    font-size: 46px;
+    color: #ffffff;
+}
+.carousel-btn{
+    font-size: 14px;
+    background-color: #f7d413;
+    color: #fff;
+    padding: 11px 16px;
+    border-radius: 30px;
+    text-shadow: none;
+}
+a.carousel-btn {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover.carousel-btn {
+    color: #f7f7f7;
+    background-color: #e4c204;
+}
+.carousel-control.left{
+    text-shadow: 0 1px 2px rgb(26, 26, 26);
+    background-color: rgba(0,0,0,0);
+    filter: alpha(opacity=50);
+    opacity: .5;
+    background-image: none;
+}
+ .carousel-control.right{
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,0);
+    filter: alpha(opacity=50);
+    opacity: .5;
+     background-image: none;
+}
+.carousel-control{
+   width: 7%;
+}
+.carousel-caption i{
+    margin-left: 3px;
+}
+.glyphicon{
+    font-size: 15px;
+}
+.carousel-control.left span{
+   font-size: 18px; 
+}
+.carousel-control.right span{
+   font-size: 18px; 
+}
+/* fade effect style */
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+/* End-fade effect style */
+/*End-slider*/
+.navbar-brand {
+    padding: 1px 15px;
+}
+.title-head{
+    margin-left: 39px;
+    font-size: 24px;
+    color: #6b6b6b;
+    font-weight: 800;
+    margin-top: 50px;
+}
+.form-control{
+   border-radius: 0px; 
+   border: 1px solid #e6e4e4;
+}
+/* carousel fullscreen */
+
+.carousel-fullscreen .carousel-inner .item {
+    min-height: 630px; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+/* carousel fullscreen - vertically centered caption*/
+
+.carousel-fullscreen .carousel-caption {
+    top: 50%;  
+    bottom: auto;
+    -webkit-transform: translate(0, -50%); 
+    -ms-transform: translate(0, -50%); 
+    transform: translate(0, -50%);
+}
+
+/* overlay for better readibility of the caption  */
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    transition: all 0.2s ease-out;
+}
+@media screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+    .carousel-caption {
+     width: 90%;
+    }
+    .navbar-right {
+    margin-right: 35px;
+}
+    #about {
+    padding: 10px;
+    height: auto;
+}
+    .para {
+    margin-top: 0px;
+}
+    #process {
+    min-height: auto;
+}
+    .form .btns{
+        width: auto;
+    }
+    .title-head {
+        margin-top: 0px;
+    }
+    #method p {
+    padding: 0px 41px;
+
+}
+@media screen and (min-width : 768px) and (max-width : 1024px) and (orientation :landscape) {
+    .carousel-caption {
+     width: 90%;
+    } 
+    .para {
+        margin-top: 0px;
+    }
+    #process {
+    min-height: auto;
+}
+}
+
+
+
+
+
+
