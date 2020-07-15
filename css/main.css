@@ -303,6 +303,10 @@ a:hover.carousel-btn {
     text-align: center;
      padding-bottom: 10px;
 }
+.font-bg{
+    font-size: 18px !important;
+    color: #1e893c;
+}
 /*End-main-style*/
 /*Media query*/
 @media screen and (max-width: 767px) {
@@ -351,12 +355,13 @@ a:hover.carousel-btn {
         padding-right: 0px;
     }
     .carousel-fullscreen .carousel-inner .item {
-    background-position: 83% 60% !important;
+    background-position: 90% 57% !important;
 }
     .reg-btn {
     font-size: 12px;
     width: 40%;
     margin-left: 11px;
+    text-align: center;
 }
     .about {
     margin-top: 0px;
