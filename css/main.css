@@ -18,6 +18,9 @@ body {
 .m-1{
     margin-top: 0px;
 }
+.p-top{
+    padding-top: 80px;
+}
 /*End-Custom style*/
 .m-top{
     margin-top: 10px;
@@ -216,6 +219,27 @@ a:hover.carousel-btn {
 .about{
    margin-top: 40px;  
 }
+.about-image-circle{
+    width: 248px;
+    height: 248px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.about-image-circle img{
+    width: 80%;
+    text-align: center;
+    display: block;
+    margin: 12px auto;
+}
+.about-pro{
+    width: 84% !important;
+    margin: 22px auto !important;
+    padding-left: 10px;
+}
+.about-succ{
+    margin-top: 32px !important;
+}
 .about p{
     text-align: center;
     font-weight: 100;
@@ -231,18 +255,16 @@ a:hover.carousel-btn {
     color: #888888;
     margin-top: 15px;
 }
-.about-image img{
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-}
 .expertise .top-cur img{
    width: 100%; 
+}
+.top-cur img{
+  width: 100%;   
 }
 .expertise{
     margin-top: 60px;
 }
-.expertise-inner{
+.expertise-inner,.register{
     background-color: #F5F5F5;
 }
 .title-line{
@@ -252,14 +274,17 @@ a:hover.carousel-btn {
     background-color: #c2d835;
     margin-top: 8px;
 }
+.title-line-2{
+    background-color: #216e36 !important
+}
 .title-text{
     font-size: 25px;
     float: left;
     margin-left: 10px;
 }
-.exp{
-    margin-top: 40px;
-    padding-bottom: 90px;
+.exp,.regis{
+    margin-top: 10px;
+    padding-bottom: 40px;
     overflow: hidden;
 }
 .footer .footer-top-img img {
@@ -276,7 +301,6 @@ a:hover.carousel-btn {
     color: #fff;
     font-weight: 900;
     font-size: 15px;
-    text-align: center;
 }
 .footer ul{
    list-style: none; 
@@ -287,15 +311,12 @@ a:hover.carousel-btn {
     color: #373737;
 }
 .footer span{
-    text-align: center;
     display: block;
 }
 .footer-nav{
-    width: 27%;
     margin: 0 auto;
 }
 .footer-address{
-    width: 38%;
     margin: 0 auto;
     margin-top: 10px;
 }
@@ -307,6 +328,77 @@ a:hover.carousel-btn {
     font-size: 18px !important;
     color: #1e893c;
 }
+.default-nav{
+    background-color: #adbe3a;
+}
+.forms{
+    background-color: #f5f5f5;
+    padding: 14px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px -1px 9px 0px rgb(158 158 158 / 73%);
+-moz-box-shadow:    0px -1px 9px 0px rgb(158 158 158 / 73%);
+box-shadow: 0px -1px 9px 0px rgb(158 158 158 / 73%);
+    margin-top: 10px;
+}
+.register-btn{
+    padding: 7px 20px;
+    border: none;
+    background-color: #216e36;
+    border-radius: 30px;
+    color: #fff;
+    outline: none;
+}
+.register-btn:hover{
+    background-color: #239642;
+}
+.expe-image:hover{
+    margin: 0 auto;
+    border-radius: 20px;
+   margin-top: 10px;
+}
+.forms input{
+    background-color: #fff;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 13px;
+}
+.forms textarea{
+    background-color: #fff;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 13px;
+}
+/*Jee*/
+.jee-main{
+    margin-top: 64px;
+}
+.jee{
+  background-color: #C2D835;
+  margin-bottom: 70px;
+}
+.jee-wapper{
+    margin-top: 10px;
+    padding-bottom: 40px;
+    overflow: hidden;
+    
+}
+.jee-image{
+    width: 100%;
+    position: absolute;
+}
+.jee-banner{
+    position: relative;
+    margin-top: 30px;
+}
+.what-jee{
+    padding-bottom: 50px;
+}
+.melu-inner{
+    background-color: #F5F5F5;
+}
+/*End-Jee*/
 /*End-main-style*/
 /*Media query*/
 @media screen and (max-width: 767px) {
