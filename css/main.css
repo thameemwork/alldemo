@@ -29,16 +29,13 @@ body {
     margin-top: 10px;
 }
 .main-slider h4{
-    padding-top: 10px;
     font-size: 48px;
-    font-weight: bold;
 }
 .main-slider p{
     font-size: 16px;
-    color: #656565;
+    color: #9e9e9e;
     padding-right: 80px;
     text-shadow: none;
-    font-weight: 700;
 }
 .main-slider .btns{
     margin-top: 10px;
@@ -58,27 +55,28 @@ body {
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #fff;
+    color: #216e36;
     background: none;
     border-bottom: 4px solid #216e36;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #fff;
+    color: #6f6f6f;
 }
 .navbar-default {
     background-color: transparent;
     border-color: transparent;
-    border: 1px solid #aabd2f;
+    border: 1px solid #e8e8e8;
     height: 65px;
      transition:500ms ease;
 }
 .navbar-default.scrolled{
-   background-color: #adbe3a;
+    box-shadow: 0 1px 5px rgba(190,190,190,.5);
+    background-color: #ffffff;
 }
 .navbar-brand > img {
     display: block;
     width: 80%;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .navbar-fixed-top {
     top: 0;
@@ -91,7 +89,7 @@ body {
     border-color: #adbe3a;
 }
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
+    background-color: #208a3e;
 }
 .reg-btn{
     padding: 7px 20px !important;
@@ -114,6 +112,7 @@ body {
     left: 10%;
     width: 40%;
     font-size: 50px;
+    text-shadow: inherit;
 }
 .carousel-caption h3{
     font-size: 40px;
@@ -121,7 +120,7 @@ body {
 .carousel-caption h4{
     line-height: 56px;
     font-size: 46px;
-    color: #ffffff;
+    color: #656565;
 }
 .carousel-btn{
     font-size: 14px;
@@ -196,10 +195,10 @@ a:hover.carousel-btn {
 }
 /* carousel fullscreen */
 .carousel-fullscreen .carousel-inner .item {
-    min-height: 630px; 
+    min-height: 638px; 
     background-position: center center; 
     background-repeat: no-repeat; 
-    background-size: cover;
+    background-size: contain;
     background-position: 77% 10%;
     
 }
@@ -220,7 +219,7 @@ a:hover.carousel-btn {
     transition: all 0.2s ease-out;
 }
 .about{
-   margin-top: 40px;  
+   margin-top: 10px;  
 }
 .about-image-circle{
     width: 248px;
@@ -272,7 +271,7 @@ a:hover.carousel-btn {
 .expertise{
     margin-top: 60px;
 }
-.expertise-inner,.register{
+.expertise-inner{
     background-color: #F5F5F5;
 }
 .expertise-hover{
@@ -348,6 +347,7 @@ a:hover.carousel-btn {
 }
 .footer-inner{
     background-color: #c2d835;
+    margin-top: -3px;
 }
 .exp img{
     display: block;
@@ -454,6 +454,7 @@ box-shadow: 0px -1px 9px 0px rgb(158 158 158 / 73%);
 }
 .melu-inner{
     background-color: #F5F5F5;
+    margin-top: -3px;
 }
 /*End-Jee*/
 .road-circle{
@@ -508,6 +509,7 @@ box-shadow:         -1px 0px 12px 0px rgba(50, 50, 50, 0.75);
 }
 .package{
     background-color: #F5F5F5;
+    margin-top: -3px;
 }
 .read{
     clip-path: polygon(100% 0, 100% 52%, 48% 70%, 48% 69%, 0 49%, 0 0);
@@ -717,6 +719,7 @@ position: relative;
 }
     .jee{
         margin-bottom: 10px;
+        background-color: #F3F4F4;
     } 
     .what-jee {
     padding-bottom: 10px;
