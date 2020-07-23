@@ -195,10 +195,10 @@ a:hover.carousel-btn {
 }
 /* carousel fullscreen */
 .carousel-fullscreen .carousel-inner .item {
-    min-height: 638px; 
+    min-height: 750px; 
     background-position: center center; 
     background-repeat: no-repeat; 
-    background-size: contain;
+    background-size: cover;
     background-position: 77% 10%;
     
 }
@@ -219,7 +219,7 @@ a:hover.carousel-btn {
     transition: all 0.2s ease-out;
 }
 .about{
-   margin-top: 10px;  
+   margin-top: 40px;  
 }
 .about-image-circle{
     width: 248px;
@@ -648,7 +648,7 @@ position: relative;
         min-height: 420px;
     }
     .carousel-caption{
-        width: 100% !important;
+       width: 85% !important;
     }
     .main-slider h4{
         padding-left: 0px;
@@ -656,10 +656,14 @@ position: relative;
     .main-slider p {
     padding-left:0px;
     font-size: 12px;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    color: #dedddd;
     }
     .carousel-caption h4 {
     line-height: 38px !important;
     font-size: 27px !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+        color: #fff;
 }
     .main-slider .btns{
       margin-left: 0px;  
