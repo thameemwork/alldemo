@@ -12,6 +12,7 @@
 <link href="css/main.css" rel="stylesheet">
 <link href="css/font-style.css" rel="stylesheet">
 <link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -21,7 +22,7 @@
 </head>
 <body>
 <!--Home-Nav-->
-<nav role="navigation" class="navbar navbar-default navbar-fixed-top default-nav" id="mainNav">
+<nav role="navigation" class="navbar navbar-default navbar-fixed-top default-nav wow fadeInDown" data-wow-duration="1500ms" id="mainNav">
 <div class="container m-top">
 <div id="nav-bar" class="navbar-header">
 <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
@@ -61,16 +62,20 @@
 <div class="register m-top"> 
 <div class="register-inner p-top">
 <div class="container">
-  <span class="title-line"></span><h4 class="title-text"><b>Register Now</b></h4>
-    <div class="clearfix"></div>
+    <section class="wow fadeInDown" data-wow-duration="1900ms">
+  <span class="title-line">
+    </span><h4 class="title-text"><b>Register Now</b></h4>
+        <div class="clearfix"></div>
+        </section>
+    
     <div class="regis">
-      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInDown" data-wow-duration="1900ms">
     <p>Explore Experiential Learning. Engaging and Educative
 Content for NEET/JEE.<br> With 3 Chapters Free. 
 Start Your Free Trial Today !</p>
     <img src="image/reg.png" class="img-responsive">     
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInDown" data-wow-duration="2300ms">
     <div class="forms">
         <p>For Queries mail to info@meluhatn.com or
  Call us at  96423 90571</p>
@@ -92,7 +97,7 @@ Start Your Free Trial Today !</p>
 </div>
     <div class="footer-inner">
         <div class="container">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow slideInDown" data-wow-duration="1300ms">
                 <img src="image/logo.png">
                 <br><br>
             <div class="media">
@@ -115,7 +120,7 @@ Start Your Free Trial Today !</p>
     </div>
   </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow slideInDown " data-wow-duration="1800ms">
                 
                 <span class="footer-title">ADDRESS</span>
                   <div class="footer-address">  
@@ -127,7 +132,7 @@ Chennai – 600032.</p>
                 </div>
                 
          
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow slideInDown" data-wow-duration="2400ms">
                 <p class="footer-title">QUICK LINKS</p>
                 <div class="footer-nav">
                 <ul>
@@ -141,19 +146,39 @@ Chennai – 600032.</p>
                 </div>
             
             </div>
+            <section class="wow slideInDown" data-wow-duration="2800ms" >
             <div class="clearfix"></div>
             <hr>
             <h6>Meluha TN.</h6>
+            </section>
         </div>
     </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.js"></script>
 <script>
 $(window).scroll(function(){
 	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
 });    
 </script>
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+    </script>
 </body>
 </html>
