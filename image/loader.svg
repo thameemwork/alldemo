@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="51px" height="51px" viewBox="0 0 51 51" enable-background="new 0 0 51 51" xml:space="preserve">
+<g transform="rotate(321.805 50 50)">
+	<path fill="none" stroke="#216E36" stroke-width="12" d="M45.895-2.254c-9.858,0-17.85,7.991-17.85,17.85
+		c-0.001,9.858,7.99,17.85,17.85,17.85c9.858,0,17.851-7.991,17.85-17.85c0-4.733-1.881-9.273-5.228-12.621"/>
+	<path fill="#216E36" d="M45.384-8.374l0,12.24l6.12-6.12L45.384-8.374"/>
+	
+		<animateTransform  fill="remove" type="rotate" restart="always" calcMode="linear" additive="replace" accumulate="none" keyTimes="0;1" values="0 50 50;360 50 50" dur="1s" repeatCount="indefinite" attributeName="transform">
+		</animateTransform>
+</g>
+</svg>
