@@ -1,10 +1,11 @@
 /* HEADER */
 .main_header {
-  padding: 100px 0 0;
+  padding: 50px 0 47px;
+  background-color: #fafafa;
 }
 /* header title */
 .main_header .header_title {
-  color: #fff;
+  color: #161c2d;
   font-size: 56px;
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
@@ -40,7 +41,7 @@
 /* SE I */
 /* box */
 .se_i .box {
-  background: rgba(255, 255, 255, .05);
+  background: #12937a;
   padding: 40px 30px;
 }
 /* icon */
