@@ -1,0 +1,94 @@
+/* -- :: Header */
+header {
+  position: relative;
+  padding: 88px 0;
+  background: url(../image/bg.jpg);
+  background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+header h1 {
+  color: var(--thBlack);
+  font-size: 53px;
+  font-weight: 900;
+  line-height: 85px !important;
+}
+header p {
+  color: var(--thGray2);
+  font-size: 17px;
+  line-height: 27px !important;
+}
+/* -------------------------- */
+/* -- :: Media Query */
+@media (max-width: 1199.98px) {
+  /* -- :: Header */
+  header {
+    padding: 90px 0;
+    background-size: 2400px;
+  }
+  header h1 {
+    font-size: 46px;
+    line-height: 64px !important;
+  }
+  /* -- :: Features Row */
+  .features-row .row > div:not(:last-child) > .item::after {
+    display: none;
+  }
+}
+@media (max-width: 991.98px) {
+  /* -- :: Header */
+  header {
+    padding: 70px 0;
+    background: #fafafc;
+  }
+  header h1 {
+    font-size: 40px;
+    line-height: 74px !important;
+  }
+  /* -- :: Section II */
+  .se-ii .plan {
+    max-width: 460px;
+    margin: 0 auto;
+  }
+  /* -- :: Section V */
+  .se-v .c-table thead tr td {
+    width: 131px !important;
+    min-width: 131px !important;
+    padding: 20px;
+  }
+  .se-v .c-table thead tr td {
+    font-size: 15px;
+  }
+  .se-v .c-table tbody tr td.title,
+  .se-v .c-table tbody tr td {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767.98px) {
+  /* -- :: Header */
+  header h1 {
+    font-size: 32px;
+    line-height: 51px !important;
+  }
+  /* -- :: Section II */
+  .se-ii .plan h4 {
+    font-size: 18px;
+  }
+  .se-ii .plan h3 {
+    font-size: 24px;
+  }
+  /* -- :: Section IV */
+  .se-iv .content {
+    overflow: hidden;
+    padding: 30px 0;
+  }
+  .se-iv .content > div {
+    max-height: 320px;
+    padding: 0 15px;
+    overflow: auto;
+  }
+  .se-iv .item h6,
+  .se-iv .item a {
+    font-size: 14px;
+  }
+}
