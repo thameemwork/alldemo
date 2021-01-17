@@ -1,17 +1,18 @@
 /* -- :: Header */
 header {
   position: relative;
-  padding: 88px 0;
+  padding: 130px 0;
   background: url(../image/bg.jpg);
   background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 header h1 {
-  color: var(--thBlack);
-  font-size: 53px;
-  font-weight: 900;
+  font-size: 45px;
   line-height: 85px !important;
+  background: -webkit-linear-gradient(#004d3b, #057f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 header p {
   color: var(--thGray2);
@@ -326,10 +327,10 @@ a {
   text-align: center;
 }
 .section-head h5 {
-  font-size: 15px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: var(--thYellow);
+    font-size: 17px;
+    font-weight: 300;
+    color: #6f6f6f;
+    margin-top: 12px;
 }
 .section-head h2 {
   position: relative;
@@ -393,9 +394,9 @@ a {
   font-size: 18px;
 }
 .features-row .item p {
-  color: var(--thWhite);
+  color: #8c8c8c;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
 }
 /*--Service--*/
 .section-head .lines {
