@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="icon" type="image/jpg" href="image/fav.png">
+       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>
   <title>Media Myst</title>
 </head>
 <body>
@@ -270,6 +272,98 @@
 			</div>
 		</div>
 	</div>
+    <!--Gallery-->
+    <div class="section-head p-50" style="margin-bottom:0px;">
+				<h2>Project</h2>
+				<div class="lines">
+					<span></span>
+				</div>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+			</div>
+    <div class="gallery-image">
+    <div class="img-box">
+      <img src="https://picsum.photos/350/250?image=444" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Library</p>
+          <p class="opacity-low">Architect Design</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="https://picsum.photos/350/250/?image=232" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Night Sky</p>
+          <p class="opacity-low">Cinematic</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="https://picsum.photos/350/250/?image=431" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Tea Talk</p>
+          <p class="opacity-low">Composite</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="https://picsum.photos/350/250?image=474" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Road</p>
+          <p class="opacity-low">Landscape</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="https://picsum.photos/350/250?image=344" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Sea</p>
+          <p class="opacity-low">Cityscape</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="https://picsum.photos/350/250?image=494" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Vintage</p>
+          <p class="opacity-low">Cinematic</p>
+        </div>
+      </div> 
+    </div>
+  </div>
+    <!---->
+    <div class="section-head p-50" style="margin-bottom:0px;">
+				<h2>Our Clients</h2>
+				<div class="lines">
+					<span></span>
+				</div>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+			</div>
+    <div class="brand-carousel section-padding owl-carousel">
+  <div class="single-logo">
+    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+  </div>
+  <div class="single-logo">
+    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+  </div>
+  <div class="single-logo">
+    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+  </div>
+  <div class="single-logo">
+    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+  </div>
+  <div class="single-logo">
+    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+  </div>
+  <div class="single-logo">
+    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+  </div>
+</div>
   <!-- :: Footer -->
   <footer>
     <!-- links -->
@@ -352,5 +446,28 @@
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+    <script>
+    $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
+        $('.brand-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  autoplay:true,
+  responsive:{
+    0:{
+      items:1
+    },
+    600:{
+      items:3
+    },
+    1000:{
+      items:5
+    }
+  }
+})
+    </script>
 </body>
 </html>
