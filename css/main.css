@@ -377,10 +377,10 @@ a {
 }
 
 /* -- :: Features Row */
-.features-row {
+/*.features-row {
   background: -webkit-gradient(linear, left top, right top, from(var(--thBlue)), color-stop(50%, var(--thBlue2)));
   background: linear-gradient(to right, var(--thBlue), var(--thBlue2) 50%);
-}
+}*/
 .features-row .item {
   position: relative;
 }
@@ -388,7 +388,7 @@ a {
   width: 50px;
 }
 .features-row .item h5 {
-  color: var(--thBlack);
+  color: var(--thBlue);
   font-weight: 500;
   font-size: 18px;
 }
@@ -835,4 +835,13 @@ footer .c-r a:hover {
   footer .n-l form button {
     border-radius: 50px;
   }
+}
+
+
+
+
+.about{
+    background-image: url(../image/about-bg.png);
+    background-size: cover;
+    background-color: #fbfbfb;
 }
