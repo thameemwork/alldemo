@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56.394" height="37.833" viewBox="0 0 56.394 37.833">
+  <g id="Group_54" data-name="Group 54" transform="translate(-1263.833 -300.833)">
+    <ellipse id="Ellipse_25" data-name="Ellipse 25" cx="7.063" cy="7.063" rx="7.063" ry="7.063" transform="translate(1305.708 314.75)" fill="#2c97e6"/>
+    <g id="circular-clock" transform="translate(1263.833 300.833)">
+      <g id="Group_35" data-name="Group 35">
+        <path id="Path_41" data-name="Path 41" d="M13.8,26.429l4.764-3.9a2.937,2.937,0,0,0,.448.046,3.408,3.408,0,0,0,2.146-6.131L20.484,7.9a1.432,1.432,0,0,0-1.12-1.32,1.388,1.388,0,0,0-1.637,1.251l-.672,8.617A3.407,3.407,0,0,0,15.7,19.264a4.184,4.184,0,0,0,.046.448L11.9,24.422a1.432,1.432,0,0,0-.139,1.73A1.385,1.385,0,0,0,13.8,26.429Zm5.312-8.64a1.374,1.374,0,1,1-1.374,1.374A1.372,1.372,0,0,1,19.11,17.789Zm-.193,20.044A18.917,18.917,0,1,0,0,18.917,18.937,18.937,0,0,0,18.917,37.833Zm0-33.386A14.469,14.469,0,1,1,4.447,18.917,14.484,14.484,0,0,1,18.917,4.447Z" fill="#2c97e6"/>
+      </g>
+    </g>
+    <text id="_" data-name="&gt;" transform="translate(1312.228 324.5)" fill="#fefefe" font-size="10" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">&gt;</tspan></text>
+    <text id="_2" data-name="&gt;" transform="translate(1306.708 324.5)" fill="#fefefe" font-size="10" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">&gt;</tspan></text>
+  </g>
+</svg>
