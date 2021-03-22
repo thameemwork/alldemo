@@ -1,0 +1,182 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Enter OTP</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+    <style>
+.otp-submit {
+    width: 100%;
+    background-color: #c13a54;
+    height: 52px;
+    text-align: center;
+    color: #F1F2F2;
+    border-radius: 5px;
+    border: 0px solid grey;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 25px;
+    transition: 0.5s;
+    outline: none;
+}
+.otp-submit[disabled] {
+  background-color: #939598;
+  cursor: default;
+}
+
+    </style>
+</head>
+<body class="animate-bottom bg-gray">
+<div class="sgn-box">
+<div class="top-nav text-center">
+<div class="arrow"><a href="sign-in.html">
+<img src="img/arrow.svg">
+</a>
+</div>
+Sign In
+</div>
+<div class="sgn-red">
+</div>
+<div class="signinbox sing-v80">
+<div class="signin-title">Enter the 6 digit verification code sent to your number</div>
+<div class="ph-number-otp">
+<span>+91- 98765 41230 </span><span><img src="img/edit.svg" height="13px"></span>
+</div>
+<!--<div class="mobile-number">
+<form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+  <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+  <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+  <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+  <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+  <input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" />
+  <input type="text" id="digit-6" name="digit-6" data-previous="digit-5" />
+</form>
+</div>
+<div class="get-otp">
+<button onclick="location.href = '5.html';" class="otp-button" >Verify OTP</button>
+</div>-->
+<div class="mobile-number otp-event">
+        <form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+		<input type="tel" id="otp-number-input-1" class="otp-number-input" maxlength="1">
+		<input type="tel" id="otp-number-input-2" class="otp-number-input" maxlength="1">
+		<input type="tel" id="otp-number-input-3" class="otp-number-input" maxlength="1">
+		<input type="tel" id="otp-number-input-4" class="otp-number-input" maxlength="1">
+		<input type="tel" id="otp-number-input-5" class="otp-number-input" maxlength="1">
+		<input type="tel" id="otp-number-input-6" class="otp-number-input" maxlength="1">
+        </form>
+	<div>
+		<button id="confirm" type="button" class="otp-submit" disabled>Verify OTP</button> 
+	</div>
+</div>
+<div class="have-acc">
+If you didn't receive a code! <a href="#" class="csign-in">Resend </a>
+</div>
+<img src="img/logo.png" class="logosign-in" alt="">
+</div>
+</div>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/main.js"></script>
+ <script>
+  var height = $(window).height();
+  $(".sgn-box").css("height", height);
+  </script>
+  
+  <script>
+$( ".custom-textbox" ).on('input', function() {
+    if ($(this).val().length>9) {
+        $(".otp-button").css("background-color","#C13A54");       
+        $(".otp-button").css("boder","1px solid #C13A54");  
+ $(".otp-button").prop("disabled", false);		
+    }
+	else{
+	 $(".otp-button").css("background-color","#939598");       
+        $(".otp-button").css("boder","1px solid #939598");
+		$(".otp-button").prop("disabled", true);
+	}
+});
+  </script>
+  <script>
+
+$(document).ready(function() {
+	$('.otp-event').each(function(){
+	 var $input = $(this).find('.otp-number-input');
+	 var $submit = $(this).find('.otp-submit');
+	 $input.keydown(function(ev) {
+		otp_val = $(this).val();
+		if (ev.keyCode == 37) {
+			$(this).prev().focus();
+			ev.preventDefault();
+		} else if (ev.keyCode == 39) {
+			$(this).next().focus();
+			ev.preventDefault();
+		} else if (otp_val.length == 1 && ev.keyCode != 8 && ev.keyCode != 46) {
+			otp_next_number = $(this).next();
+			if (otp_next_number.length == 1 && otp_next_number.val().length == 0) {
+				otp_next_number.focus();
+			}
+		} else if (otp_val.length == 0 && ev.keyCode == 8) {
+			$(this).prev().val("");
+			$(this).prev().focus();
+		} else if (otp_val.length == 1 && ev.keyCode == 8) {
+			$(this).val("");
+		} else if (otp_val.length == 0 && ev.keyCode == 46) {
+			next_input = $(this).next();
+			next_input.val("");
+			while (next_input.next().length > 0) {
+				next_input.val(next_input.next().val());
+				next_input = next_input.next();
+				if (next_input.next().length == 0) {
+					next_input.val("");
+					break;
+				}
+			}
+		}
+		
+	}).focus(function() {
+		$(this).select();
+		var otp_val = $(this).prev().val();
+		if (otp_val === "") {
+			$(this).prev().focus(); 
+		}else if($(this).next().val()){
+			 $(this).next().focus();  
+		}
+	}).keyup(function(ev) {
+		otpCodeTemp = "";
+		$input.each(function(i) {
+			if ($(this).val().length != 0) {
+				$(this).addClass('otp-filled-active');
+			} else {
+				$(this).removeClass('otp-filled-active');
+			}
+			otpCodeTemp += $(this).val();
+		});
+		if ($(this).val().length == 1 && ev.keyCode != 37 && ev.keyCode != 39) {
+			$(this).next().focus();
+			ev.preventDefault(); 
+		}
+		$input.each(function(i) {
+		 if($(this).val() != ''){
+			$submit.prop('disabled', false); 
+		 }else{
+			$submit.prop('disabled', true);
+	 	 }
+		});
+		 
+	});
+	$input.on("paste", function(e) { 
+		window.handlePasteOTP(e);
+	});
+	});
+	
+});
+
+
+    </script>
+  
+</body>
+
+</html>
