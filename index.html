@@ -1,0 +1,60 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Sign in</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="animate-bottom bg-gray">
+<div class="sgn-box">
+<div class="sgn-red">
+<div class="md-partner">
+  MANDAP PARTNER
+  <img src="img/btm-line.svg" alt="">
+</div>
+</div>
+<div class="signinbox">
+<div class="archh">
+<img src="img/arch.svg">
+</div>
+<div class="signin-title">Sign in</div>
+<div class="mobile-number">
+<input type="text" class="custom-textbox" name="" placeholder="Enter Your Mobile Number" pattern="\d*" maxlength="10">
+</div>
+<div class="get-otp">
+<button onclick="location.href = 'otp.html';" class="otp-button" disabled="true">Get OTP</button>
+</div>
+<div class="have-acc">
+Don't have an account? <a href="#" class="csign-in">Sign Up </a>
+</div>
+<img src="img/logo.png" class="logosign-in" alt="">
+</div>
+</div>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/main.js"></script>
+ <script>
+  var height = $(window).height();
+  $(".sgn-box").css("height", height);
+  </script>
+  
+  <script>
+$( ".custom-textbox" ).on('input', function() {
+    if ($(this).val().length>9) {
+        $(".otp-button").css("background-color","#C13A54");       
+        $(".otp-button").css("boder","1px solid #C13A54");  
+ $(".otp-button").prop("disabled", false);		
+    }
+	else{
+	 $(".otp-button").css("background-color","#939598");       
+        $(".otp-button").css("boder","1px solid #939598");
+		$(".otp-button").prop("disabled", true);
+	}
+});
+  </script>
+  
+</body>
+
+</html>
