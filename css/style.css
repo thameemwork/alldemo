@@ -232,4 +232,47 @@ border-radius: 10px !important;
   color: #6b6b6b;
   font-weight: 300;
 }
+@media only screen and (max-width:767px){
+  .banner {
+    margin-top: 65px;
+}
+.zoom-effect h5{
+  font-size: 14px;
+}
+.product h3 {
+  font-size: 18px;
+}
+.tag {
+  left: 5px;
+  top: 7px;
+}
+.zoom-effect {
+  margin-bottom: 20px;
+}
+.row-product {
+  margin-top: 0px;
+  padding-bottom: 0px;
+}
+.product p {
+  margin-top: 30px;
+}
+.product-btn {
+  margin-top: 30px;
+}
+.padding-b {
+  padding-bottom: 0px;
+}
+.footer {
+  padding-top: 20px;
+}
+.m-top-r-2{
+  margin-top: 20px;
+}
+}
+
+
+
+
+
+
 
