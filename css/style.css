@@ -268,6 +268,26 @@ border-radius: 10px !important;
 .m-top-r-2{
   margin-top: 20px;
 }
+.carousel-caption h1{
+  font-size: 20px;
+}
+.carousel-item > img {
+  height: 12rem;
+  margin-bottom: 0px;
+}
+.carousel {
+  height: 12rem;
+  margin-bottom: 0px;
+}
+.carousel-item {
+  height: 19rem;
+}
+.carousel-inner {
+  height: 12rem;
+}
+.banner{
+  height: auto;
+}
 }
 
 
