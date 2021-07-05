@@ -291,6 +291,10 @@ border-radius: 10px !important;
 .font-18{
   font-size: 18px;
 }
+.ptb40 {
+  padding: 20px 0;
+}
+
 }
 body::-webkit-scrollbar {
     width: 10px;
@@ -314,7 +318,7 @@ section.get-started {
   background-size: cover;
 }
 .ptb40 {
-  padding: 40px 0;
+  padding: 25px 0;
 }
 
 
