@@ -289,8 +289,30 @@ border-radius: 10px !important;
   height: auto;
 }
 }
+body::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #F6609A;
+  border-radius: 50px;
+}
 
-
+section.get-started {
+  background-blend-mode: overlay;
+  background: url(../img/get-started-bg.png) no-repeat, -moz-linear-gradient(to right, #F6609A -20%, #940a3f 120%);
+  background: url(../img/get-started-bg.png) no-repeat, -webkit-linear-gradient(to right, #F6609A -20%,#940a3f 120%);
+  background: url(../img/get-started-bg.png) no-repeat, linear-gradient(to right, #F6609A -20%,#940a3f 120%);
+  background-position: center center;
+  background-size: cover;
+}
+.ptb40 {
+  padding: 40px 0;
+}
 
 
 
