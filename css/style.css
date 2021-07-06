@@ -309,6 +309,10 @@ div.scrollmenu {
 .wi-r-50{
   max-width: 50%;
 }
+.whatapp-icon {
+  right: 17px;
+  bottom: 23px;
+}
 }
 body::-webkit-scrollbar {
     width: 10px;
@@ -342,6 +346,13 @@ section.get-started {
     text-align: center;
     font-size: 17px;
     color: #b02459;
+}
+.whatapp-icon{
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
 }
 
 
