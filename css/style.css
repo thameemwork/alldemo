@@ -398,6 +398,10 @@ section.get-started {
   margin-top: 40px;
   float: left;
   padding-bottom: 20px;
+  width: 100%;
+}
+.contact-banner{
+  background-image: url(../img/sub-contact.jpg);
 }
 
 
