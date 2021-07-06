@@ -196,7 +196,7 @@ body{
 .bottom-title{
     position: absolute;
     bottom: 8px;
-    left: 23px;
+    left: 12px;
     color: #fff;
 }
 .product img{
@@ -294,7 +294,21 @@ border-radius: 10px !important;
 .ptb40 {
   padding: 20px 0;
 }
-
+.bottom-title {
+  left: 9px;
+}
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  width: 100%;
+}
+.scrollmenu div {
+  display: inline-block;
+  color: #000;
+}
+.wi-r-50{
+  max-width: 50%;
+}
 }
 body::-webkit-scrollbar {
     width: 10px;
@@ -319,6 +333,15 @@ section.get-started {
 }
 .ptb40 {
   padding: 25px 0;
+}
+.scrool-title{
+    width: 90%;
+    background-color: rgb(255 255 255 / 85%);
+    padding: 4px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 17px;
+    color: #b02459;
 }
 
 
