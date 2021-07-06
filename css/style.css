@@ -313,6 +313,12 @@ div.scrollmenu {
   right: 17px;
   bottom: 23px;
 }
+.about-banner .breadcrumb {
+  width: 46% !important;
+}
+.about-banner {
+  margin-top: 65px !important;
+}
 }
 body::-webkit-scrollbar {
     width: 10px;
@@ -354,7 +360,45 @@ section.get-started {
     bottom: 30px;
     cursor: pointer;
 }
-
+.about-banner{
+  height: 200px;
+  width: 100%;
+  margin-top: 70px;
+  text-align: center;
+  float: left;
+  background-image: url(../img/sub-banner.jpg);
+}
+.about-banner h2{
+  margin-top: 60px;
+  color: #fff;
+}
+.about-banner .breadcrumb{
+    width: 13%;
+    margin: 0 auto;
+    background: none;
+}
+.about-content h2{
+  margin-top: 20px;
+  color: #f882b0;
+}
+.about-content p{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    text-align: justify;
+}
+.breadcrumb-item a{
+  color: #f882b0;
+}
+.breadcrumb-item.active {
+  color: #e0e0e0;
+}
+.about-content{
+  margin-top: 40px;
+  float: left;
+  padding-bottom: 20px;
+}
 
 
 
