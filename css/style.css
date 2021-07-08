@@ -42,6 +42,9 @@ body{
 .padding-b{
   padding-bottom: 80px;
 }
+.padding-b-20 {
+  padding-bottom: 20px;
+}
 .border-bottom{
   border-bottom: 1px solid #e1ecff !important;
 }
@@ -419,6 +422,27 @@ section.get-started {
   left: 100%;
   margin-left: .1rem;
   margin-right: .1rem;
+}
+#jar .zoom-effect{
+  margin: 17px auto;
+}
+.page-link{
+  color: #4e4e4e;
+}
+.page-item.active .page-link{
+    background-color: #f6609a;
+    border-color: #f6609a;
+}
+.dropdown-menu{
+  margin: 12px 0 0;
+}
+.dropdown-menu{
+  padding: 0px;
+}
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #f6609a;
 }
 
 

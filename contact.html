@@ -22,7 +22,29 @@
               <div class="navbar-nav ml-auto">
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="aboutus.html" class="nav-item nav-link ">About us</a>
-                <a href="product.html" class="nav-item nav-link">Product</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Product
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Saress</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="softsilk.html">Soft Silk</a></li>
+                        <li><a class="dropdown-item" href="#">Cotton Slik</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Other</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Pavada Chatta</a></li>
+                        <li><a class="dropdown-item" href="#">Kurthi</a></li>
+                        <li><a class="dropdown-item" href="#">Stitching</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Aari work</a></li>
+                   
+                  </ul>
+                </li>
                 <a href="contact.html" class="nav-item nav-link active">Contact</a>
               </div>
           </div>
@@ -112,5 +134,22 @@
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+  if (!$(this).next().hasClass('show')) {
+    $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+  }
+  var $subMenu = $(this).next(".dropdown-menu");
+  $subMenu.toggleClass('show');
+
+
+  $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+    $('.dropdown-submenu .show').removeClass("show");
+  });
+
+
+  return false;
+});
+    </script>
   </body>
 </html>
