@@ -458,10 +458,10 @@ color: #30333B;
     margin-top:0px;
 }
 .top-image-1-r{
-  width: 187px;
+  width: 160px;
 }
 .top-image-2-r{
-  width: 144px;
+  width: 136px;
 }
 .banner .reg {
   width: 94%;
@@ -485,8 +485,8 @@ color: #30333B;
   width: 100%;
 }
 .video-section {
-  padding-top: 100px;
-  padding-bottom: 80px;
+  padding-top: 50px;
+    padding-bottom: 30px;
 }
 .video-section .video-img {
   width: 20%;
@@ -496,6 +496,7 @@ color: #30333B;
 }
 .count-time li span {
   font-size: 30px;
+  padding: 0 13px;  
 }
 .count-time li {
   font-size: 14px;
