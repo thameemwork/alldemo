@@ -359,6 +359,14 @@ margin-top: 33px;
     font-weight: bold;
     color: #E72F2F;
 }
+.contact-number{
+  box-shadow: 14px 22px 46px -11px #d4d4d4;
+    padding: 15px;
+    border: 1px solid #e4e2e2;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 9px;
+}
 .count h3{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
