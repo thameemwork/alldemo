@@ -461,7 +461,7 @@ color: #30333B;
   width: 160px;
 }
 .top-image-2-r{
-  width: 136px;
+  width: 128px;
 }
 .banner .reg {
   width: 94%;
@@ -496,7 +496,7 @@ color: #30333B;
 }
 .count-time li span {
   font-size: 30px;
-  padding: 0 13px;  
+  padding: 0 13px !important;  
 }
 .count-time li {
   font-size: 14px;
