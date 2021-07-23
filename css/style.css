@@ -580,6 +580,29 @@ color: #30333B;
   text-align: left;
   margin-bottom: 10px;
 }
+.test{
+  padding-top: 52px;
+}
+.test h4 {
+  font-size: 30px;
+}
+.test h4 span{
+  font-size: 42px;
+}
+.test p {
+  white-space: break-spaces;
+}
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+  .list-tes {
+    display: inline-block;
+  }
+  .flex-none{
+    flex-wrap: inherit;
+  }
 }
 body::-webkit-scrollbar {
     width: 10px;
@@ -594,6 +617,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50px;
 }
 
+ 
 
 
 
