@@ -619,7 +619,7 @@ color: #30333B;
 }
   .list-tes {
     display: inline-block;
-    margin: 0px 0px 0px 4px;
+    margin: 0px 0px 0px 0px;
     max-width: 370px;
     width: 335px;
   }
