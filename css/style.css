@@ -317,6 +317,7 @@ margin-top: 33px;
   color: #fff;
   text-decoration: none;
   font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
 }
 .not-av{
   background-color: #B9B9B9;
@@ -334,10 +335,11 @@ margin-top: 33px;
     padding: 6px 20px;
 }
 .cost-title h3{
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  margin-top: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    margin-top: 20px;
+    font-size: 32px;
 }
 .cost-title h5{
   text-align: center;
@@ -347,7 +349,7 @@ margin-top: 33px;
 }
 .cost-price p{
   font-family: 'Roboto Mono', monospace;
-  font-size: 30px;
+  font-size: 37px;
   text-align: center;
 }
 .cost-price p span{
@@ -356,9 +358,10 @@ margin-top: 33px;
 }
 .cost-des p{
   font-family: 'Roboto Mono', monospace;
-  font-size: 13px;
-    font-weight: 300;
-    line-height: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
 }
 .count{
   float: left;
@@ -442,7 +445,6 @@ margin: 30px auto;
   font-size: 100px;
   font-family: 'Big Shoulders Display', cursive;
   padding: 0 20px;
-  border-radius: 10px; 
   margin: 0 10px; 
   background: rgb(61,80,142);
 background: linear-gradient(90deg, rgba(61,80,142,1) 0%, rgba(7,20,78,1) 100%);
@@ -606,6 +608,7 @@ color: #30333B;
 .test p {
   white-space: initial;
   text-align: left;
+  font-size: 11px;
 }
 .scrolling-wrapper {
   overflow-x: scroll;
@@ -616,7 +619,7 @@ color: #30333B;
 }
   .list-tes {
     display: inline-block;
-    margin: 0px 0px 0px 16px;
+    margin: 0px 0px 0px 4px;
     max-width: 370px;
     width: 335px;
   }
