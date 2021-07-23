@@ -384,9 +384,9 @@ margin-top: 33px;
     color: #E72F2F;
 }
 .contact-number{
-  box-shadow: 14px 22px 46px -11px #d4d4d4;
-    padding: 15px;
-    border: 1px solid #e4e2e2;
+  -webkit-box-shadow: 0 0 35px 0 rgb(154 161 171 / 21%);
+    box-shadow: 0 0 35px 0 rgb(154 161 171 / 21%);
+    padding: 10px;
     width: 70%;
     margin: 0 auto;
     border-radius: 9px;
@@ -412,7 +412,8 @@ margin-top: 33px;
 .footer{
   float: left;
   width: 100%;
-  padding-top: 60px;
+  background-color: #F8F8F8;
+  margin-top: 80px;
   text-align: center;
 }
 .logo-sub-tittle{
@@ -527,7 +528,21 @@ color: #30333B;
   font-size: 14px;
 }
 .count {
-  padding-top: 32px;
+  padding-top: 59px;
+}
+#countdown{
+  margin-top: 26px; 
+}
+.count-con{
+  margin-top: 26px;
+}
+.count h3 {
+  font-size: 21px;
+  margin: 0;
+}
+.count h5 {
+  font-size: 16px;
+  margin: 0;
 }
 .count h4 {
   font-size: 40px;
@@ -635,6 +650,12 @@ color: #30333B;
   }
   .price-wapper {
     margin-top: 30px;
+}
+.cost-des p{
+  white-space: initial;
+}
+.footer {
+  margin-top: 55px;
 }
 }
 body::-webkit-scrollbar {
