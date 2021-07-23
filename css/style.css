@@ -634,7 +634,7 @@ color: #30333B;
 }
   .list-tes {
     display: inline-block;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 20px;
     max-width: 370px;
     width: 335px;
   }
@@ -650,6 +650,7 @@ color: #30333B;
   }
   .price-wapper {
     margin-top: 30px;
+    width: 300px;
 }
 .cost-des p{
   white-space: initial;
