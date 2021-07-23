@@ -563,6 +563,9 @@ color: #30333B;
   font-family: 'Big Shoulders Display', cursive;
   color: #787878;
 }
+.count-section {
+  padding-top: 112px;
+}
 }
 body::-webkit-scrollbar {
     width: 10px;
