@@ -241,16 +241,28 @@ margin-top: 33px;
     
 }
 .test-profile{
-  width: 100px;
+  width: 140px;
+  margin-top: -92px;
+    margin-left: -25px;
+}
+.test-full{
+    margin-top: 54px;
+    -webkit-box-shadow: 0 0 35px 0 rgb(154 161 171 / 21%);
+    box-shadow: 0 0 35px 0 rgb(154 161 171 / 21%);
+    padding: 20px;
 }
 .test-qu{
-  width: 50px;
+  width: 70px;
     float: right;
-    margin-top: 40px;
+    margin-top: -50px;
 }
 .test p{
   font-family: 'Roboto Mono', monospace;
   color: #787878;
+  margin-top: -15px;
+}
+.scrolling-wrapper{
+  margin-top: 60px;
 }
 .test h5{
   text-transform: uppercase;
@@ -336,6 +348,7 @@ margin-top: 33px;
 .cost-price p{
   font-family: 'Roboto Mono', monospace;
   font-size: 30px;
+  text-align: center;
 }
 .cost-price p span{
   font-family: 'Roboto Mono', monospace;
@@ -582,6 +595,7 @@ color: #30333B;
 }
 .test{
   padding-top: 52px;
+  padding-bottom: 0px;
 }
 .test h4 {
   font-size: 30px;
@@ -590,19 +604,35 @@ color: #30333B;
   font-size: 42px;
 }
 .test p {
-  white-space: break-spaces;
+  white-space: initial;
+  text-align: left;
 }
 .scrolling-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
+  margin-right: 20px;
+  margin-top: 39px;
 }
   .list-tes {
     display: inline-block;
+    margin: 0px 0px 0px 16px;
+    max-width: 370px;
+    width: 335px;
   }
   .flex-none{
     flex-wrap: inherit;
   }
+  .cost{
+    margin-top: 101px;
+  }
+  .sec-ticket{
+    margin: -160px auto;
+    margin-bottom: 50px;
+  }
+  .price-wapper {
+    margin-top: 30px;
+}
 }
 body::-webkit-scrollbar {
     width: 10px;
