@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Feedback</title>
+    <style>
+      body{
+        font-family: calibri;
+      }
+      .wapper{
+      max-width:648px; 
+      width: 100%;
+      border: 1px solid #ddd;
+      float: left;
+      }
+      .wapper img{
+        width: 100%;
+      }
+      .container {
+  display: block;  position: relative;  padding-left: 35px;  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  float:left;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 3px solid #cccccc;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #fff;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #00a03a;
+}
+ /* component */
+
+.star-rating {
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:2.5em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+  float: left;
+}
+
+.star-rating input {
+  display:none;
+}
+
+.star-rating label {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.star-rating :checked ~ label {
+  color:#f90;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color:#fc0;
+}
+
+/* explanation */
+
+article {
+  background-color:#ffe;
+  box-shadow:0 0 1em 1px rgba(0,0,0,.25);
+  color:#006;
+  font-family:cursive;
+  font-style:italic;
+  margin:4em;
+  max-width:30em;
+  padding:2em;
+}   
+
+
+.count-lable{
+    position: relative;
+    left: -27px;
+    top: -11px;
+    color:#fff;
+    font-size: 17px;
+}
+.count{
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+}
+
+.countradio:after {
+        width: 32px;
+        height: 32px;
+        border-radius: 20px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+    .countradio:checked:after {
+        width: 32px;
+        height: 32px;
+        border-radius: 20px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #ff9800;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+    .submit-btn{
+      margin: 7px 157px 10px 179px;
+      padding: 29px 114px;
+      border-radius: 45px;
+      border-radius: 45px;
+      background-color: #ff9800;
+      border: none;
+      color: #fff;
+      font-size: 19px;
+      outline: none;cursor: pointer;
+    }
+    @media only screen and (max-width: 767px) {
+    .submit-btn{
+    padding: 16px 64px;
+    border-radius: 45px;
+    border-radius: 45px;
+    background-color: #ff9800;
+    border: none;
+    color: #fff;
+    font-size: 19px;
+    outline: none;
+    cursor: pointer;
+    margin: 19px auto;
+    display: block;
+      }
+
+    }
+	@media screen and (device-aspect-ratio: 40/71) {
+	.res-al {
+    left: 241px !important;
+    top: -32px;
+}
+	}
+      </style>
+  </head>
+  <body>
+   <div class="wapper">
+<img src="image/banner.svg">
+<div style="color: #000;padding: 13px 14px 7px 14px; font-size: 15px;">
+  <span><b>Dear &#60; Name &#62;</b></span><br>
+  <p>Do take a minute to share your feedback for the service provided by &#60; Pragati Ramakrishnan&#62;. Rest assured this feedback will be used internally to improve our service 
+  and won’t be disclosed to your Relationship Manager.
+  </p>
+</div>
+<img src="image/dot.svg" style="float: left;width: 13px;margin-top: 4px;margin-right: 7px;margin-left: 9px;">
+<div style="font-size:16px; font-weight:600;padding: 0px 14px 7px 14px;">Does your Relationship Manager share profiles
+   to you on a weekly basis? </div>
+   <div style="padding:13px 14px 7px 31px;font-size: 15px;">
+    <label class="container">Yes
+     <input type="radio" checked="checked" name="radio">
+     <span class="checkmark"></span>
+   </label>
+   <label class="container">No
+     <input type="radio" name="radio">
+     <span class="checkmark"></span>
+   </label>
+  </div>
+  <div style="font-size:16px;padding: 0px 14px 7px 14px; font-weight:600">
+    <img src="image/dot.svg" style="float: left;width: 13px;margin-top: 4px;margin-right: 7px;">
+    Are the profiles shared by your Relationship Manager as per your preferences? </div>
+    <div style="padding:13px 14px 7px 31px;font-size: 15px;">
+      <label class="container">Yes
+       <input type="radio" checked="checked" name="radio2">
+       <span class="checkmark"></span>
+     </label>
+     <label class="container">No
+       <input type="radio" name="radio2">
+       <span class="checkmark"></span>
+     </label>
+    </div>
+    <div style="font-size:16px;padding: 0px 14px 7px 14px;font-weight:600">
+      <img src="image/dot.svg" style="float: left;width: 13px;margin-top: 4px;margin-right: 7px;">
+      Is your Relationship Manager available when you call &#60; him &#62;  
+      and attends to your requirements promptly?</div>
+      <div style="padding:13px 14px 7px 31px;font-size: 15px;">
+        <label class="container">Yes
+         <input type="radio" checked="checked" name="radio3">
+         <span class="checkmark"></span>
+       </label>
+       <label class="container">No
+         <input type="radio" name="radio3">
+         <span class="checkmark"></span>
+       </label>
+      </div>
+      <div style="font-size:16px;padding: 0px 14px 7px 14px; font-weight:600">
+        <img src="image/dot.svg" style="float: left;width: 13px;margin-top: 4px;margin-right: 7px;">
+        Does your Relationship Manager get updates from your prospective matches and shares them with you 
+        on a regular basis?</div>
+        <div style="padding:13px 14px 7px 31px;font-size: 15px;">
+          <label class="container">Yes
+           <input type="radio"  name="radio4">
+           <span class="checkmark"></span>
+         </label>
+         <label class="container">No
+           <input type="radio" name="radio4">
+           <span class="checkmark"></span>
+         </label>
+        </div>
+        <div style="font-size:16px;padding: 0px 14px 7px 14px; font-weight:600">
+          <img src="image/dot.svg" style="float: left;width: 13px;margin-top: 4px;margin-right: 7px;">
+          Please rate the service provided by your Relationship Manager. (1 is poor, 5 is excellent)</div>
+          <div style="padding:13px 14px 7px 31px;font-size: 15px;">
+ 
+            <div class="star-rating">
+              <input type="radio" id="5-stars" name="rating" value="5" />
+              <label for="5-stars" class="star">&#9733;</label>
+              <input type="radio" id="4-stars" name="rating" value="4" />
+              <label for="4-stars" class="star">&#9733;</label>
+              <input type="radio" id="3-stars" name="rating" value="3" />
+              <label for="3-stars" class="star">&#9733;</label>
+              <input type="radio" id="2-stars" name="rating" value="2" />
+              <label for="2-stars" class="star">&#9733;</label>
+              <input type="radio" id="1-star" name="rating" value="1" />
+              <label for="1-star" class="star">&#9733;</label>
+            </div>
+            
+              <span><b style="display: block;padding-top:16px;font-size:19px;">Good!</b></span>
+          </div>
+          <br>
+          <div style="font-size:16px;padding: 0px 14px 7px 14px; font-weight:600">
+            <img src="image/dot.svg" style="float: left;width: 13px;margin-top: 4px;margin-right: 7px;">
+            Would you be recommending our Assisted Service to your friends/relatives?</div>
+            <div style="padding:13px 14px 7px 31px;font-size: 15px;">
+              <label class="container">Yes
+               <input type="radio"  name="radio4">
+               <span class="checkmark"></span>
+             </label>
+             <label class="container">No
+               <input type="radio" name="radio4">
+               <span class="checkmark"></span>
+             </label>
+            </div>
+            <div style="margin-left: 20px;">
+              <input type="radio" value="1" name="QId[15]" id="one" class="count countradio">
+            <label class="count-lable" for="one">1</label>
+            <input type="radio" value="2" name="QId[15]" id="two" class="count countradio">
+            <label class="count-lable" for="two">2</label>
+            <input type="radio" value="3" name="QId[15]" id="three" class="count countradio">
+            <label class="count-lable" for="three">3</label>
+            <input type="radio" value="4" name="QId[15]" id="four" class="count countradio">
+            <label class="count-lable" for="four">4</label>
+            <input type="radio" value="5" name="QId[15]" id="five" class="count countradio">
+            <label class="count-lable" for="five">5</label>
+            <input type="radio" value="6" name="QId[15]" id="six" class="count countradio">
+            <label class="count-lable" for="six">6</label>
+            <input type="radio" value="7" name="QId[15]" id="seven" class="count countradio">
+            <label class="count-lable" for="seven">7</label>
+            <input type="radio" value="8" name="QId[15]" id="eight" class="count countradio">
+            <label class="count-lable" for="eight">8</label>
+            <input type="radio" value="9" name="QId[15]" id="nine" class="count countradio">
+            <label class="count-lable" for="nine">9</label>
+            <input type="radio" value="10" name="QId[15]" class="count countradio" id="ten">
+            <label class="count-lable res-al" for="ten" style="left: -30px;">10</label>
+            
+          </div>
+          <div>
+            <p style="float:left;font-size:14px;margin-left: 10px;">Not at all likely</p>
+            <p style="float:right;font-size:14px;margin-right: 70px;">Extremely likely</p>
+          </div>  
+          
+          <span id="errormsg" style="color: red;font-size: 20px;font-weight: 600;text-align: center;"></span>
+          <button type="button" name="button" onclick="checkForm()" value="button" class="submit-btn">Submit</button>
+          
+    </div>
+
+ 
+  </body>
+</html>
