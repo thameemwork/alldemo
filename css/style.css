@@ -718,27 +718,23 @@ label {
 }
 
 .bg-image-1 {
-  background-image: url("http://placehold.it/1920x1080.jpg");
+  background-image: url("../images/backgrounds/bg.jpg");
 }
 
 .bg-image-2 {
-  background-image: url("http://placehold.it/1920x1080.jpg");
+  background-image: url("../images/backgrounds/About.jpg");
 }
 
 .bg-image-3 {
-  background-image: url("http://placehold.it/1920x1080.jpg");
+  background-image: url("../images/backgrounds/contact.jpg");
 }
 
 .bg-image-4 {
-  background-image: url("http://placehold.it/1920x1080.jpg");
-}
-
-.bg-image-5 {
-  background-image: url("http://placehold.it/1920x1080.jpg");
+  background-image: url("../images/backgrounds/contact.jpg");
 }
 
 .bg-image-6 {
-  background-image: url("http://placehold.it/1920x1080.jpg");
+  background-image: url("../images/backgrounds/contact.jpg");
 }
 
 .bg-particles {
@@ -1980,4 +1976,7 @@ input.form-control {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+.m-top-4{
+	margin-top:40px;
 }
