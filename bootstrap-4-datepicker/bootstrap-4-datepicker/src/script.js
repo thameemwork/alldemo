@@ -1,2 +1,0 @@
-$('#inputDate').datepicker({
-});
