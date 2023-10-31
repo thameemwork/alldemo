@@ -1,62 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
 }
-.login-wapper{
+
+.login-wapper {
     height: 100vh;
     align-items: center;
     display: flex;
     flex-direction: row;
-  }
-  .login-inner{
+}
+
+.login-inner {
     width: 60%;
     display: block;
     height: 100vh;
     background-color: #F6F6F6;
     text-align: center;
 }
-.login-inner h1{
+
+.login-inner h1 {
     margin-top: 20px;
     font-size: 30px;
     color: #707070;
     line-height: 50px;
 }
-.login-inner span{
-    color:#9E2067;
+
+.login-inner span {
+    color: #0D206E;
 }
-  .login-imgs{
+
+.login-imgs {
     width: 100%;
     -o-object-fit: contain;
-      object-fit: contain;
+    object-fit: contain;
     height: 78%;
-  }
-  .logo{
+}
+
+.logo {
     width: 50%;
     margin: 10px auto 20px;
     display: block;
-  }
-  .login-form{
+}
+
+.login-form {
     width: 40%;
     padding-left: 3rem;
-      padding-right: 3rem;
+    padding-right: 3rem;
     max-width: 100%;
-     align-items: center;
+    align-items: center;
     display: flex;
     justify-content: center;
     background-color: #fff;
-  }
-  .user-slection{
+}
+
+.user-slection {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 95%;
-  }
-  .user-wapper{
+}
+.user-wapper {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -67,136 +76,21 @@ body{
     min-height: 98px;
     margin: 0px 13px;
     position: relative;
-  }
-  .w-full {
-      width: 100%;
-  }
-  .text-xl {
-      font-size: 1.25rem;
-  }
-  .font-bold {
-      font-weight: 700;
-  }
-  .mt-12 {
-      margin-top: 3rem;
-  }
-  .leading-tight {
-      line-height: 1.25;
-  }
-  .font-bold {
-      font-weight: 700;
-  }
-  .mt-6 {
-      margin-top: 1.5rem;
-  }
-  .my-6 {
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
-  }
-  .border-gray-300 {
-      border-color: #e2e8f0;
-  }
-  hr {
-      border-top-width: 1px;
-  }.text-gray-700 {
-      color: #4a5568;
-  }
-  .block {
-      display: block;
-  }.w-full {
-      width: 100%;
-  }
-  .px-4 {
-      padding-left: 1rem;
-      padding-right: 1rem;
-  }
-  .py-3 {
-      padding-top: 0.75rem;
-      padding-bottom: 0.75rem;
-  }
-  .mt-2 {
-      margin-top: 0.5rem;
-  }
-  .border {
-      border-width: 1px;
-  }
-  .rounded-lg {
-      border-radius: 0.5rem;
-  }
-  .bg-gray-200 {
-      background-color: #edf2f7;
-  }
-  .mt-4 {
-      margin-top: 1rem;
-  }
-  .text-right {
-      text-align: right;
-  }
-  .mt-2 {
-      margin-top: 0.5rem;
-  }
-  .text-white {
-      color: #fff;
-  }
-  .px-4 {
-      padding-left: 1rem;
-      padding-right: 1rem;
-  }
-  .py-3 {
-      padding-top: 0.75rem;
-      padding-bottom: 0.75rem;
-  }
-  .mt-6 {
-      margin-top: 1.5rem;
-  }
-  .font-semibold {
-      font-weight: 600;
-  }
-  .block {
-      display: block;
-  }
-  .rounded-lg {
-      border-radius: 0.5rem;
-  }
-  .bg-blue-500 {
-      background-color: #4299e1;
-  }
-  .justify-center {
-      justify-content: center;
-  }
-  .items-center {
-      align-items: center;
-  }
-  .flex {
-      display: flex;
-  }
-  .w-6 {
-      width: 1.5rem;
-  }
-  .h-6 {
-      height: 1.5rem;
-  }
-  .ml-4 {
-      margin-left: 1rem;
-  }
-  .mt-8 {
-      margin-top: 2rem;
-  }
-  .text-sm {
-      font-size: .875rem;
-  }
-  
-  .text-gray-500 {
-      color: #a0aec0;
-  }
-  .mt-12 {
-      margin-top: 3rem;
-  }
-  .h-screen {
-      height: 100vh;
-  }
-
-  .has-search .form-control-feedback {
+    text-align: center;
+}
+.user-wapper p {
+    margin: 0px;
+}
+.block {
+    display: block;
+}
+.w-full {
+    width: 100%;
+}
+.h-screen {
+    height: 100vh;
+}
+.has-search .form-control-feedback {
     position: absolute;
     z-index: 2;
     display: block;
@@ -207,7 +101,7 @@ body{
     pointer-events: none;
     color: #aaa;
 }
-.form-cus{
+.form-cus {
     padding: 5px 40px;
     font-size: 14px;
     border-radius: 0px;
@@ -217,6 +111,7 @@ body{
 .form-group.has-search {
     margin: 16px 0px;
 }
+
 .form-label {
     margin-bottom: 7px;
 }
@@ -224,15 +119,15 @@ body{
     color: #212529;
     background-color: #fff;
     border-color: #fff;
-    border-bottom: 1px solid #9e2067;
+    border-bottom: 1px solid #0D206E;
     outline: 0;
     box-shadow: none;
 }
-.form-label{
+.form-label {
     font-weight: 500;
 }
-.btn-cus{
-    background-color: #9E2067;
+.btn-cus {
+    background-color: #0D206E;
     border-radius: 21px;
     padding: 5px 26px;
     color: #fff;
@@ -241,74 +136,92 @@ body{
     border: none;
     outline: none;
 }
-.btn-cus:hover{
-    background-color: #91195c;
+.btn-cus:hover {
+    background-color: #0b1b5a;
 }
-a.active {
+.user-slection a.active {
     background-image: url(../img/check.svg);
     background-repeat: no-repeat;
     background-position: right 100%;
-    border: 1px solid #9e2067;    
+    border: 1px solid #0D206E;
 }
-.user-slection img{
+.user-slection img {
     margin: 0 auto;
     display: block;
 }
-a{
+.user-slection a {
     text-decoration: none;
     color: #000;
 }
-a:hover{
+.user-slection a:hover {
     text-decoration: none;
     color: #000;
 }
-.lg-none{
-   display: none;
+.lg-none {
+    display: none;
+}
+.m_t-8{
+    margin-top: 8px;
+}
+.link-password{
+    color: #087AEC;
+    font-size: 12px;
+    text-decoration: none;
 }
 @media screen and (max-width: 767px) {
     .login-inner h1 {
         margin-top: 4px;
-    font-size: 18px;
-    line-height: 25px;
-    margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 30px;
     }
-    .login-imgs{
+
+    .login-imgs {
         display: none;
     }
-    .login-wapper{
+
+    .login-wapper {
         flex-direction: column;
         height: auto;
     }
-    .login-inner{
+
+    .login-inner {
         width: 100%;
         background-color: #fff;
         height: auto;
     }
-    .login-form{
+
+    .login-form {
         width: 100%;
         padding: 0px;
     }
-    .m-none{
+
+    .m-none {
         display: none;
     }
-    .user-slection{
+
+    .user-slection {
         width: 100%;
     }
-    .user-wapper{
+
+    .user-wapper {
         padding: 3px 14px;
         width: 44%;
         height: 116px;
         margin: 0px 9px;
     }
+
     .logo {
         margin: 20px auto 20px;
         width: auto;
     }
-    .btn-cus{
+
+    .btn-cus {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    .lg-none{
+
+    .lg-none {
         display: block;
     }
 }
