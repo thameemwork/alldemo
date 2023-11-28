@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Side Navbar</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- main-style -->
+
+    <title>Hello, world!</title>
+  </head>
+
+  <body>
+    <div class="wapper_container">
+      <div class="sidenav">
+        <img src="img/logo_50.png" class="nav_logo2">
+        <img src="img/logo.png" class="nav_logo">
+        <div class="container-fluid">
+          <div class="row d-flex d-md-block flex-nowrap wrapper">
+            <div class="collapse width show" id="sidebar">
+              <div class="list-group border-0  text-md-left">
+                <a href="Dasboard.html" class="list-group-item d-inline-block collapsed active"
+                  data-parent="#sidebar"><i class="fa fa-dashboard"></i> <span
+                    class="d-none d-md-inline">Dashboard</span></a>
+
+                <a href="#menu1" class="list-group-item d-inline-block collapsed" data-toggle="collapse"
+                  aria-expanded="false"><i class="fa fa-book"></i> <span class="d-none d-md-inline">Leave</span></a>
+                <div class="collapse sub_menu" id="menu1" data-parent="#sidebar"><a href="maternity_leave.html"
+                    class="list-group-item" data-parent="#menu1">Maternity Leave</a></div>
+
+                <a href="#menu2" class="list-group-item d-inline-block collapsed" data-toggle="collapse"
+                  aria-expanded="false"><i class="fa fa-book"></i> <span class="d-none d-md-inline">Payroll
+                    Management</span></a>
+                <div class="collapse sub_menu" id="menu2" data-parent="#sidebar">
+                  <a href="#" class="list-group-item" data-parent="#menu2">Comp Off/Extra Pay</a>
+                  <a href="incentive.html" class="list-group-item" data-parent="#menu2">Incentives</a>
+                  <a href="pbb.html" class="list-group-item" data-parent="#menu2">Performance Based Bonus</a>
+                  <a href="#" class="list-group-item" data-parent="#menu2">System Deposit</a>
+                  <a href="Probation.html" class="list-group-item" data-parent="#menu2">Probation Confirmation</a>
+                  <a href="ijp.html" class="list-group-item" data-parent="#menu2">IJP</a>
+                </div>
+
+
+                <a href="#menu3" class="list-group-item d-inline-block collapsed" data-toggle="collapse"
+                  aria-expanded="false"><i class="fa fa-book"></i> <span
+                    class="d-none d-md-inline">Post-Employment</span></a>
+                <div class="collapse sub_menu" id="menu3" data-parent="#sidebar">
+                  <a href="employee_profile.html" class="list-group-item" data-parent="#menu3">Employee Profile</a>
+                </div>
+
+                <a href="#menu4" class="list-group-item d-inline-block collapsed" data-toggle="collapse"
+                  aria-expanded="false"><i class="fa fa-book"></i> <span class="d-none d-md-inline">Self
+                    Service</span></a>
+                <div class="collapse sub_menu" id="menu4" data-parent="#sidebar">
+                  <a href="track_leave.html" class="list-group-item" data-parent="#menu4">Track Leave</a>
+                </div>
+
+                <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i
+                    class="fa fa-dashboard"></i> <span class="d-none d-md-inline">Survey</span></a>
+
+
+                <a href="Resignation.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i
+                    class="fa fa-heart"></i> <span class="d-none d-md-inline">Resignation</span></a>
+                <!--<a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-list"></i> <span class="d-none d-md-inline">Item 5</span></a>-->
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="inner_content">
+        <div class="header">
+          <div class="toggle_btn">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery first, then popper.js, then bootstrap.js, then bundle.js -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(".toggle_btn").click(function (e) {
+        e.preventDefault();
+        $(".sidenav").toggleClass("with_icon");
+        $(".inner_content").toggleClass("with_icon");
+      });
+    </script>
+  </body>
+
+  </html>
+  <!-- partial -->
+
+</body>
+
+</html>
