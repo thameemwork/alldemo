@@ -132,7 +132,7 @@ body {
 #sidebar .list-group .list-group-item[aria-expanded="true"] {
     background-color: #a32066;
     color: #fff;
-}-
+}
 
 #sidebar .list-group .list-group-item[aria-expanded="true"]::after {
     content: "\f106";
@@ -195,6 +195,10 @@ body {
 }
 .sidenav.with_icon:hover .nav_logo2{
     display: none;
+}
+#sidebar a:hover{
+	background-color:#9d2665 !important;
+    color: #fff;
 }
 
 
