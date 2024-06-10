@@ -15,7 +15,7 @@ body {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   padding: 10px;
-  background-color: #fff;
+  background-color: #19689d;
   color: #ddd;
 }
 .navbar-dark .navbar-nav .nav-link {
@@ -28,16 +28,19 @@ body {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
-  color: #253d61;
+  color: #ca9618;
   font-weight: 600;
 }
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #253d61;
+  color: #ca9618;
   font-weight: 600;
 }
 .navbar-light .navbar-nav .nav-link {
-  color: #253d61;
+  color: #fff;
+}
+.navbar-brand img {
+  width: 158px;
 }
 /* .cus-navbar .navbar-nav .nav-link {
   color: #253d61;
