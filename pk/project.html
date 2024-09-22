@@ -9,71 +9,63 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/all.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>PK Construction</title>
 </head>
 
 <body>
-    <div class="navigation-wrap nav-bar start-header start-style">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-md fixed-top navbar-light nav-bar cus-navbar">
-                        <a class="navbar-brand" href="https://front.codes/" target="_blank">
-                            <img src="img/logo.png" />
-                        </a>
-
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto py-4 py-md-0">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">
-                                        Home
-                                        <span class="sr-only">(current)</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="aboutus.html">Aboutus</a>
-                                </li>
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link" href="#">Service</a>
-                                </li> -->
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Projects
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="project.html">Previous Projects</a>
-                                        <a class="dropdown-item" href="#">Completed</a>
-
-                                        <a class="dropdown-item" href="#">Work In Progress</a>
-                                    </div>
-                                </li>
-
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link" href="#">Gallery</a>
-                                </li> -->
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-
-                </div>
-            </div>
-            
-        </div>
+  <div class="top_header">
+    <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div>
+        <span><i class='bx bx-phone-call'></i></span> &nbsp;<span>+1 201-380-2737</span>
+      </div>
+      <div>
+        <span><i class='bx bx-map'></i></span> &nbsp;<span>138 MacArthur Ave, United States</span> 
+      </div>
+      <div>
+       <span>Follow Us:</span> &nbsp; &nbsp;
+        <a href="#"><span><i class='bx bxl-facebook'></i></span>&nbsp; &nbsp;</a>
+        <a href="#"><span><i class='bx bxl-instagram' ></i></span>&nbsp; &nbsp;</a>
+        <a href="#"><span><i class='bx bxl-whatsapp' ></i></span></a>
+      </div>
     </div>
-    <div style="margin-top: 43px;
-    background-color: #ddd;
-    padding: 40px 20px;" >
+    </div>
+  </div>
+  <nav id="navbar_top" class="navbar navbar-expand-lg nav-bar">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" />
+      </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="main_nav">
+    
+  
+    <ul class="navbar-nav ml-auto py-4 py-md-0 ">
+      <li class="nav-item cus-nav"><a class="nav-link" href="index.html">  Home </a></li>
+      <li class="nav-item cus-nav"><a class="nav-link" href="aboutus.html"> About Us </a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle cus-nav active " href="project.html" data-bs-toggle="dropdown">Projects</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Completed</a></li>
+            <li><a class="dropdown-item" href="#">Work-In-Progress </a></li>
+          </ul>
+      </li>
+      <li class="nav-item cus-nav">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item cus-nav">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  
+    </div> <!-- navbar-collapse.// -->
+   </div> <!-- container-fluid.// -->
+  </nav>
+    <div style=" background-color: #ddd;color: #fff;padding: 40px 20px;background-image: url(./img/pexels-enginakyurt-1463917.jpg);text-align: center" >
         <div class="container">
             <h3>Projects</h3>
         </div>
@@ -85,7 +77,7 @@
             <div class="col-md-12">
                 <nav>
                     <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Previous Projects</a>
+            
                         <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Completed Projects</a>
                         <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Work In Progress</a>
                     </div>
@@ -170,58 +162,7 @@
                               </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        <div class="row">
-                            <div class="col-md-6 col-xl-4 mb-3">
-                                <div class="content-section">
-                                  <span class="ava-lable">1 Flat(s) Available</span>
-                                  <div class="res-bg">
-                                    <img style="width: 100%" src="https://images.unsplash.com/photo-1471039497385-b6d6ba609f9c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80">
-                                  </div>
-                                  <div class="res-title">
-                                    <h5>Crown Residences</h5>
-                                    <p style="margin-top: 10px">
-                                      1204-3182 sqft. Poonamallee High Road, Special price of
-                                      Rs.10,599/- per sqft
-                                    </p>
-                                    <a href="#">Click</a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-md-6 col-xl-4 mb-3">
-                                <div class="content-section">
-                                  <span class="ava-lable">1 Flat(s) Available</span>
-                                  <div class="res-bg">
-                                    <img style="width: 100%" src="https://images.unsplash.com/photo-1471039497385-b6d6ba609f9c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80">
-                                  </div>
-                                  <div class="res-title">
-                                    <h5>Crown Residences</h5>
-                                    <p style="margin-top: 10px">
-                                      1204-3182 sqft. Poonamallee High Road, Special price of
-                                      Rs.10,599/- per sqft
-                                    </p>
-                                    <a href="#">Click</a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-md-6 col-xl-4 mb-3">
-                                <div class="content-section">
-                                  <span class="ava-lable">1 Flat(s) Available</span>
-                                  <div class="res-bg">
-                                    <img style="width: 100%" src="https://images.unsplash.com/photo-1471039497385-b6d6ba609f9c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80">
-                                  </div>
-                                  <div class="res-title">
-                                    <h5>Crown Residences</h5>
-                                    <p style="margin-top: 10px">
-                                      1204-3182 sqft. Poonamallee High Road, Special price of
-                                      Rs.10,599/- per sqft
-                                    </p>
-                                    <a href="#">Click</a>
-                                  </div>
-                                </div>
-                              </div>
-                        </div>  
-                    </div>
+                    
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                         <div class="row">
                             <div class="col-md-6 col-xl-4 mb-3">
@@ -280,86 +221,112 @@
     </div>
 
     <section class="contact" id="contact">
-        <div class="container">
-          <div class="heading text-center">
-            <h2>
-              Contact
-              <span>Us</span>
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor
-              <br>
-              incididunt ut labore et dolore magna aliqua.
-            </p>
+      <div class="container">
+        <div class="heading text-center">
+          <h2>
+            Contact
+            <span>Us</span>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor
+            <br />
+            incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-5" style="border-right: 1px solid #ddd">
+            <div class="title">
+              <h3>Contact detail</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor
+              </p>
+            </div>
+            <div class="content">
+              <!-- Info-1 -->
+              <div class="info">
+                <i class="fas fa-mobile-alt"></i>
+                <h4 class="d-inline-block">
+                  PHONE :
+                  <br />
+                  <span>+12457836913 , +12457836913</span>
+                </h4>
+              </div>
+              <!-- Info-2 -->
+              <div class="info">
+                <i class="far fa-envelope"></i>
+                <h4 class="d-inline-block">
+                  EMAIL :
+                  <br />
+                  <span>example@info.com</span>
+                </h4>
+              </div>
+              <!-- Info-3 -->
+              <div class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4 class="d-inline-block">
+                  ADDRESS :
+                  <br />
+                  <span>6743 last street , Abcd, Xyz</span>
+                </h4>
+              </div>
+            </div>
           </div>
-          <div class="row">
-            <div class="col-md-5" style="border-right: 1px solid #ddd">
-              <div class="title">
-                <h3>Contact detail</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor
-                </p>
+    
+          <div class="col-md-7 d-flex justify-content-center">
+            <div class="contact-page-form" style="margin-top: 0px;" method="post">
+              <h3 style="font-size: 18px;">Get in Touch</h3> 
+              <form action="contact-mail.php" method="post">
+                <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="single-input-field">
+                    <input type="text" placeholder="Your Name" name="name"/>
+                  </div>
+                </div>  
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="single-input-field">
+                    <input type="email" placeholder="E-mail" name="email" required/>
+                  </div>
+                </div>                              
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="single-input-field">
+                    <input type="text" placeholder="Phone Number" name="phone"/>
+                  </div>
+                </div>  
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="single-input-field">
+                    <input type="text" placeholder="Subject" name="subject"/>
+                  </div>
+                </div>                
+                <div class="col-md-12 message-input">
+                  <div class="single-input-field">
+                    <textarea  placeholder="Write Your Message" name="message"></textarea>
+                  </div>
+                </div>                                                
+                <div class="single-input-fieldsbtn">
+                  <input type="submit" value="Send Now"/>
+                </div>                          
               </div>
-              <div class="content">
-                <!-- Info-1 -->
-                <div class="info">
-                  <i class="fas fa-mobile-alt"></i>
-                  <h4 class="d-inline-block">
-                    PHONE :
-                    <br>
-                    <span>+12457836913 , +12457836913</span>
-                  </h4>
-                </div>
-                <!-- Info-2 -->
-                <div class="info">
-                  <i class="far fa-envelope"></i>
-                  <h4 class="d-inline-block">
-                    EMAIL :
-                    <br>
-                    <span>example@info.com</span>
-                  </h4>
-                </div>
-                <!-- Info-3 -->
-                <div class="info">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <h4 class="d-inline-block">
-                    ADDRESS :
-                    <br>
-                    <span>6743 last street , Abcd, Xyz</span>
-                  </h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-7 d-flex justify-content-center">
-              <div class="social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#">
-                  <i class="fab fa-whatsapp"></i>
-                </a>
-              </div>
-            </div>
+              </form>   
+            </div>  
           </div>
         </div>
-      </section>
+      </div>
+      <div>
+        <div class="footer">
+          <div>
+              <p>Copyright © Pk Construction</p>
+          </div>
+      </div>
+      </div>
+    </section>
 </div>
 
     
     
 
-    <div class="container-fluid">
-        <div class="footer">
-            <div>
-                <p>Copyright &copy; Pk Constraction</p>
-            </div>
-            <!-- <div>
-                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-            </div> -->
-        </div>
-    </div>
+   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
