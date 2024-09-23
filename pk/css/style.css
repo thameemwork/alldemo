@@ -538,6 +538,52 @@ ul.dropdown-menu {
     box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
   }
 }
+@media screen and (max-width: 768px) {
+  .top_header {
+    height: auto;
+  }
+  .top_inner{
+    font-size: 12px;
+    flex-wrap: wrap;
+    line-height: 24px;
+  }
+  .carousel-item{
+    height: 30vh;
+  }
+  .pulse-button {
+    left: 30%;
+  }
+  .res-title{
+    bottom: 44px;
+  }
+  .res-title a{
+    margin-top: 0px;
+    padding: 4px 15px;
+    font-size: 10px;
+  }
+  .ava-lable{
+    font-size: 10px;
+  }
+  .res-title h6{
+    font-size: 12px;
+  }
+  .res-title p{
+    font-size: 10px;
+    margin-top: 0px;
+  }
+  .contact {
+    padding: 80px 10px 0px 10px;
+}
+#main_nav{
+  background-color: #fff;
+}
+.cus-nav a{
+  padding: 10px 0;
+}
+a.cus-nav{
+  padding: 10px 0;
+}
+}
 
 
 
