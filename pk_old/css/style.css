@@ -91,7 +91,7 @@ a:hover.cus-nav  {
 }
 /* Slider */
 .carousel-item {
-  height: 70vh;
+  height: 87vh;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -113,53 +113,29 @@ a.dropdown-item {
   padding: 5px 26px;
 }
 .about-section h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 30px;
   font-weight: 700;
   color: #1886ca;
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
 }
-.about-section p {
-   line-height: 30px;
-}
-.about-section {
-  background: #fff;
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-.experience{
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
-  background-color: #000;
-}
-.experience img{
-  opacity: 0.5;
-}  
+/* .about-section {
+  padding-bottom: 100px;
+} */
 .residential-section {
-  background: #F8F8F8;
+  background-color: #fbfafa;
   padding-top: 10px;
-  padding-bottom: 80px;
-}
-.residential-section .bg_left{
-  position: absolute;
-}
-.residential-section .bg_right{
-  position: absolute;
-  right: 0;
-}
-.residential-section a{
-  text-decoration: none;
 }
 .residential-section h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 30px;
   font-weight: 700;
   color: #1886ca;
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
 }
 .residential-data {
   margin-top: 20px;
@@ -215,7 +191,7 @@ a.dropdown-item {
 }
 .contact {
   padding: 80px 80px 0px 80px;
-  background-color: #000000;
+  background-color: #fbfafa;
 }
 
 .contact .heading h2 {
@@ -254,11 +230,8 @@ a.dropdown-item {
 .contact .title h3 {
   font-size: 18px;
   font-weight: 600;
-  color: #fff;
 }
-.contact-page-form h3{
-  color: #fff;
-}
+
 .contact .title p {
   font-size: 14px;
   font-weight: 400;
@@ -282,7 +255,6 @@ a.dropdown-item {
 .contact .content .info h4 {
   font-size: 13px;
   line-height: 1.4;
-  color: #fff;
 }
 
 .contact .content .info h4 span {
@@ -308,7 +280,6 @@ a.dropdown-item {
 }
 .footer p {
   margin: 10px 0px;
-  color: #d3d0d0;
 }
 .res-title a {
   background-color: #0056b3;
@@ -468,7 +439,6 @@ padding-left: 0;
   display: inline-block;
   width: 100%;
   margin-top: 30px;
-  
 }
 
 .contact-page-map {
@@ -525,8 +495,8 @@ ul.dropdown-menu {
     top: 26%;
     left: 50%;
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     color: white;
     border: none;
     border-radius: 50%;
@@ -534,13 +504,13 @@ ul.dropdown-menu {
     cursor: pointer;
     box-shadow: 0 0 0 0 rgba(90, 153, 212, 0.5);
     -webkit-animation: pulse 1.5s infinite;
-    font-size: 18px;
+    font-size: 35px;
 }
 .pulse-button i {
   display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
+    height: 60px;
 }
 .pulse-button:hover {
   -webkit-animation: none;
@@ -558,7 +528,7 @@ ul.dropdown-menu {
     -ms-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
-    box-shadow: 0 0 0 20px rgba(90, 153, 212, 0);
+    box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
   }
   100% {
     -moz-transform: scale(0.9);
@@ -567,28 +537,6 @@ ul.dropdown-menu {
     transform: scale(0.9);
     box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
   }
-}
-.image_caption{
-  background-color: #efefefc2;
-  width: 100%;
-  display: block;
-  padding: 10px 20px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  height: 59px;
-  text-align: center;
-}
-.service {
-  width: 100%;
-  padding: 80px;
-}
-.service h4 {
-  font-size: 30px;
-  font-weight: 700;
-  color: #1886ca;
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .top_header {
