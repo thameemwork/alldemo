@@ -635,6 +635,12 @@ ul.dropdown-menu {
 a.cus-nav{
   padding: 10px 0;
 }
+.bg_left{
+  display: none;
+}
+.bg_right{
+  display: none;
+}
 }
 
 
