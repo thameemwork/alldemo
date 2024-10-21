@@ -128,14 +128,8 @@ a.dropdown-item {
   margin-top: 80px;
   margin-bottom: 80px;
 }
-.experience{
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
-  background-color: #000;
-}
-.experience img{
-  opacity: 0.5;
+.abou_pra p{
+  margin-top: 100px;
 }  
 .residential-section {
   background: #F8F8F8;
@@ -586,9 +580,9 @@ ul.dropdown-menu {
   font-size: 30px;
   font-weight: 700;
   color: #1886ca;
-  margin-bottom: 50px;
   display: flex;
-  justify-content: center;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 @media screen and (max-width: 768px) {
   .top_header {
@@ -641,6 +635,41 @@ a.cus-nav{
 .bg_right{
   display: none;
 }
+.about-section h4{
+  margin-bottom: 20px;
+}
+.about-section{
+  margin-top: 40px;
+  margin-bottom: 10px;   
+}
+.about-section h4{
+  font-size: 20px;
+}
+.about-section p {
+  line-height: 26px;
+  font-size: 14px;
+  text-align: justify;
+}
+.residential-section h4{
+  margin-top: 20px;
+  font-size: 20px;
+}
+.residential-section{
+  padding-bottom: 50px;
+}
+.service {
+  width: 100%;
+  padding: 10px;
+}
+.service h4{
+  margin-top: 23px;
+  font-size: 20px;
+  margin-bottom: 26px;
+}
+.abou_pra p{
+  margin-top: 10px;
+  text-align: justify;
+} 
 }
 
 
