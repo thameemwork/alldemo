@@ -107,10 +107,18 @@ a.cus-nav {
 a:hover.cus-nav {
   border-top: 4px solid #1886ca;
 }
-
+.socials{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+.socials a{
+ margin-right: 10px;
+}
 /* Slider */
 .carousel-item {
-  height: 70vh;
+  height: 92vh;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -259,7 +267,7 @@ a.dropdown-item {
 
 .contact {
   padding: 80px 80px 0px 80px;
-  background-color: #000000;
+  background-color: #1886ca;
 }
 
 .contact .heading h2 {
@@ -267,14 +275,14 @@ a.dropdown-item {
   font-weight: 700;
   margin: 0;
   padding: 0;
-  color: #1886ca;
+  color: #fff;
 }
 
 .contact .heading p {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.7;
-  color: #999999;
+  color: #fff;
   margin: 20px 0 60px;
   padding: 0;
 }
@@ -309,7 +317,7 @@ a.dropdown-item {
 .contact .title p {
   font-size: 14px;
   font-weight: 400;
-  color: #999;
+  color: #fff;
   line-height: 1.6;
   margin: 0 0 40px;
 }
@@ -337,7 +345,7 @@ a.dropdown-item {
 .contact .content .info h4 span {
   font-size: 13px;
   font-weight: 300;
-  color: #999999;
+  color: #fff;
 }
 
 .social {
@@ -346,11 +354,7 @@ a.dropdown-item {
   align-items: center;
 }
 
-.social a {
-  padding: 20px;
-  font-size: 24px;
-  color: #0056b3;
-}
+
 
 .footer {
   display: flex;
