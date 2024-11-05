@@ -12,6 +12,7 @@ body {
   /* font-family: "Playfair Display", serif; */
   overflow-x: hidden;
   /* font-weight: bold; */
+
 }
 .padding_tb {
   margin-top: 30px;
@@ -22,6 +23,9 @@ body {
 }
 .m_2{
   margin-top: 20px !important;
+}
+.m_5{
+  margin-top: 50px !important;
 }
 .top_header {
   width: 100%;
@@ -622,6 +626,8 @@ a.dropdown-item {
   border-color: #0c3cab;
 }
 
+
+
 .single-input-field h4 {
   color: #464646;
   text-transform: capitalize;
@@ -631,15 +637,18 @@ a.dropdown-item {
 .contact-page-form {
   display: inline-block;
   width: 100%;
-  margin-top: 30px;
 
 }
-
-.contact-page-map {
-  margin-top: 36px;
-}
-
 .contact-page-form form {
+  padding: 20px 15px 0;
+}
+
+.contact-page-form1 {
+  display: inline-block;
+  width: 100%;
+
+}
+.contact-page-form1 form {
   padding: 20px 15px 0;
 }
 
@@ -802,7 +811,7 @@ ul.dropdown-menu {
   }
 
   .res-title {
-    bottom: 44px;
+    bottom: 94px;
   }
 
   .res-title a {
@@ -863,7 +872,7 @@ ul.dropdown-menu {
 
   .about-section p {
     line-height: 26px;
-    font-size: 14px;
+    font-size: 12px;
     text-align: justify;
   }
 
@@ -976,3 +985,87 @@ ul.dropdown-menu {
   0%		{ right:0px; }
   100%	{ right:-100%; }
 }
+
+.single-input-field textarea {
+  background: #07215c82 none repeat scroll 0 0;
+  border: 1px solid #dddddd;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.single-input-fieldsbtn1 input[type="submit"] {
+  background: #07215c none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  padding: 10px 0;
+  text-transform: capitalize;
+  width: 150px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.single-input-fieldsbtn1 a {
+  background: #07215c none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  padding: 10px 0;
+  text-transform: capitalize;
+  width: 150px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.single-input-fieldsbtn1 a:hover {
+  background: #0c3cab;
+  transition: all 0.4s ease-in-out 0s;
+  border-color: #0c3cab;
+  text-decoration: none;
+}
+.single-input-fieldsbtn1 input[type="submit"]:hover {
+  background: #0c3cab;
+  transition: all 0.4s ease-in-out 0s;
+  border-color: #0c3cab;
+}
+.contact-page-form1 input {
+  background: #ffffff82 none repeat scroll 0 0;
+  border: 1px solid #e7e1e1;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  width: 100%;
+  border-radius: 4px;
+  color: #424242;
+  outline: none;
+}
+
+.contact-page-form1 .message-input {
+  display: inline-block;
+  width: 100%;
+  outline: none;
+}
+
+.single-input-field1 textarea {
+  background: #ffffff82 none repeat scroll 0 0;
+  border: 1px solid #dddddd;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border-radius: 4px;
+  color: #424242;
+  outline: none;
+}
+
+.single-input-fieldsbtn1 input[type="submit"] {
+  background: #07215c none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  padding: 10px 0;
+  text-transform: capitalize;
+  width: 150px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
