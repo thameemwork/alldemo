@@ -891,6 +891,9 @@ ul.dropdown-menu {
     margin-top: 10px;
     text-align: justify;
   }
+  .about_exp{
+    display: none;
+  }
 }
 
 .nav .nav-item button.active {
@@ -942,9 +945,9 @@ ul.dropdown-menu {
     position:fixed; 
     width:calc(100% - 60px); 
     max-width:320px; 
-    height:auto !important;
     top: 70px;
     left: 0;
+    height: 100vh !important;
 
     /* Optional styling */
     background:#f8f8f8;
