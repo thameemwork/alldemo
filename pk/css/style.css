@@ -184,10 +184,10 @@ a.dropdown-item {
   font-size: 30px;
   font-weight: 700;
   color: #07215c;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 .about-section p {
@@ -216,7 +216,7 @@ a.dropdown-item {
     border-radius: 10px;
 }
 .about_exp_page{
-    bottom: 10px;
+    bottom: 20px;
     border-radius: 10px;
     left:16px;
 }
@@ -721,7 +721,17 @@ ul.dropdown-menu {
   -webkit-animation: pulse 1.5s infinite;
   font-size: 18px;
 }
-
+.pluse_cus{
+  left:0;
+  background: #07215c;
+  box-shadow: 0 0 0 0 #0000006e;
+}
+.pluse_cus i {
+  color: #fff !important;
+}
+.read_about a:hover{
+   text-decoration: none;
+}
 .pulse-button i {
   display: flex;
   align-items: center;
@@ -816,7 +826,7 @@ ul.dropdown-menu {
   }
 
   .res-title {
-    bottom: 94px;
+    bottom: 64px;
   }
 
   .res-title a {
@@ -864,20 +874,17 @@ ul.dropdown-menu {
 
   .about-section h4 {
     margin-bottom: 20px;
+    font-size: 20px;
+    margin-top: 10px;
   }
 
   .about-section {
     margin-top: 40px;
     margin-bottom: 10px;
   }
-
-  .about-section h4 {
-    font-size: 20px;
-  }
-
   .about-section p {
     line-height: 26px;
-    font-size: 12px;
+    font-size: 13px;
     text-align: justify;
   }
 
@@ -887,7 +894,7 @@ ul.dropdown-menu {
   }
 
   .residential-section {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
 
   .service {
