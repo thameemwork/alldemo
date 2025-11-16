@@ -1,0 +1,3945 @@
+{
+	"info": {
+		"_postman_id": "f18acacb-1360-4573-a58b-4fa60756e066",
+		"name": "Rki",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9630763"
+	},
+	"item": [
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "Create Customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"John\",\r\n  \"lastName\": \"Doe\",\r\n  \"email\": \"raghavendrarv10@gmail.com\",\r\n  \"phone\": \"+918776725274\",\r\n  \"dateOfBirth\": \"2017-08-15\",\r\n  \"address\": \"123 Main Street, Apt 4B\",\r\n  \"city\": \"New York\",\r\n  \"state\": \"NY\",\r\n  \"country\": \"USA\",\r\n  \"postalCode\": \"10001\",\r\n  \"customerIdProof\" : \"iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAApgAAAKYB3X3/OAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAANCSURBVEiJtZZPbBtFFMZ/M7ubXdtdb1xSFyeilBapySVU8h8OoFaooFSqiihIVIpQBKci6KEg9Q6H9kovIHoCIVQJJCKE1ENFjnAgcaSGC6rEnxBwA04Tx43t2FnvDAfjkNibxgHxnWb2e/u992bee7tCa00YFsffekFY+nUzFtjW0LrvjRXrCDIAaPLlW0nHL0SsZtVoaF98mLrx3pdhOqLtYPHChahZcYYO7KvPFxvRl5XPp1sN3adWiD1ZAqD6XYK1b/dvE5IWryTt2udLFedwc1+9kLp+vbbpoDh+6TklxBeAi9TL0taeWpdmZzQDry0AcO+jQ12RyohqqoYoo8RDwJrU+qXkjWtfi8Xxt58BdQuwQs9qC/afLwCw8tnQbqYAPsgxE1S6F3EAIXux2oQFKm0ihMsOF71dHYx+f3NND68ghCu1YIoePPQN1pGRABkJ6Bus96CutRZMydTl+TvuiRW1m3n0eDl0vRPcEysqdXn+jsQPsrHMquGeXEaY4Yk4wxWcY5V/9scqOMOVUFthatyTy8QyqwZ+kDURKoMWxNKr2EeqVKcTNOajqKoBgOE28U4tdQl5p5bwCw7BWquaZSzAPlwjlithJtp3pTImSqQRrb2Z8PHGigD4RZuNX6JYj6wj7O4TFLbCO/Mn/m8R+h6rYSUb3ekokRY6f/YukArN979jcW+V/S8g0eT/N3VN3kTqWbQ428m9/8k0P/1aIhF36PccEl6EhOcAUCrXKZXXWS3XKd2vc/TRBG9O5ELC17MmWubD2nKhUKZa26Ba2+D3P+4/MNCFwg59oWVeYhkzgN/JDR8deKBoD7Y+ljEjGZ0sosXVTvbc6RHirr2reNy1OXd6pJsQ+gqjk8VWFYmHrwBzW/n+uMPFiRwHB2I7ih8ciHFxIkd/3Omk5tCDV1t+2nNu5sxxpDFNx+huNhVT3/zMDz8usXC3ddaHBj1GHj/As08fwTS7Kt1HBTmyN29vdwAw+/wbwLVOJ3uAD1wi/dUH7Qei66PfyuRj4Ik9is+hglfbkbfR3cnZm7chlUWLdwmprtCohX4HUtlOcQjLYCu+fzGJH2QRKvP3UNz8bWk1qMxjGTOMThZ3kvgLI5AzFfo379UAAAAASUVORK5CYII=\",\r\n  \"customerAccountDto\" :{\r\n    \"perDayTxnLimit\" : 0.1\r\n  },\r\n  \"vehicle\":[\r\n    {\r\n        \"vehicleNumber\" : \"AP21Bk4139\",\r\n        \"vehicleType\" : \"Bike\",\r\n        \"vehicleRcNumber\" : \"29ABCDE1234F1Z5\",\r\n        \"vehicleModel\" : \"Apache\",\r\n        \"idProof\" : \"iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAApgAAAKYB3X3/OAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAANCSURBVEiJtZZPbBtFFMZ/M7ubXdtdb1xSFyeilBapySVU8h8OoFaooFSqiihIVIpQBKci6KEg9Q6H9kovIHoCIVQJJCKE1ENFjnAgcaSGC6rEnxBwA04Tx43t2FnvDAfjkNibxgHxnWb2e/u992bee7tCa00YFsffekFY+nUzFtjW0LrvjRXrCDIAaPLlW0nHL0SsZtVoaF98mLrx3pdhOqLtYPHChahZcYYO7KvPFxvRl5XPp1sN3adWiD1ZAqD6XYK1b/dvE5IWryTt2udLFedwc1+9kLp+vbbpoDh+6TklxBeAi9TL0taeWpdmZzQDry0AcO+jQ12RyohqqoYoo8RDwJrU+qXkjWtfi8Xxt58BdQuwQs9qC/afLwCw8tnQbqYAPsgxE1S6F3EAIXux2oQFKm0ihMsOF71dHYx+f3NND68ghCu1YIoePPQN1pGRABkJ6Bus96CutRZMydTl+TvuiRW1m3n0eDl0vRPcEysqdXn+jsQPsrHMquGeXEaY4Yk4wxWcY5V/9scqOMOVUFthatyTy8QyqwZ+kDURKoMWxNKr2EeqVKcTNOajqKoBgOE28U4tdQl5p5bwCw7BWquaZSzAPlwjlithJtp3pTImSqQRrb2Z8PHGigD4RZuNX6JYj6wj7O4TFLbCO/Mn/m8R+h6rYSUb3ekokRY6f/YukArN979jcW+V/S8g0eT/N3VN3kTqWbQ428m9/8k0P/1aIhF36PccEl6EhOcAUCrXKZXXWS3XKd2vc/TRBG9O5ELC17MmWubD2nKhUKZa26Ba2+D3P+4/MNCFwg59oWVeYhkzgN/JDR8deKBoD7Y+ljEjGZ0sosXVTvbc6RHirr2reNy1OXd6pJsQ+gqjk8VWFYmHrwBzW/n+uMPFiRwHB2I7ih8ciHFxIkd/3Omk5tCDV1t+2nNu5sxxpDFNx+huNhVT3/zMDz8usXC3ddaHBj1GHj/As08fwTS7Kt1HBTmyN29vdwAw+/wbwLVOJ3uAD1wi/dUH7Qei66PfyuRj4Ik9is+hglfbkbfR3cnZm7chlUWLdwmprtCohX4HUtlOcQjLYCu+fzGJH2QRKvP3UNz8bWk1qMxjGTOMThZ3kvgLI5AzFfo379UAAAAASUVORK5CYII=\"\r\n    },\r\n    {\r\n        \"vehicleNumber\" : \"TL21Bk4140\",\r\n        \"vehicleType\" : \"Car\",\r\n        \"vehicleRcNumber\" : \"29ABCDE1234F1Z5\",\r\n        \"vehicleModel\" : \"Ertiga\",\r\n        \"idProof\" : \"iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAApgAAAKYB3X3/OAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAANCSURBVEiJtZZPbBtFFMZ/M7ubXdtdb1xSFyeilBapySVU8h8OoFaooFSqiihIVIpQBKci6KEg9Q6H9kovIHoCIVQJJCKE1ENFjnAgcaSGC6rEnxBwA04Tx43t2FnvDAfjkNibxgHxnWb2e/u992bee7tCa00YFsffekFY+nUzFtjW0LrvjRXrCDIAaPLlW0nHL0SsZtVoaF98mLrx3pdhOqLtYPHChahZcYYO7KvPFxvRl5XPp1sN3adWiD1ZAqD6XYK1b/dvE5IWryTt2udLFedwc1+9kLp+vbbpoDh+6TklxBeAi9TL0taeWpdmZzQDry0AcO+jQ12RyohqqoYoo8RDwJrU+qXkjWtfi8Xxt58BdQuwQs9qC/afLwCw8tnQbqYAPsgxE1S6F3EAIXux2oQFKm0ihMsOF71dHYx+f3NND68ghCu1YIoePPQN1pGRABkJ6Bus96CutRZMydTl+TvuiRW1m3n0eDl0vRPcEysqdXn+jsQPsrHMquGeXEaY4Yk4wxWcY5V/9scqOMOVUFthatyTy8QyqwZ+kDURKoMWxNKr2EeqVKcTNOajqKoBgOE28U4tdQl5p5bwCw7BWquaZSzAPlwjlithJtp3pTImSqQRrb2Z8PHGigD4RZuNX6JYj6wj7O4TFLbCO/Mn/m8R+h6rYSUb3ekokRY6f/YukArN979jcW+V/S8g0eT/N3VN3kTqWbQ428m9/8k0P/1aIhF36PccEl6EhOcAUCrXKZXXWS3XKd2vc/TRBG9O5ELC17MmWubD2nKhUKZa26Ba2+D3P+4/MNCFwg59oWVeYhkzgN/JDR8deKBoD7Y+ljEjGZ0sosXVTvbc6RHirr2reNy1OXd6pJsQ+gqjk8VWFYmHrwBzW/n+uMPFiRwHB2I7ih8ciHFxIkd/3Omk5tCDV1t+2nNu5sxxpDFNx+huNhVT3/zMDz8usXC3ddaHBj1GHj/As08fwTS7Kt1HBTmyN29vdwAw+/wbwLVOJ3uAD1wi/dUH7Qei66PfyuRj4Ik9is+hglfbkbfR3cnZm7chlUWLdwmprtCohX4HUtlOcQjLYCu+fzGJH2QRKvP3UNz8bWk1qMxjGTOMThZ3kvgLI5AzFfo379UAAAAASUVORK5CYII=\"\r\n    }\r\n  ],\r\n  \"username\" : \"test@133\",\r\n  \"password\" : \"1234\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}customer/createCustomer",
+							"host": [
+								"{{baseUrl}}customer"
+							],
+							"path": [
+								"createCustomer"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Customer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\": \"John\",\r\n  \"lastName\": \"Doe\",\r\n  \"email\": \"johns.doe2@example.com\",\r\n  \"phone\": \"+918776743226\",\r\n  \"dateOfBirth\": \"2017-08-15\",\r\n  \"address\": \"123 Main Street, Apt 4B\",\r\n  \"city\": \"New York\",\r\n  \"state\": \"NY\",\r\n  \"country\": \"USA\",\r\n  \"postalCode\": \"10001\",\r\n  \"vehicle\":[\r\n    {\r\n        \"vehicleNumber\" : \"AP21Bk4126\",\r\n        \"vehicleType\" : \"Bike\"\r\n    },\r\n    {\r\n        \"vehicleNumber\" : \"AP21Bk4127\",\r\n        \"vehicleType\" : \"Car\"\r\n    }\r\n  ],\r\n  \"username\" : \"test@123\",\r\n  \"password\" : \"1234\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}customer/createCustomer",
+									"host": [
+										"{{baseUrl}}customer"
+									],
+									"path": [
+										"createCustomer"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Aug 2025 07:53:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\"\n}"
+						},
+						{
+							"name": "sampleErrorForList",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"firstName\": \"John\",\r\n  \"lastName\": \"Doe\",\r\n  \"email\": \"johns.doe2@example.com\",\r\n  \"phone\": \"+918776743226\",\r\n  \"dateOfBirth\": \"2017-08-15\",\r\n  \"address\": \"123 Main Street, Apt 4B\",\r\n  \"city\": \"New York\",\r\n  \"state\": \"NY\",\r\n  \"country\": \"USA\",\r\n  \"postalCode\": \"10001\",\r\n  \"vehicle\":[\r\n    {\r\n        \"vehicleNumber\" : \"AP21Bk4126\",\r\n        \"vehicleType\" : \"Bike\"\r\n    },\r\n    {\r\n        \"vehicleNumber\" : \"AP21Bk4127\",\r\n        \"vehicleType\" : \"Car\"\r\n    }\r\n  ],\r\n  \"username\" : \"test@123\",\r\n  \"password\" : \"1234\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}customer/createCustomer",
+									"host": [
+										"{{baseUrl}}customer"
+									],
+									"path": [
+										"createCustomer"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Aug 2025 19:33:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"RKI_003\",\n    \"errors\": [\n        \"vehicle[0].vehicleRcNumber : must not be empty\",\n        \"vehicle[1].vehicleRcNumber : must not be empty\",\n        \"vehicle[0].vehicleModel : must not be empty\",\n        \"vehicle[1].vehicleModel : must not be empty\"\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Update customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vehicle\": [\r\n        // {\r\n        //     \"id\": 1,\r\n        //     \"vehicleNumber\": \"AP21Bk4129\",\r\n        //     \"status\" : \"Suspend\"\r\n        // }\r\n    ],\r\n    \"customerAccountDto\": {\r\n        \"perDayTxnLimit\": 400.1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}customer/updateCustomer/1",
+							"host": [
+								"{{baseUrl}}customer"
+							],
+							"path": [
+								"updateCustomer",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sampleError",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"vehicle\": [\r\n        {\r\n            \"id\" : 1,\r\n            \"vehicleNumber\": \"AP21Bk4129\"\r\n        },\r\n        {\r\n            \"vehicleNumber\": \"AP21Bk4125\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}customer/updateCustomer/1",
+									"host": [
+										"{{baseUrl}}customer"
+									],
+									"path": [
+										"updateCustomer",
+										"1"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Aug 2025 20:13:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_004\",\n    \"errorMessage\": \"For the new object which you are trying to create these fields are mandatory\",\n    \"errors\": [\n        \"vehicleModel must not be empty\",\n        \"vehicleRcNumber must not be empty\",\n        \"vehicleType must not be empty\"\n    ]\n}"
+						},
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"vehicle\": [\r\n        {\r\n            \"id\" : 1,\r\n            \"vehicleNumber\": \"AP21Bk4129\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}customer/updateCustomer/1",
+									"host": [
+										"{{baseUrl}}customer"
+									],
+									"path": [
+										"updateCustomer",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Aug 2025 20:14:56 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}customer/getCustomer/7",
+							"host": [
+								"{{baseUrl}}customer"
+							],
+							"path": [
+								"getCustomer",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}customer/getCustomer/2",
+									"host": [
+										"{{baseUrl}}customer"
+									],
+									"path": [
+										"getCustomer",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Aug 2025 20:44:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\",\n    \"customerDto\": {\n        \"pageIndex\": 0,\n        \"pageSize\": 10,\n        \"id\": 2,\n        \"firstName\": \"John\",\n        \"lastName\": \"Doe\",\n        \"email\": \"johns.doe3@example.com\",\n        \"phone\": \"+918776723226\",\n        \"dateOfBirth\": \"2017-08-15\",\n        \"address\": \"123 Main Street, Apt 4B\",\n        \"city\": \"New York\",\n        \"state\": \"NY\",\n        \"country\": \"USA\",\n        \"postalCode\": \"10001\",\n        \"status\": \"Active\",\n        \"vehicle\": [\n            {\n                \"id\": 5,\n                \"vehicleNumber\": \"AP31Bk4126\",\n                \"vehicleType\": \"Bike\",\n                \"vehicleModel\": \"Apache\",\n                \"vehicleRcNumber\": \"29ABCDE1234F1Z5\",\n                \"status\": \"Active\"\n            },\n            {\n                \"id\": 6,\n                \"vehicleNumber\": \"AP31Bk4127\",\n                \"vehicleType\": \"Car\",\n                \"vehicleModel\": \"Ertiga\",\n                \"vehicleRcNumber\": \"29ABCDE1234F1Z5\",\n                \"status\": \"Active\"\n            }\n        ],\n        \"customerAccountDto\": {\n            \"id\": 2,\n            \"accountNumber\": 10000001,\n            \"availableBalance\": 0,\n            \"currentBalance\": 1,\n            \"perDayTxnLimit\": 0,\n            \"currentDayTxnLimit\": 0\n        },\n        \"customerUserDto\": {\n            \"customerUserId\": 2,\n            \"username\": \"test@125\",\n            \"password\": \"$2a$10$n.CnTS5tWiOvdLszj79wou81hS9EJj5Xqson7BH7obyqSUwECNXgK\"\n        }\n    }\n}"
+						},
+						{
+							"name": "failure",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}customer/getCustomer/4",
+									"host": [
+										"{{baseUrl}}customer"
+									],
+									"path": [
+										"getCustomer",
+										"4"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Aug 2025 20:46:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_100\",\n    \"errorMessage\": \"Customer details not found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vehicle\": [\r\n       \r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}customer/getAllCustomer",
+							"host": [
+								"{{baseUrl}}customer"
+							],
+							"path": [
+								"getAllCustomer"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sampleResponse",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"vehicle\": [\r\n        {\r\n            \"vehicleType\": \"Bike\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}customer/getAllCustomer",
+									"host": [
+										"{{baseUrl}}customer"
+									],
+									"path": [
+										"getAllCustomer"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Aug 2025 20:45:10 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"customerDtos\": [\n        {\n            \"pageIndex\": 0,\n            \"pageSize\": 10,\n            \"noOfRecords\": 2,\n            \"id\": 2,\n            \"firstName\": \"John\",\n            \"lastName\": \"Doe\",\n            \"email\": \"johns.doe3@example.com\",\n            \"phone\": \"+918776723226\",\n            \"dateOfBirth\": \"2017-08-15\",\n            \"address\": \"123 Main Street, Apt 4B\",\n            \"city\": \"New York\",\n            \"state\": \"NY\",\n            \"country\": \"USA\",\n            \"postalCode\": \"10001\",\n            \"status\": \"Active\",\n            \"vehicle\": [\n                {\n                    \"id\": 5,\n                    \"vehicleNumber\": \"AP31Bk4126\",\n                    \"vehicleType\": \"Bike\",\n                    \"vehicleModel\": \"Apache\",\n                    \"vehicleRcNumber\": \"29ABCDE1234F1Z5\",\n                    \"status\": \"Active\"\n                }\n            ],\n            \"customerAccountDto\": {\n                \"id\": 2,\n                \"accountNumber\": 10000001,\n                \"availableBalance\": 0,\n                \"currentBalance\": 1,\n                \"perDayTxnLimit\": 0,\n                \"currentDayTxnLimit\": 0\n            },\n            \"customerUserDto\": {\n                \"customerUserId\": 2,\n                \"username\": \"test@125\",\n                \"password\": \"$2a$10$n.CnTS5tWiOvdLszj79wou81hS9EJj5Xqson7BH7obyqSUwECNXgK\"\n            }\n        },\n        {\n            \"pageIndex\": 0,\n            \"pageSize\": 10,\n            \"noOfRecords\": 2,\n            \"id\": 1,\n            \"firstName\": \"John\",\n            \"lastName\": \"Doe\",\n            \"email\": \"johns.doe2@example.com\",\n            \"phone\": \"+918776743226\",\n            \"dateOfBirth\": \"2017-08-15\",\n            \"address\": \"123 Main Street, Apt 4B\",\n            \"city\": \"New York\",\n            \"state\": \"NY\",\n            \"country\": \"USB\",\n            \"postalCode\": \"10001\",\n            \"status\": \"Active\",\n            \"vehicle\": [\n                {\n                    \"id\": 1,\n                    \"vehicleNumber\": \"AP21Bk4129\",\n                    \"vehicleType\": \"Bike\",\n                    \"vehicleModel\": \"Apache\",\n                    \"vehicleRcNumber\": \"29ABCDE1234F1Z5\",\n                    \"status\": \"Suspend\"\n                }\n            ],\n            \"customerAccountDto\": {\n                \"id\": 1,\n                \"accountNumber\": 10000000,\n                \"availableBalance\": 0,\n                \"currentBalance\": 0,\n                \"perDayTxnLimit\": null,\n                \"currentDayTxnLimit\": null\n            },\n            \"customerUserDto\": {\n                \"customerUserId\": 1,\n                \"username\": \"test@123\",\n                \"password\": \"$2a$10$SxnAbjq1MlmRsnbi8Ck78.WVuerRLwfyB6Bbf0wJRFAJJMMFuAwbS\"\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Parse the response body as JSON\r",
+									"let response = pm.response.json();\r",
+									"\r",
+									"// Check if the token exists in the response\r",
+									"if (response && response.token) {\r",
+									"    // Store the token in a collection variable named 'tokent'\r",
+									"    pm.collectionVariables.set(\"customerToken\", response.token);\r",
+									"\r",
+									"    console.log(\"Token stored in collection variable: tokent\");\r",
+									"} else {\r",
+									"    console.error(\"Token not found in response\");\r",
+									"}\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"username\": \"test@123\",\r\n    // \"email\" : \"johns.doe2@example.com\",\r\n    \"phone\" : \"+918776725226\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}customer/validatLoginUser",
+							"host": [
+								"{{baseUrl}}customer"
+							],
+							"path": [
+								"validatLoginUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "merchant",
+			"item": [
+				{
+					"name": "Update Merchant",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"merchantUserList\": [\r\n        {\r\n            \"id\": 3,\r\n            \"email\": \"admin@rkisupermart2.com\",\r\n            \"phone\": \"+919876543212\"\r\n        },\r\n        {\r\n            \"email\": \"support@rkisupermart3.com\",\r\n            \"phone\": \"+918765432102\"\r\n        }\r\n    ],\r\n    \"merchantPricing\": [\r\n        {\r\n            \"id\": 3,\r\n            \"type\": \"Car\",\r\n            \"price\": [\r\n                {\r\n                    \"startHour\": 0,\r\n                    \"endHour\": 4,\r\n                    \"price\": 120.00\r\n                },\r\n                {\r\n                    \"startHour\": 4,\r\n                    \"endHour\": 5,\r\n                    \"price\": 20.00\r\n                },\r\n                {\r\n                    \"startHour\": 5,\r\n                    \"endHour\": 12,\r\n                    \"price\": 150.00\r\n                },\r\n                {\r\n                    \"startHour\": 12,\r\n                    \"endHour\": 24,\r\n                    \"price\": 200.00\r\n                }\r\n            ],\r\n            \"pricePerWeek\": 550.00,\r\n            \"pricePerMonth\": 1550.00\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}merchant/updateMerchant/2",
+							"host": [
+								"{{baseUrl}}merchant"
+							],
+							"path": [
+								"updateMerchant",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"merchantUserList\": [\r\n        {\r\n            \"id\": 3,\r\n            \"email\": \"admin@rkisupermart2.com\",\r\n            \"phone\": \"+919876543212\"\r\n        },\r\n        {\r\n            \"id\": 4,\r\n            \"email\": \"support@rkisupermart3.com\",\r\n            \"phone\": \"+918765432102\"\r\n        }\r\n    ],\r\n    \"merchantPricing\": [\r\n        {\r\n            \"id\": 3,\r\n            \"type\": \"Car\",\r\n            \"price\": [\r\n                {\r\n                    \"startHour\": 0,\r\n                    \"endHour\": 4,\r\n                    \"price\": 120.00\r\n                },\r\n                {\r\n                    \"startHour\": 4,\r\n                    \"endHour\": 5,\r\n                    \"price\": 20.00\r\n                },\r\n                {\r\n                    \"startHour\": 5,\r\n                    \"endHour\": 12,\r\n                    \"price\": 150.00\r\n                },\r\n                {\r\n                    \"startHour\": 12,\r\n                    \"endHour\": 24,\r\n                    \"price\": 200.00\r\n                }\r\n            ],\r\n            \"pricePerWeek\": 550.00,\r\n            \"pricePerMonth\": 1550.00\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}merchant/updateMerchant/2",
+									"host": [
+										"{{baseUrl}}merchant"
+									],
+									"path": [
+										"updateMerchant",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Aug 2025 19:10:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Invalid Date",
+									"domain": "",
+									"path": ""
+								}
+							],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Merchant",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"merchantName\": \"RKI SuperMart23\",\r\n    \"gstin\": \"29ABCDE1234F1Z5\",\r\n    \"address\": \"12 MG Road\",\r\n    \"city\": \"Bangalore\",\r\n    \"state\": \"Karnataka\",\r\n    \"country\": \"India\",\r\n    \"postalCode\": \"560001\",\r\n    \"revenuePercentage\" : 3.00,\r\n    \"merchantPricing\": [\r\n        {\r\n            \"type\": \"Car\",\r\n            \"price\": [\r\n                {\r\n                    \"startHour\": 0,\r\n                    \"endHour\": 5,\r\n                    \"price\": 100.00\r\n                },\r\n                {\r\n                    \"startHour\": 5,\r\n                    \"endHour\": 12,\r\n                    \"price\": 150.00\r\n                },\r\n                {\r\n                    \"startHour\": 12,\r\n                    \"endHour\": 24,\r\n                    \"price\": 200.00\r\n                }\r\n            ],\r\n            \"pricePerWeek\": 500.00,\r\n            \"pricePerMonth\": 1500.00\r\n        },\r\n        {\r\n            \"type\": \"Bike\",\r\n            \"price\": [\r\n                {\r\n                    \"startHour\": 0,\r\n                    \"endHour\": 5,\r\n                    \"price\": 100.00\r\n                },\r\n                {\r\n                    \"startHour\": 5,\r\n                    \"endHour\": 12,\r\n                    \"price\": 150.00\r\n                },\r\n                {\r\n                    \"startHour\": 12,\r\n                    \"endHour\": 24,\r\n                    \"price\": 200.00\r\n                }\r\n            ],\r\n            \"pricePerWeek\": 500.00,\r\n            \"pricePerMonth\": 1500.00\r\n        }\r\n    ],\r\n    \"merchantUserList\": [\r\n        {\r\n            \"email\": \"admin@rkisupermart8.com\",\r\n            \"phone\": \"+919876543214\",\r\n            \"password\" : \"1234\"\r\n        },\r\n        {\r\n            \"email\": \"support@rkisupermart8.com\",\r\n            \"phone\": \"+918765432104\",\r\n            \"password\" : \"1234\"\r\n        }\r\n    ],\r\n    \"merchantDevice\": [\r\n        {\r\n            \"deviceId\": \"TestId101\",\r\n            \"deviceType\": \"Camera\",\r\n            \"deviceLocation\" : \"In\"\r\n        },\r\n        {\r\n            \"deviceId\": \"TESTID202\",\r\n            \"deviceType\": \"Infra Camera\",\r\n            \"deviceLocation\" : \"Out\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}merchant/createMerchant",
+							"host": [
+								"{{baseUrl}}merchant"
+							],
+							"path": [
+								"createMerchant"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"merchantName\": \"RKI SuperMart\",\r\n    \"gstin\": \"29ABCDE1234F1Z5\",\r\n    \"address\": \"12 MG Road\",\r\n    \"city\": \"Bangalore\",\r\n    \"state\": \"Karnataka\",\r\n    \"country\": \"India\",\r\n    \"postalCode\": \"560001\",\r\n    \"status\": \"ACTIVE\",\r\n    \"merchantPricing\": [\r\n        {\r\n            \"type\": \"Car\",\r\n            \"price\": [\r\n                {\r\n                    \"startHour\": 0,\r\n                    \"endHour\": 5,\r\n                    \"price\": 100.00\r\n                },\r\n                {\r\n                    \"startHour\": 5,\r\n                    \"endHour\": 12,\r\n                    \"price\": 150.00\r\n                },\r\n                {\r\n                    \"startHour\": 12,\r\n                    \"endHour\": 24,\r\n                    \"price\": 200.00\r\n                }\r\n            ],\r\n            \"pricePerWeek\": 500.00,\r\n            \"pricePerMonth\": 1500.00\r\n        },\r\n        {\r\n            \"type\": \"Bike\",\r\n            \"price\": [\r\n                {\r\n                    \"startHour\": 0,\r\n                    \"endHour\": 5,\r\n                    \"price\": 100.00\r\n                },\r\n                {\r\n                    \"startHour\": 5,\r\n                    \"endHour\": 12,\r\n                    \"price\": 150.00\r\n                },\r\n                {\r\n                    \"startHour\": 12,\r\n                    \"endHour\": 24,\r\n                    \"price\": 200.00\r\n                }\r\n            ],\r\n            \"pricePerWeek\": 500.00,\r\n            \"pricePerMonth\": 1500.00\r\n        }\r\n    ],\r\n    \"merchantUserList\": [\r\n        {\r\n            \"email\": \"admin@rkisupermart2.com\",\r\n            \"phone\": \"+919876543212\"\r\n        },\r\n        {\r\n            \"email\": \"support@rkisupermart3.com\",\r\n            \"phone\": \"+918765432102\"\r\n        }\r\n    ],\r\n    \"merchantDevice\": [\r\n        {\r\n            \"deviceId\": \"DEV001\",\r\n            \"deviceType\": \"POS\"\r\n        },\r\n        {\r\n            \"deviceId\": \"DEV002\",\r\n            \"deviceType\": \"KIOSK\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}merchant/createMerchant",
+									"host": [
+										"{{baseUrl}}merchant"
+									],
+									"path": [
+										"createMerchant"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Aug 2025 20:47:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Merchant",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiIxIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzU4MTMxMzQ3LCJleHAiOjE3NTgxMzE5NDd9.T3PZ3Urz3ZyHSpFdSlfpA0-okixws3j5uHWjvtghj-G1OxdPu4kaVwyPv5mF3jHyPiWJuq8tGMVN9gu638kypEe43AUODlHgoF1q6tBqYHdq6G2F4FpKdS9uo8qF8FOGu200_x8WjyaHd3g9VL-mlSiz73mtUYr6PCQJ-9LwLEYReYtE-DoZ3CWaOyzgbkYAOFf6wOE2Qy19i1RXF96rOABmYmd-d3nZ_9bvW49maQ9gsnEgtsA7yB8EK1bGviomiaW0tOMgmqNClRar4BGqGZ_dg2aw9NrtO5NyC3BTyT9e1HUmAfaw5deAxiBq-8vj9PN0TVnsOfHDDKh5kloKl0W1tIVvy9pE4IAl19tTgJiGnikvk0LG-8Od3HunGmpWHmnSOWeWAAcsjc0UN9Xt3sE9H5AitvegSFqRvvT9fwXBirZZZ0FlTgk8v-MSuIvEoZO1iovqN39CiTb9KsGMHgLo4o2GmyHBC70iuxP0ZpzlG0l90vBcpL_-xyxE3weZUa4RGgHxZp0ByHU4l_qIpaoeBm-NidM7L-njKk1J0_Gz9O3zfWh3zRr-98DO1Cyaql2uC_0bGMzXTpwt1zGF2_EEPTsxHQTh0MwC9VzYqL-bEIx_gTEmX6woLfZmBmrbwfqAPXSXYWv6SPj2q784jsIWLFkTCEGdXbExwftgg_c",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/RKI/api/merchant/getMerchant/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RKI",
+								"api",
+								"merchant",
+								"getMerchant",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/RKI/api/merchant/getMerchant/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"RKI",
+										"api",
+										"merchant",
+										"getMerchant",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Aug 2025 21:33:42 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\",\n    \"merchantDto\": {\n        \"id\": 1,\n        \"merchantName\": \"RKI SuperMart\",\n        \"gstin\": \"29ABCDE1234F1Z5\",\n        \"address\": \"12 MG Road\",\n        \"city\": \"Bangalore\",\n        \"state\": \"Karnataka\",\n        \"country\": \"India\",\n        \"postalCode\": \"560001\",\n        \"status\": \"ACTIVE\",\n        \"merchantPricing\": [\n            {\n                \"id\": 1,\n                \"type\": \"Car\",\n                \"price\": [\n                    {\n                        \"id\": 1,\n                        \"startHour\": 0,\n                        \"endHour\": 5,\n                        \"price\": 100\n                    },\n                    {\n                        \"id\": 2,\n                        \"startHour\": 5,\n                        \"endHour\": 12,\n                        \"price\": 150\n                    },\n                    {\n                        \"id\": 3,\n                        \"startHour\": 12,\n                        \"endHour\": 24,\n                        \"price\": 200\n                    }\n                ],\n                \"pricePerWeek\": 500,\n                \"pricePerMonth\": 1500\n            },\n            {\n                \"id\": 2,\n                \"type\": \"Bike\",\n                \"price\": [\n                    {\n                        \"id\": 4,\n                        \"startHour\": 0,\n                        \"endHour\": 5,\n                        \"price\": 100\n                    },\n                    {\n                        \"id\": 5,\n                        \"startHour\": 5,\n                        \"endHour\": 12,\n                        \"price\": 150\n                    },\n                    {\n                        \"id\": 6,\n                        \"startHour\": 12,\n                        \"endHour\": 24,\n                        \"price\": 200\n                    }\n                ],\n                \"pricePerWeek\": 500,\n                \"pricePerMonth\": 1500\n            }\n        ],\n        \"merchantUserList\": [\n            {\n                \"id\": 1,\n                \"email\": \"admin@rkisupermart2.com\",\n                \"phone\": \"+919876543212\"\n            },\n            {\n                \"id\": 2,\n                \"email\": \"support@rkisupermart3.com\",\n                \"phone\": \"+918765432102\"\n            }\n        ],\n        \"merchantDevice\": [\n            {\n                \"id\": 1,\n                \"deviceId\": \"DEV001\",\n                \"deviceType\": \"POS\"\n            },\n            {\n                \"id\": 2,\n                \"deviceId\": \"DEV002\",\n                \"deviceType\": \"KIOSK\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Merchant",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"merchantName\": \"RKI SuperMart2\",\r\n    \"merchantUserList\": [\r\n        {\r\n            \"email\": \"admin@rkisupermart6.com\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}merchant/getAllMerchant",
+							"host": [
+								"{{baseUrl}}merchant"
+							],
+							"path": [
+								"getAllMerchant"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"merchantName\": \"RKI SuperMart2\",\r\n    \"merchantUserList\": [\r\n        {\r\n            \"email\": \"admin@rkisupermart6.com\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}merchant/getAllMerchant",
+									"host": [
+										"{{baseUrl}}merchant"
+									],
+									"path": [
+										"getAllMerchant"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 27 Aug 2025 08:28:12 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\",\n    \"merchantListDto\": [\n        {\n            \"pageIndex\": 0,\n            \"pageSize\": 10,\n            \"id\": 2,\n            \"merchantName\": \"RKI SuperMart2\",\n            \"gstin\": \"29ABCDE1234F1Z5\",\n            \"address\": \"12 MG Road\",\n            \"city\": \"Bangalore\",\n            \"state\": \"Karnataka\",\n            \"country\": \"India\",\n            \"postalCode\": \"560001\",\n            \"status\": \"Active\",\n            \"merchantPricing\": [\n                {\n                    \"id\": 3,\n                    \"type\": \"Car\",\n                    \"price\": [\n                        {\n                            \"id\": 7,\n                            \"startHour\": 0,\n                            \"endHour\": 5,\n                            \"price\": 100\n                        },\n                        {\n                            \"id\": 8,\n                            \"startHour\": 5,\n                            \"endHour\": 12,\n                            \"price\": 150\n                        },\n                        {\n                            \"id\": 9,\n                            \"startHour\": 12,\n                            \"endHour\": 24,\n                            \"price\": 200\n                        }\n                    ],\n                    \"pricePerWeek\": 500,\n                    \"pricePerMonth\": 1500\n                },\n                {\n                    \"id\": 4,\n                    \"type\": \"Bike\",\n                    \"price\": [\n                        {\n                            \"id\": 10,\n                            \"startHour\": 0,\n                            \"endHour\": 5,\n                            \"price\": 100\n                        },\n                        {\n                            \"id\": 11,\n                            \"startHour\": 5,\n                            \"endHour\": 12,\n                            \"price\": 150\n                        },\n                        {\n                            \"id\": 12,\n                            \"startHour\": 12,\n                            \"endHour\": 24,\n                            \"price\": 200\n                        }\n                    ],\n                    \"pricePerWeek\": 500,\n                    \"pricePerMonth\": 1500\n                }\n            ],\n            \"merchantUserList\": [\n                {\n                    \"id\": 3,\n                    \"email\": \"admin@rkisupermart6.com\",\n                    \"phone\": \"+919876543213\"\n                },\n                {\n                    \"id\": 4,\n                    \"email\": \"support@rkisupermart7.com\",\n                    \"phone\": \"+918765432103\"\n                }\n            ],\n            \"merchantDevice\": [\n                {\n                    \"id\": 3,\n                    \"deviceId\": \"DEV001\",\n                    \"deviceType\": \"POS\"\n                },\n                {\n                    \"id\": 4,\n                    \"deviceId\": \"DEV002\",\n                    \"deviceType\": \"KIOSK\"\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Parse the response body as JSON\r",
+									"let response = pm.response.json();\r",
+									"\r",
+									"// Check if the token exists in the response\r",
+									"if (response && response.token) {\r",
+									"    // Store the token in a collection variable named 'tokent'\r",
+									"    pm.collectionVariables.set(\"merchantToken\", response.token);\r",
+									"\r",
+									"    console.log(\"Token stored in collection variable: tokent\");\r",
+									"} else {\r",
+									"    console.error(\"Token not found in response\");\r",
+									"}\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"username\": \"test@123\",\r\n    // \"email\" : \"johns.doe2@example.com\",\r\n    \"phone\" : \"+919876543214\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}merchant/validatLoginUser",
+							"host": [
+								"{{baseUrl}}merchant"
+							],
+							"path": [
+								"validatLoginUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "createAdmin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"test123\",\r\n    \"email\" : \"test@123\",\r\n    \"phone\" : \"+918765432104\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}AdminUser/createAdmin",
+							"host": [
+								"{{baseUrl}}AdminUser"
+							],
+							"path": [
+								"createAdmin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateAdmin",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"username\" : \"test125\",\r\n   \"password\": \"1235\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}AdminUser/updateAdminUser/1",
+							"host": [
+								"{{baseUrl}}AdminUser"
+							],
+							"path": [
+								"updateAdminUser",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Parse the response body as JSON\r",
+									"let response = pm.response.json();\r",
+									"\r",
+									"// Check if the token exists in the response\r",
+									"if (response && response.token) {\r",
+									"    // Store the token in a collection variable named 'tokent'\r",
+									"    pm.collectionVariables.set(\"token\", response.token);\r",
+									"\r",
+									"    console.log(\"Token stored in collection variable: tokent\");\r",
+									"} else {\r",
+									"    console.error(\"Token not found in response\");\r",
+									"}\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"test123\",\r\n    // \"password\": \"1234\"\r\n    \"password\": \"NewStrongPass!9\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}AdminUser/loginAdminUser",
+							"host": [
+								"{{baseUrl}}AdminUser"
+							],
+							"path": [
+								"loginAdminUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "validateAdminOtp",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Parse the response body as JSON\r",
+									"let response = pm.response.json();\r",
+									"\r",
+									"// Check if the token exists in the response\r",
+									"if (response && response.token) {\r",
+									"    // Store the token in a collection variable named 'tokent'\r",
+									"    pm.collectionVariables.set(\"token\", response.token);\r",
+									"\r",
+									"    console.log(\"Token stored in collection variable: tokent\");\r",
+									"} else {\r",
+									"    console.error(\"Token not found in response\");\r",
+									"}\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"test123\",\r\n    \"otpCode\" : \"803650\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}AdminUser/validateAdminOtp",
+							"host": [
+								"{{baseUrl}}AdminUser"
+							],
+							"path": [
+								"validateAdminOtp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "validateAdminOtp",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\" : \"test123\",\r\n    \"otpCode\" : \"078761\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}AdminUser/validateAdminOtp",
+									"host": [
+										"{{baseUrl}}AdminUser"
+									],
+									"path": [
+										"validateAdminOtp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Nov 2025 15:26:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\",\n    \"token\": \"eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiIxIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzYyMTgzNjEyLCJleHAiOjE3NjIxODQyMTJ9.OQRNuB3WwfJz_-48En6-XzMnuWskQXEvLqs_8vTiLjxyQY_czksyeqrLVYAWy2X00-IatyJZPgPzm43LrRjY_5ZqbuUoFd0W-24g8jo5xC9ogaSPsg5ZdL5rtyJs0ylrK63iQvGEjl4K99ForxmKEKkvTWCDxiglvE9j5yGGm0VJgpoINooHG7Pvozfjw6JyS80HR_HGfdTHAvTlZ8HQ7ZZZdhe7Q2DsYte8iNU3u9xWtuveMkKasfCaAY5lmMOdynjjMGdrKK0T991WGuvho_3R6u3hjrDkxPEuxKx95mxyc3qGO0iYl2jVKPiAkzvd16Z1Pu4i1eesWESJLsFh_PzhOOHI8mY4n13lea688I52hp-a6AjVI6469YT4z4_j6Xfd1t1S0C_cBUZ2Hy6bm2b7PIokiZmG_4QUXXAmgkSjubdKjsvHazOaumcRVYzLpt7t3X7--6xsMElixtXLJ971K6YdFh4AuQjDxzIrEGfvJROXZnN32IPuPNQGkiQISwUeY2fuUg5rdnzfVzhDsY5A6tc7BkR106vsaanHFPIjxLmZ8PMsddZiNaoA7YjaPS9S7VKZQjFCKgmhSNRAVFzGQXsUx545TiWNm_tKaHah6Ba9j5r1XliQKqaekCYdr5Eej-vz_d-ppekTZ1MKaBMhuZBLOruuJSe5WIPV75o\"\n}"
+						}
+					]
+				},
+				{
+					"name": "initiateResetPassword",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"test123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}AdminUser/requestPasswordReset",
+							"host": [
+								"{{baseUrl}}AdminUser"
+							],
+							"path": [
+								"requestPasswordReset"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"test123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}AdminUser/requestPasswordReset",
+									"host": [
+										"{{baseUrl}}AdminUser"
+									],
+									"path": [
+										"requestPasswordReset"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Nov 2025 16:22:29 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "ResetOtp",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"test123\",\r\n    \"otpCode\": \"132431\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}AdminUser/validateResetOtp",
+							"host": [
+								"{{baseUrl}}AdminUser"
+							],
+							"path": [
+								"validateResetOtp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ResetOtp",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"test123\",\r\n    \"otpCode\": \"132431\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}AdminUser/validateResetOtp",
+									"host": [
+										"{{baseUrl}}AdminUser"
+									],
+									"path": [
+										"validateResetOtp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Nov 2025 16:46:51 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "resetPassword",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"encodedToken\": \"8d2cc24bb3dc6d9cae370f8e5fe1feddc07fad88dd94f45db6908bb0c3c3d553527f78f09f28b23f14ba0c\",\r\n    \"newPassword\": \"NewStrongPass!9\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}AdminUser/resetPassword",
+							"host": [
+								"{{baseUrl}}AdminUser"
+							],
+							"path": [
+								"resetPassword"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"encodedToken\": \"8d2cc24bb3dc6d9cae370f8e5fe1feddc07fad88dd94f45db6908bb0c3c3d553527f78f09f28b23f14ba0c\",\r\n    \"newPassword\": \"NewStrongPass!9\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}AdminUser/resetPassword",
+									"host": [
+										"{{baseUrl}}AdminUser"
+									],
+									"path": [
+										"resetPassword"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Nov 2025 16:47:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "baragateTransaction",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{merchantToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // TestId101, TESTID202\r\n    \"deviceId\": \"TESTID202\",\r\n    \"vehicleType\": \"Car\",\r\n    \"vehicleNumber\": \"AP21Bk4126\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}Transaction/initiateManualTransaction",
+							"host": [
+								"{{baseUrl}}Transaction"
+							],
+							"path": [
+								"initiateManualTransaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateOrder",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{customerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"amount\": 3240,\r\n  \"currency\": \"INR\",\r\n  \"receipt\": \"Receipt no. 1\",\r\n  \"notes\": {\r\n    \"notes_key_1\": \"Tea, Earl Grey, Hot\",\r\n    \"notes_key_2\": \"Tea, Earl Grey… decaf.\"\r\n  },\r\n  \"customerId\" :1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}Transaction/createOrder",
+							"host": [
+								"{{baseUrl}}Transaction"
+							],
+							"path": [
+								"createOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CompleteOrder",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{customerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}Transaction/fetchPayment/pay_RVQwB9qEzP19Ir",
+							"host": [
+								"{{baseUrl}}Transaction"
+							],
+							"path": [
+								"fetchPayment",
+								"pay_RVQwB9qEzP19Ir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "subscription",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{customerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vehicleNumber\": \"AP21Bk4125\",\r\n    \"merchantId\": 1,\r\n    \"subscriptionType\": \"weekly\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}Transaction/vehicleSubscripton",
+							"host": [
+								"{{baseUrl}}Transaction"
+							],
+							"path": [
+								"vehicleSubscripton"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "manualTransaction",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"merchantId\" : 1,\r\n    \"txnAmount\" : 1,\r\n    \"description\" : \"debiting the merchant amount from this\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}Transaction/manualDebitTransaction",
+							"host": [
+								"{{baseUrl}}Transaction"
+							],
+							"path": [
+								"manualDebitTransaction"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DashBoard",
+			"item": [
+				{
+					"name": "getKycStatusDetails",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}AdminUser/getKycStatusDetails",
+							"host": [
+								"{{baseUrl}}AdminUser"
+							],
+							"path": [
+								"getKycStatusDetails"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getKycStatusDetails",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}AdminUser/getKycStatusDetails",
+									"host": [
+										"{{baseUrl}}AdminUser"
+									],
+									"path": [
+										"getKycStatusDetails"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 Oct 2025 16:47:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\",\n    \"result\": [\n        {\n            \"key\": \"Pending\",\n            \"value\": \"1\",\n            \"type\": \"CUSTOMER\"\n        },\n        {\n            \"key\": \"Rejected\",\n            \"value\": \"0\",\n            \"type\": \"CUSTOMER\"\n        },\n        {\n            \"key\": \"Verified\",\n            \"value\": \"0\",\n            \"type\": \"CUSTOMER\"\n        },\n        {\n            \"key\": \"Pending\",\n            \"value\": \"2\",\n            \"type\": \"VEHICLE\"\n        },\n        {\n            \"key\": \"Rejected\",\n            \"value\": \"0\",\n            \"type\": \"VEHICLE\"\n        },\n        {\n            \"key\": \"Verified\",\n            \"value\": \"0\",\n            \"type\": \"VEHICLE\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "getKycStatusDetailsByType",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}AdminUser/getKycStatusDetailsByType?type=VEHICLE&status=Pending",
+							"host": [
+								"{{baseUrl}}AdminUser"
+							],
+							"path": [
+								"getKycStatusDetailsByType"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "VEHICLE"
+								},
+								{
+									"key": "status",
+									"value": "Pending"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getKycStatusDetailsByType",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}AdminUser/getKycStatusDetailsByType?type=CUSTOMER&status=Pending",
+									"host": [
+										"{{baseUrl}}AdminUser"
+									],
+									"path": [
+										"getKycStatusDetailsByType"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "CUSTOMER"
+										},
+										{
+											"key": "status",
+											"value": "Pending"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 Oct 2025 16:53:59 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\",\n    \"customer\": [\n        {\n            \"pageIndex\": 0,\n            \"pageSize\": 10,\n            \"id\": 1,\n            \"firstName\": \"John\",\n            \"lastName\": \"Doe\",\n            \"email\": \"johns.doe4@example.com\",\n            \"phone\": \"+918776725226\",\n            \"dateOfBirth\": \"2017-08-15\",\n            \"address\": \"123 Main Street, Apt 4B\",\n            \"city\": \"New York\",\n            \"state\": \"NY\",\n            \"country\": \"USA\",\n            \"postalCode\": \"10001\",\n            \"status\": \"Active\",\n            \"customerIdProof\": \"iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAApgAAAKYB3X3/OAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAANCSURBVEiJtZZPbBtFFMZ/M7ubXdtdb1xSFyeilBapySVU8h8OoFaooFSqiihIVIpQBKci6KEg9Q6H9kovIHoCIVQJJCKE1ENFjnAgcaSGC6rEnxBwA04Tx43t2FnvDAfjkNibxgHxnWb2e/u992bee7tCa00YFsffekFY+nUzFtjW0LrvjRXrCDIAaPLlW0nHL0SsZtVoaF98mLrx3pdhOqLtYPHChahZcYYO7KvPFxvRl5XPp1sN3adWiD1ZAqD6XYK1b/dvE5IWryTt2udLFedwc1+9kLp+vbbpoDh+6TklxBeAi9TL0taeWpdmZzQDry0AcO+jQ12RyohqqoYoo8RDwJrU+qXkjWtfi8Xxt58BdQuwQs9qC/afLwCw8tnQbqYAPsgxE1S6F3EAIXux2oQFKm0ihMsOF71dHYx+f3NND68ghCu1YIoePPQN1pGRABkJ6Bus96CutRZMydTl+TvuiRW1m3n0eDl0vRPcEysqdXn+jsQPsrHMquGeXEaY4Yk4wxWcY5V/9scqOMOVUFthatyTy8QyqwZ+kDURKoMWxNKr2EeqVKcTNOajqKoBgOE28U4tdQl5p5bwCw7BWquaZSzAPlwjlithJtp3pTImSqQRrb2Z8PHGigD4RZuNX6JYj6wj7O4TFLbCO/Mn/m8R+h6rYSUb3ekokRY6f/YukArN979jcW+V/S8g0eT/N3VN3kTqWbQ428m9/8k0P/1aIhF36PccEl6EhOcAUCrXKZXXWS3XKd2vc/TRBG9O5ELC17MmWubD2nKhUKZa26Ba2+D3P+4/MNCFwg59oWVeYhkzgN/JDR8deKBoD7Y+ljEjGZ0sosXVTvbc6RHirr2reNy1OXd6pJsQ+gqjk8VWFYmHrwBzW/n+uMPFiRwHB2I7ih8ciHFxIkd/3Omk5tCDV1t+2nNu5sxxpDFNx+huNhVT3/zMDz8usXC3ddaHBj1GHj/As08fwTS7Kt1HBTmyN29vdwAw+/wbwLVOJ3uAD1wi/dUH7Qei66PfyuRj4Ik9is+hglfbkbfR3cnZm7chlUWLdwmprtCohX4HUtlOcQjLYCu+fzGJH2QRKvP3UNz8bWk1qMxjGTOMThZ3kvgLI5AzFfo379UAAAAASUVORK5CYII=\",\n            \"customerIdProofStatus\": \"Pending\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "approveOrRejectKycStatus",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"customerId\" : \"1\",\r\n    \"vehicleId\" : \"1\",\r\n    \"status\" : \"Verified\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}AdminUser/approveOrRejectKycStatus",
+							"host": [
+								"{{baseUrl}}AdminUser"
+							],
+							"path": [
+								"approveOrRejectKycStatus"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customerId\" : \"1\",\r\n    \"status\" : \"Verified\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}AdminUser/approveOrRejectKycStatus",
+									"host": [
+										"{{baseUrl}}AdminUser"
+									],
+									"path": [
+										"approveOrRejectKycStatus"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 Oct 2025 17:02:38 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "getTotalMerchanCount",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}AdminUser/getTotalMerchanCount",
+							"host": [
+								"{{baseUrl}}AdminUser"
+							],
+							"path": [
+								"getTotalMerchanCount"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}AdminUser/getTotalMerchanCount",
+									"host": [
+										"{{baseUrl}}AdminUser"
+									],
+									"path": [
+										"getTotalMerchanCount"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 Oct 2025 17:09:41 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\",\n    \"result\": [\n        {\n            \"value\": \"2\",\n            \"type\": \"merchantCount\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "getTotalSubscribedCustomerCount",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}AdminUser/getTotalSubscribedCustomerCount",
+							"host": [
+								"{{baseUrl}}AdminUser"
+							],
+							"path": [
+								"getTotalSubscribedCustomerCount"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}AdminUser/getTotalSubscribedCustomerCount",
+									"host": [
+										"{{baseUrl}}AdminUser"
+									],
+									"path": [
+										"getTotalSubscribedCustomerCount"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 Oct 2025 17:15:24 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\",\n    \"result\": [\n        {\n            \"value\": \"1\",\n            \"type\": \"subscribedCount\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "getAnalyticsReport",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fromDate\": \"2025-10-06\"\r\n//   \"toDate\": \"2025-10-06\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}AdminUser/getAnalyticsReport",
+							"host": [
+								"{{baseUrl}}AdminUser"
+							],
+							"path": [
+								"getAnalyticsReport"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"fromDate\": \"2025-10-06\"\r\n//   \"toDate\": \"2025-10-06\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}AdminUser/getAnalyticsReport",
+									"host": [
+										"{{baseUrl}}AdminUser"
+									],
+									"path": [
+										"getAnalyticsReport"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 Oct 2025 17:55:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\",\n    \"analyticReports\": [\n        {\n            \"merchantId\": 1,\n            \"txnAmount\": 400,\n            \"merchantAmount\": 392,\n            \"adminAmount\": 8,\n            \"txnCount\": 2\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Reports",
+			"item": [
+				{
+					"name": "CarTransactionReport",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vehicleNumber\": \"AP21Bk4126\"\r\n    // \"fromDate\" : \"yyyy-mm-dd\",\r\n    // \"toDate\" : \"yyyy-mm-dd\",\r\n    // \"fromAmount\" : 0,\r\n    // \"toAmount\" : 0,\r\n    // \"vehicleType\" : \"Car/Bike\",\r\n    // \"deviceId\" : \"merchantDeviceId\",\r\n    // \"pageIndex\" : 1,\r\n    // \"pageSize\" : 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}Reports/carTransaction",
+							"host": [
+								"{{baseUrl}}Reports"
+							],
+							"path": [
+								"carTransaction"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CarTransactionReport",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"vehicleNumber\": \"AP21Bk4126\"\r\n    // \"fromDate\" : \"yyyy-mm-dd\",\r\n    // \"toDate\" : \"yyyy-mm-dd\",\r\n    // \"fromAmount\" : 0,\r\n    // \"toAmount\" : 0,\r\n    // \"vehicleType\" : \"Car/Bike\",\r\n    // \"deviceId\" : \"merchantDeviceId\",\r\n    // \"pageIndex\" : 1,\r\n    // \"pageSize\" : 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}Reports/carTransaction",
+									"host": [
+										"{{baseUrl}}Reports"
+									],
+									"path": [
+										"carTransaction"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Nov 2025 11:47:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\",\n    \"carTransaction\": [\n        {\n            \"pageIndex\": 10,\n            \"pageSize\": 10,\n            \"noOfRecords\": 1,\n            \"entryDeviceId\": \"TestId101\",\n            \"vehicleNumber\": \"AP21Bk4126\",\n            \"merchantName\": \"RKI SuperMart23\",\n            \"customerName\": \"John\",\n            \"txnAmount\": 200,\n            \"merchantAmount\": 194,\n            \"adminAmount\": 6,\n            \"status\": \"Executed\",\n            \"entryTime\": \"2025-11-03T17:04:44.001513\",\n            \"exitTime\": \"2025-11-03T17:16:14.399429\",\n            \"customerId\": 1,\n            \"merchantLocation\": \"12 MG Road\",\n            \"vehicleType\": \"Bike\",\n            \"exitDeviceId\": \"TESTID202\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "walletRechargeReport",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"fromDate\" : \"yyyy-mm-dd\",\r\n    // \"toDate\" : \"yyyy-mm-dd\",\r\n    // \"fromAmount\" : 0,\r\n    // \"toAmount\" : 0,\r\n    // \"status\" : \"InProgress/Executed\",\r\n    // \"orderId\" : \"TxnReferenceNumber\",\r\n    // \"customerEmail\" : \"emailId\",\r\n    // \"pageIndex\" : 1,\r\n    // \"pageSize\" : 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}Reports/walletRechargeReport",
+							"host": [
+								"{{baseUrl}}Reports"
+							],
+							"path": [
+								"walletRechargeReport"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "walletRechargeReport",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    // \"fromDate\" : \"yyyy-mm-dd\",\r\n    // \"toDate\" : \"yyyy-mm-dd\",\r\n    // \"fromAmount\" : 0,\r\n    // \"toAmount\" : 0,\r\n    // \"status\" : \"InProgress/Executed\",\r\n    // \"orderId\" : \"TxnReferenceNumber\",\r\n    // \"customerEmail\" : \"emailId\",\r\n    // \"pageIndex\" : 1,\r\n    // \"pageSize\" : 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}Reports/walletRechargeReport",
+									"host": [
+										"{{baseUrl}}Reports"
+									],
+									"path": [
+										"walletRechargeReport"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Nov 2025 11:56:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\",\n    \"walletRechargeData\": [\n        {\n            \"pageIndex\": 0,\n            \"pageSize\": 10,\n            \"noOfRecords\": 1,\n            \"customerId\": 1,\n            \"status\": \"Executed\",\n            \"currency\": \"INR\",\n            \"orderId\": \"order_RVQuwvNLVV8bFS\",\n            \"txnDateTime\": \"2025-10-20T00:09:49.091409\",\n            \"customerName\": \"John Doe\",\n            \"toAmountGreaterThanFromAmount\": true\n        }\n    ],\n    \"totalRecords\": 1,\n    \"pageIndex\": 0,\n    \"pageSize\": 10\n}"
+						}
+					]
+				},
+				{
+					"name": "manualTransaction",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     // \"fromDate\" : \"yyyy-mm-dd\",\r\n    // \"toDate\" : \"yyyy-mm-dd\",\r\n    // \"fromAmount\" : 0,\r\n    // \"toAmount\" : 0,\r\n    // \"transactionId\": ReferenceNumber(Long),\r\n    // \"merchantId\" : merchantId(Long)\r\n    // \"pageIndex\" : 1,\r\n    // \"pageSize\" : 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}Reports/manualTransaction",
+							"host": [
+								"{{baseUrl}}Reports"
+							],
+							"path": [
+								"manualTransaction"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "manualTransaction",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n     // \"fromDate\" : \"yyyy-mm-dd\",\r\n    // \"toDate\" : \"yyyy-mm-dd\",\r\n    // \"fromAmount\" : 0,\r\n    // \"toAmount\" : 0,\r\n    // \"transactionId\": ReferenceNumber(Long),\r\n    // \"merchantId\" : merchantId(Long)\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}Reports/manualTransaction",
+									"host": [
+										"{{baseUrl}}Reports"
+									],
+									"path": [
+										"manualTransaction"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Nov 2025 11:59:27 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\",\n    \"manualTransactionData\": [],\n    \"totalRecords\": 0,\n    \"pageIndex\": 0,\n    \"pageSize\": 10\n}"
+						}
+					]
+				},
+				{
+					"name": "subscriptionReport",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"fromDate\" : \"yyyy-mm-dd\",\r\n    // \"toDate\" : \"yyyy-mm-dd\",\r\n    // \"fromAmount\" : 0,\r\n    // \"toAmount\" : 0,\r\n    // \"transactionId\": ReferenceNumber(Long),\r\n    // \"merchantId\" : merchantId(Long)\r\n    // \"vehicleNumber\" : \"\",\r\n    // \"vehicleType\" : \"Car/Bike\",\r\n    // \"customerId\" : customerId(Long),\r\n     // \"pageIndex\" : 1,\r\n    // \"pageSize\" : 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}Reports/subscriptionReport",
+							"host": [
+								"{{baseUrl}}Reports"
+							],
+							"path": [
+								"subscriptionReport"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "subscriptionReport",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}Reports/subscriptionReport",
+									"host": [
+										"{{baseUrl}}Reports"
+									],
+									"path": [
+										"subscriptionReport"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Nov 2025 11:59:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\",\n    \"subscriptionData\": [\n        {\n            \"pageIndex\": 0,\n            \"pageSize\": 10,\n            \"noOfRecords\": 1,\n            \"merchantName\": \"RKI SuperMart23\",\n            \"vehicleType\": \"Car\",\n            \"customerName\": \"John Doe\",\n            \"subscriptionId\": 1,\n            \"subscribedAt\": \"2025-10-20T00:16:00.160865\",\n            \"subscriptionFee\": 500,\n            \"expirationDate\": \"2025-10-27T00:16:00.157956\",\n            \"subscriptionStatus\": \"Active\"\n        }\n    ],\n    \"totalRecords\": 1,\n    \"pageIndex\": 0,\n    \"pageSize\": 10\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "notificationTemplate",
+			"item": [
+				{
+					"name": "CreateEmailTemplate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"templateName\": \"admin_login_otp\",\r\n    \"subject\": \"Login otp\",\r\n    \"htmlContent\": \"<h1>Hello name</h1>\",\r\n    \"smsContent\": \"Vehicle Subscription successful\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}templates/create",
+							"host": [
+								"{{baseUrl}}templates"
+							],
+							"path": [
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"templateName\": \"customer_creation\",\r\n    \"subject\": \"Welcome to RKI\",\r\n    \"htmlContent\": \"<h1>Hello name</h1>\",\r\n    \"smsContent\": \"Hi name, welcome!\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}templates/create",
+									"host": [
+										"{{baseUrl}}templates"
+									],
+									"path": [
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Oct 2025 15:40:44 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\",\n    \"template\": {\n        \"id\": 1,\n        \"templateName\": \"customer_creation\",\n        \"subject\": \"Welcome to RKI\",\n        \"htmlContent\": \"<h1>Hello name</h1>\",\n        \"smsContent\": \"Hi name, welcome!\",\n        \"createdAt\": \"2025-10-25T21:10:44.1542761\",\n        \"updatedAt\": \"2025-10-25T21:10:44.1542761\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "find by template name",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"templateName\": \"customer_creation\",\r\n    \"subject\": \"Welcome to RKI\",\r\n    \"htmlContent\": \"<h1>Hello name</h1>\",\r\n    \"smsContent\": \"Hi name, welcome!\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}templates/findBy/vehicle_subscription",
+							"host": [
+								"{{baseUrl}}templates"
+							],
+							"path": [
+								"findBy",
+								"vehicle_subscription"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"templateName\": \"customer_creation\",\r\n    \"subject\": \"Welcome to RKI\",\r\n    \"htmlContent\": \"<h1>Hello name</h1>\",\r\n    \"smsContent\": \"Hi name, welcome!\"\r\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}templates/findBy/customer_creation",
+									"host": [
+										"{{baseUrl}}templates"
+									],
+									"path": [
+										"findBy",
+										"customer_creation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Oct 2025 15:41:59 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\",\n    \"template\": {\n        \"id\": 1,\n        \"templateName\": \"customer_creation\",\n        \"subject\": \"Welcome to RKI\",\n        \"htmlContent\": \"<h1>Hello name</h1>\",\n        \"smsContent\": \"Hi name, welcome!\",\n        \"createdAt\": \"2025-10-25T21:10:44.154276\",\n        \"updatedAt\": \"2025-10-25T21:10:44.154276\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Find all emails",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"templateName\": \"customer_creation\",\r\n    \"subject\": \"Welcome to RKI\",\r\n    \"htmlContent\": \"<h1>Hello name</h1>\",\r\n    \"smsContent\": \"Hi name, welcome!\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}templates/findAll/email",
+							"host": [
+								"{{baseUrl}}templates"
+							],
+							"path": [
+								"findAll",
+								"email"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"templateName\": \"customer_creation\",\r\n    \"subject\": \"Welcome to RKI\",\r\n    \"htmlContent\": \"<h1>Hello name</h1>\",\r\n    \"smsContent\": \"Hi name, welcome!\"\r\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}templates/findAll/email",
+									"host": [
+										"{{baseUrl}}templates"
+									],
+									"path": [
+										"findAll",
+										"email"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Oct 2025 15:42:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\",\n    \"templates\": [\n        {\n            \"id\": 1,\n            \"templateName\": \"customer_creation\",\n            \"subject\": \"Welcome to RKI\",\n            \"htmlContent\": \"<h1>Hello name</h1>\",\n            \"smsContent\": \"Hi name, welcome!\",\n            \"createdAt\": \"2025-10-25T21:10:44.154276\",\n            \"updatedAt\": \"2025-10-25T21:10:44.154276\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"templateName\": \"admin_login_otp\",\r\n    \"subject\": \"Login otp\",\r\n    \"htmlContent\": \"<h1>Hello name</h1>\",\r\n    \"smsContent\": \"loginOtp\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}templates/update/vehicle_subscription",
+							"host": [
+								"{{baseUrl}}templates"
+							],
+							"path": [
+								"update",
+								"vehicle_subscription"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "customerCreation",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"templateName\": \"customer_creation\",\r\n    \"subject\": \"Welcome to RKI.\",\r\n    \"htmlContent\": \"<!DOCTYPE html> <html lang=\\\"en\\\"><head> <meta charset=\\\"UTF-8\\\" /> <title>PayBayGO Welcome Email</title> </head><body style=\\\" margin: 0; padding: 40px 0; background-color: #f5f5f5; font-family: Arial, sans-serif; \\\"> <div style=\\\" max-width: 40%; margin: 0 auto; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); overflow: hidden; text-align: left; \\\"> <!-- Header --> <div style=\\\" background:url('bg.png') no-repeat center top / cover; padding:54px 0; text-align: center; \\\"> </div> <!-- Email Body --> <div style=\\\"padding: 30px;\\\"> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px;\\\"> Dear <span style=\\\"color: #3862f6;\\\">[[${userName}]],</span> 👋 </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px;\\\"> We’re pleased to inform you that a <span style=\\\"color: #3862f6;\\\">new subscription request</span> has been received from a customer for your parking location via the <span style=\\\"color: #3862f6;\\\">PayBayGO Subscription Portal. 🎉</span> </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px;\\\"> 📌 Customer Details: <ul> <li><span style=\\\"color: #3862f6;\\\">👤 Name:</span> [[${customerId}]]</li> <li><span style=\\\"color: #3862f6;\\\">🏠 Location:</span> [[${customerAddress}]]</li> </ul> </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px; line-height: 1.7;\\\"> <span style=\\\"color: #3862f6;\\\"> 🔜 Next Steps: </span>Please review the customer details and confirm the availability of the requested parking zone. ✅ </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px; line-height: 1.7;\\\"> 📋 You may access the onboarding checklist and customer profile via the following link: </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px; line-height: 1.7;\\\"> 🔗 [Insert Link Here] </p> <p style=\\\"margin: 20px 0; font-size: 16px; line-height:22px;\\\"> 💬 If you require any assistance or clarification, feel free to reach out to our support team. We’re here to help! <strong style=\\\"color: #3862f6;\\\">Support@paybaygo.com🤝</strong> </p> <p style=\\\"margin: 20px 0; font-size: 16px; line-height:22px;\\\">Thank you for your prompt attention to this request. 🙏 🤝</p> <p style=\\\"margin: 20px 0; font-size: 16px; line-height:22px;\\\"> Warm regards,<br /> <strong>PayBayGO Support Team 💼</strong> </p> <p style=\\\"margin: 10px 0; font-size: 16px; line-height:22px; font-style: italic;\\\"> “The Parking You’ve Been Waiting For!” </p> </div> <p style=\\\"font-size: 12px;text-align: right;padding-right: 20px;\\\"> © 2025 RIM Solutions Pvt Ltd. All rights reserved. This is an automated email. Please do not reply.</p> <!-- Footer --> <div style=\\\" background:url('bg.png') no-repeat center bottom / cover;height: 25px; \\\"> <p style=\\\"visibility: hidden;\\\">.</p> </div> </div> </body> </html>\",\r\n    \"smsContent\": \"Hi name, welcome!\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}templates/update/customer_creation",
+									"host": [
+										"{{baseUrl}}templates"
+									],
+									"path": [
+										"update",
+										"customer_creation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Nov 2025 12:44:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\",\n    \"template\": {\n        \"id\": 1,\n        \"templateName\": \"customer_creation\",\n        \"subject\": \"Welcome to RKI.\",\n        \"htmlContent\": \"<!DOCTYPE html> <html lang=\\\"en\\\"><head> <meta charset=\\\"UTF-8\\\" /> <title>PayBayGO Welcome Email</title> </head><body style=\\\" margin: 0; padding: 40px 0; background-color: #f5f5f5; font-family: Arial, sans-serif; \\\"> <div style=\\\" max-width: 40%; margin: 0 auto; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); overflow: hidden; text-align: left; \\\"> <!-- Header --> <div style=\\\" background:url('bg.png') no-repeat center top / cover; padding:54px 0; text-align: center; \\\"> </div> <!-- Email Body --> <div style=\\\"padding: 30px;\\\"> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px;\\\"> Dear <span style=\\\"color: #3862f6;\\\">[User Name],</span> 👋 </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px;\\\"> We’re pleased to inform you that a <span style=\\\"color: #3862f6;\\\">new subscription request</span> has been received from a customer for your parking location via the <span style=\\\"color: #3862f6;\\\">PayBayGO Subscription Portal. 🎉</span> </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px;\\\"> 📌 Customer Details: <ul> <li><span style=\\\"color: #3862f6;\\\">👤 Name:</span> {{Customer_ID}}</li> <li><span style=\\\"color: #3862f6;\\\">🏠 Location:</span> {{Customer_Address}}</li> <li><span style=\\\"color: #3862f6;\\\">🅿️ Requested Parking Zone:</span> {{Zone_Name}}</li> <li><span style=\\\"color: #3862f6;\\\">📦 Subscription Plan:</span> {{plan}}</li> <li><span style=\\\"color: #3862f6;\\\">📅 Preferred Start Date:</span> {{Start_Date}}</li> </ul> </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px; line-height: 1.7;\\\"> <span style=\\\"color: #3862f6;\\\"> 🔜 Next Steps: </span>Please review the customer details and confirm the availability of the requested parking zone. ✅ </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px; line-height: 1.7;\\\"> 📋 You may access the onboarding checklist and customer profile via the following link: </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px; line-height: 1.7;\\\"> 🔗 [Insert Link Here] </p> <p style=\\\"margin: 20px 0; font-size: 16px; line-height:22px;\\\"> 💬 If you require any assistance or clarification, feel free to reach out to our support team. We’re here to help! <strong style=\\\"color: #3862f6;\\\">Support@paybaygo.com🤝</strong> </p> <p style=\\\"margin: 20px 0; font-size: 16px; line-height:22px;\\\">Thank you for your prompt attention to this request. 🙏 🤝</p> <p style=\\\"margin: 20px 0; font-size: 16px; line-height:22px;\\\"> Warm regards,<br /> <strong>PayBayGO Support Team 💼</strong> </p> <p style=\\\"margin: 10px 0; font-size: 16px; line-height:22px; font-style: italic;\\\"> “The Parking You’ve Been Waiting For!” </p> </div> <p style=\\\"font-size: 12px;text-align: right;padding-right: 20px;\\\"> © 2025 RIM Solutions Pvt Ltd. All rights reserved. This is an automated email. Please do not reply.</p> <!-- Footer --> <div style=\\\" background:url('bg.png') no-repeat center bottom / cover;height: 25px; \\\"> <p style=\\\"visibility: hidden;\\\">.</p> </div> </div> </body> </html>\",\n        \"smsContent\": \"Hi name, welcome!\",\n        \"createdAt\": \"2025-10-25T21:10:44.154276\",\n        \"updatedAt\": \"2025-11-03T17:36:07.699865\"\n    }\n}"
+						},
+						{
+							"name": "VehicleSubscription",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"templateName\": \"vehicle_subscription\",\r\n    \"subject\": \"Subscription Email\",\r\n    \"htmlContent\": \"<!DOCTYPE html> <html lang=\\\"en\\\"> <head> <meta charset=\\\"UTF-8\\\" /> <title>PayBayGO Welcome Email</title> </head> <body style=\\\" margin: 0; padding: 40px 0; background-color: #f5f5f5; font-family: Arial, sans-serif; \\\"> <div style=\\\" max-width: 40%; margin: 0 auto; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); overflow: hidden; text-align: left; \\\"> <!-- Header --> <div style=\\\" background:url('bg.png') no-repeat center top / cover; padding:54px 0; text-align: center; \\\"> </div> <!-- Email Body --> <div style=\\\"padding: 30px;\\\"> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px;\\\"> Dear <span style=\\\"color: #3862f6;\\\">[[${userName}]],</span> 👋 </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px;\\\"> We’re pleased to inform you that a <span style=\\\"color: #3862f6;\\\">new subscription request</span> has been received from a customer for your parking location via the <span style=\\\"color: #3862f6;\\\">PayBayGO Subscription Portal. 🎉</span> </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px;\\\"> 📌 Customer Details: <ul> <li><span style=\\\"color: #3862f6;\\\">👤 Name:</span> [[${customerId}]]</li> <li><span style=\\\"color: #3862f6;\\\">🏠 Location:</span> [[${customerAddress}]]</li> <li><span style=\\\"color: #3862f6;\\\">🅿️ Requested Parking Zone:</span> [[${zoneName}}</li> <li><span style=\\\"color: #3862f6;\\\">📦 Subscription Plan:</span> [[${plan}}</li> <li><span style=\\\"color: #3862f6;\\\">📅 Preferred Start Date:</span> [[${startDate}]]</li> </ul> </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px; line-height: 1.7;\\\"> <span style=\\\"color: #3862f6;\\\"> 🔜 Next Steps: </span>Please review the customer details and confirm the availability of the requested parking zone. ✅ </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px; line-height: 1.7;\\\"> 📋 You may access the onboarding checklist and customer profile via the following link: </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px; line-height: 1.7;\\\"> 🔗 [Insert Link Here] </p> <p style=\\\"margin: 20px 0; font-size: 16px; line-height:22px;\\\"> 💬 If you require any assistance or clarification, feel free to reach out to our support team. We’re here to help! <strong style=\\\"color: #3862f6;\\\">Support@paybaygo.com🤝</strong> </p> <p style=\\\"margin: 20px 0; font-size: 16px; line-height:22px;\\\">Thank you for your prompt attention to this request. 🙏 🤝</p> <p style=\\\"margin: 20px 0; font-size: 16px; line-height:22px;\\\"> Warm regards,<br /> <strong>PayBayGO Support Team 💼</strong> </p> <p style=\\\"margin: 10px 0; font-size: 16px; line-height:22px; font-style: italic;\\\"> “The Parking You’ve Been Waiting For!” </p> </div> <p style=\\\"font-size: 12px;text-align: right;padding-right: 20px;\\\"> © 2025 RIM Solutions Pvt Ltd. All rights reserved. This is an automated email. Please do not reply.</p> <!-- Footer --> <div style=\\\" background:url('bg.png') no-repeat center bottom / cover;height: 25px; \\\"> <p style=\\\"visibility: hidden;\\\">.</p> </div> </div> </body> </html>\",\r\n    \"smsContent\": \"Vehicle Subscription successful\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}templates/update/vehicle_subscription",
+									"host": [
+										"{{baseUrl}}templates"
+									],
+									"path": [
+										"update",
+										"vehicle_subscription"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Nov 2025 14:51:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": \"Rki_0\",\n    \"errorMessage\": \"Success\",\n    \"template\": {\n        \"id\": 2,\n        \"templateName\": \"vehicle_subscription\",\n        \"subject\": \"Subscription Email\",\n        \"htmlContent\": \"<!DOCTYPE html> <html lang=\\\"en\\\"> <head> <meta charset=\\\"UTF-8\\\" /> <title>PayBayGO Welcome Email</title> </head> <body style=\\\" margin: 0; padding: 40px 0; background-color: #f5f5f5; font-family: Arial, sans-serif; \\\"> <div style=\\\" max-width: 40%; margin: 0 auto; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); overflow: hidden; text-align: left; \\\"> <!-- Header --> <div style=\\\" background:url('bg.png') no-repeat center top / cover; padding:54px 0; text-align: center; \\\"> </div> <!-- Email Body --> <div style=\\\"padding: 30px;\\\"> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px;\\\"> Dear <span style=\\\"color: #3862f6;\\\">[[${userName}]],</span> 👋 </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px;\\\"> We’re pleased to inform you that a <span style=\\\"color: #3862f6;\\\">new subscription request</span> has been received from a customer for your parking location via the <span style=\\\"color: #3862f6;\\\">PayBayGO Subscription Portal. 🎉</span> </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px;\\\"> 📌 Customer Details: <ul> <li><span style=\\\"color: #3862f6;\\\">👤 Name:</span> [[${customerId}]]</li> <li><span style=\\\"color: #3862f6;\\\">🏠 Location:</span> [[${customerAddress}]]</li> <li><span style=\\\"color: #3862f6;\\\">🅿️ Requested Parking Zone:</span> [[${zoneName}}</li> <li><span style=\\\"color: #3862f6;\\\">📦 Subscription Plan:</span> [[${plan}}</li> <li><span style=\\\"color: #3862f6;\\\">📅 Preferred Start Date:</span> [[${startDate}]]</li> </ul> </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px; line-height: 1.7;\\\"> <span style=\\\"color: #3862f6;\\\"> 🔜 Next Steps: </span>Please review the customer details and confirm the availability of the requested parking zone. ✅ </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px; line-height: 1.7;\\\"> 📋 You may access the onboarding checklist and customer profile via the following link: </p> <p style=\\\"margin: 10px 0 20px; font-size: 16px; line-height:22px; line-height: 1.7;\\\"> 🔗 [Insert Link Here] </p> <p style=\\\"margin: 20px 0; font-size: 16px; line-height:22px;\\\"> 💬 If you require any assistance or clarification, feel free to reach out to our support team. We’re here to help! <strong style=\\\"color: #3862f6;\\\">Support@paybaygo.com🤝</strong> </p> <p style=\\\"margin: 20px 0; font-size: 16px; line-height:22px;\\\">Thank you for your prompt attention to this request. 🙏 🤝</p> <p style=\\\"margin: 20px 0; font-size: 16px; line-height:22px;\\\"> Warm regards,<br /> <strong>PayBayGO Support Team 💼</strong> </p> <p style=\\\"margin: 10px 0; font-size: 16px; line-height:22px; font-style: italic;\\\"> “The Parking You’ve Been Waiting For!” </p> </div> <p style=\\\"font-size: 12px;text-align: right;padding-right: 20px;\\\"> © 2025 RIM Solutions Pvt Ltd. All rights reserved. This is an automated email. Please do not reply.</p> <!-- Footer --> <div style=\\\" background:url('bg.png') no-repeat center bottom / cover;height: 25px; \\\"> <p style=\\\"visibility: hidden;\\\">.</p> </div> </div> </body> </html>\",\n        \"smsContent\": \"Vehicle Subscription successful\",\n        \"createdAt\": \"2025-11-03T20:19:19.813119\",\n        \"updatedAt\": \"2025-11-03T20:19:19.813119\"\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "token",
+			"value": ""
+		},
+		{
+			"key": "merchantToken",
+			"value": ""
+		},
+		{
+			"key": "customerToken",
+			"value": ""
+		}
+	]
+}
